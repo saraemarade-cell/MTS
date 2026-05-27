@@ -486,6 +486,106 @@ ul { list-style: none; }
 }
 
 /* =============================================
+   PARTNERS
+   ============================================= */
+
+.partners {
+  background: var(--dark-alt);
+  border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+  padding: 56px 0;
+  overflow: hidden;
+}
+
+.partners-header-wrap {
+  margin-bottom: 40px;
+}
+
+.partners-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.partners-sub {
+  font-size: 13px;
+  color: rgba(242,242,242,0.35);
+  letter-spacing: 0.04em;
+}
+
+/* Marquee */
+.marquee-track {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* fade edges */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.marquee-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  animation: marquee-scroll 48s linear infinite;
+}
+
+.marquee-track:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  height: 72px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.partner-logo::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 28px;
+  background: var(--dark-border);
+}
+
+.partner-logo img {
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  object-position: center;
+  filter: brightness(0) invert(1) opacity(0.35);
+  image-rendering: -webkit-optimize-contrast;
+  transition: filter var(--transition), transform var(--transition);
+  display: block;
+}
+
+.partner-logo:hover img {
+  filter: brightness(0) invert(1) opacity(0.85);
+  transform: scale(1.08);
+}
+
+/* =============================================
    CHI SIAMO
    ============================================= */
 
@@ -1371,6 +1471,12 @@ ul { list-style: none; }
 
   /* --- Navbar --- */
   .logo-img { height: 40px; }
+
+  /* Partners */
+  .partners { padding: 44px 0; }
+  .partners-header-wrap { margin-bottom: 32px; }
+  .partner-logo { padding: 0 28px; height: 60px; }
+  .partner-logo img { height: 28px; max-width: 110px; }
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
@@ -1469,6 +1575,13 @@ ul { list-style: none; }
 
   /* --- Navbar --- */
   .logo-img { height: 36px; }
+
+  /* Partners */
+  .partners { padding: 36px 0; }
+  .partners-header-wrap { margin-bottom: 24px; }
+  .partner-logo { padding: 0 20px; height: 52px; }
+  .partner-logo img { height: 24px; max-width: 90px; }
+  .marquee-inner { animation-duration: 36s; }
 
   /* --- Hero --- */
   .hero { padding: 72px 0 40px; }
