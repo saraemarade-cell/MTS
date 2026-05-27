@@ -575,16 +575,21 @@ ul { list-style: none; }
   object-fit: contain;
   object-position: center;
   display: block;
-  /* screen blend dissolves any solid white/grey backgrounds into the dark page */
+  /*
+   * invert(1): white backgrounds → black, dark logos → white
+   * screen: black areas dissolve into the dark page canvas
+   * Result: clean white logo silhouette, zero visible backgrounds
+   * Works for JPG (solid white bg), PNG (transparent), SVG
+   */
+  filter: invert(1) grayscale(0.2) opacity(0.55);
   mix-blend-mode: screen;
-  filter: grayscale(1) opacity(0.5);
   image-rendering: -webkit-optimize-contrast;
   transition: filter var(--transition), transform var(--transition);
 }
 
 .partner-logo:hover img {
-  filter: grayscale(0) opacity(0.95);
-  transform: scale(1.08);
+  filter: invert(1) grayscale(0) opacity(1);
+  transform: scale(1.06);
 }
 
 /* =============================================
