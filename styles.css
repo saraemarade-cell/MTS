@@ -132,7 +132,15 @@ ul { list-style: none; }
 }
 
 .nav-logo { display: flex; align-items: center; }
-.logo-img { height: 48px; width: auto; object-fit: contain; }
+.logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  object-position: left center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
 
 .nav-links {
   display: flex;
@@ -896,7 +904,16 @@ ul { list-style: none; }
   padding-bottom: 60px;
 }
 
-.footer-logo { height: 52px; width: auto; object-fit: contain; margin-bottom: 16px; }
+.footer-logo {
+  height: 52px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  object-position: left center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  margin-bottom: 16px;
+}
 .footer-desc { font-size: 13px; color: rgba(242,242,242,0.45); line-height: 1.6; margin-bottom: 24px; max-width: 260px; }
 
 .footer-socials { display: flex; gap: 12px; }
