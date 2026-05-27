@@ -3,13 +3,6 @@
    Visual Identity System
    ============================================= */
 
-/* FONTS */
-@font-face {
-  font-family: 'Good Times';
-  src: url('https://fonts.cdnfonts.com/css/good-times') format('woff2');
-  font-weight: 400 700;
-}
-
 :root {
   --red: #D72E1F;
   --black: #191919;
@@ -19,8 +12,8 @@
   --dark-border: rgba(242,242,242,0.08);
   --gradient: linear-gradient(135deg, #191919 0%, #D72E1F 100%);
   --gradient-hover: linear-gradient(135deg, #D72E1F 0%, #191919 100%);
-  --font-headline: 'Rajdhani', 'Good Times', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-headline: 'good-times', sans-serif;
+  --font-body: 'nexa', sans-serif;
   --font-mono: 'Andale Mono', 'Courier New', monospace;
   --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
   --radius: 4px;
