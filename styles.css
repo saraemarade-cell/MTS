@@ -655,6 +655,257 @@ ul { list-style: none; }
 }
 
 /* =============================================
+   TERRITORIO
+   ============================================= */
+
+.territorio {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+  background: var(--dark-alt);
+}
+
+.territorio-bg {
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1541348263662-e068662d82af?w=1800&q=80') center/cover no-repeat;
+}
+
+.territorio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(10,10,10,0.97) 0%,
+    rgba(17,17,17,0.94) 50%,
+    rgba(25,10,10,0.88) 100%
+  );
+}
+
+.territorio-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(215,46,31,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(215,46,31,0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+.territorio-container { position: relative; z-index: 1; }
+
+.territorio-header {
+  max-width: 720px;
+  margin-bottom: 72px;
+}
+
+.territorio-title {
+  font-family: var(--font-headline);
+  font-size: clamp(38px, 6vw, 68px);
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 16px 0 24px;
+}
+
+.territorio-intro {
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(242,242,242,0.65);
+  max-width: 600px;
+}
+
+.territorio-body {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Location block */
+.territorio-location-wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.location-img {
+  position: relative;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.location-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,0.75) 0%, transparent 60%);
+}
+
+.location-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.location-badge span {
+  color: rgba(242,242,242,0.45);
+  font-size: 10px;
+}
+
+.location-badge strong {
+  font-family: var(--font-headline);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--smoke);
+}
+
+.territorio-location-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.location-detail { display: flex; flex-direction: column; gap: 10px; }
+
+.location-label {
+  color: var(--red);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.location-detail h3 {
+  font-family: var(--font-headline);
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.location-detail p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(242,242,242,0.6);
+}
+
+/* Worlds block */
+.territorio-worlds {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.territory-worlds-header { max-width: 560px; }
+.territory-worlds-header .section-tag { display: block; margin-bottom: 12px; }
+
+.worlds-title {
+  font-family: var(--font-headline);
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.territory-worlds-header p {
+  font-size: 15px;
+  color: rgba(242,242,242,0.55);
+  line-height: 1.65;
+}
+
+.worlds-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.world-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.world-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+.world-card:hover { border-color: rgba(215,46,31,0.3); transform: translateY(-4px); }
+.world-card:hover::before { transform: scaleX(1); }
+
+.world-cat {
+  display: inline-block;
+  color: var(--red);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+}
+
+.world-card h4 {
+  font-family: var(--font-headline);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+}
+
+.world-card p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(242,242,242,0.5);
+}
+
+/* Quote */
+.territorio-quote {
+  margin-top: 80px;
+  padding-top: 56px;
+  border-top: 1px solid var(--dark-border);
+  text-align: center;
+}
+
+.territorio-quote blockquote {
+  font-family: var(--font-headline);
+  font-size: clamp(20px, 3vw, 30px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(242,242,242,0.75);
+  letter-spacing: 0.01em;
+  max-width: 780px;
+  margin: 0 auto 16px;
+  font-style: italic;
+}
+
+.quote-mark {
+  color: var(--red);
+  font-size: 1.4em;
+  line-height: 0;
+  vertical-align: -0.2em;
+}
+
+.territorio-quote cite {
+  color: var(--red);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+/* =============================================
    PERCHE MTS
    ============================================= */
 
@@ -982,12 +1233,15 @@ ul { list-style: none; }
   .corsi-grid { grid-template-columns: repeat(2, 1fr); }
   .perche-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .worlds-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 1024px) {
   .hero-container { grid-template-columns: 1fr; gap: 48px; }
   .hero-form-wrap { max-width: 540px; margin: 0 auto; }
   .hero-headline { font-size: clamp(32px, 5vw, 48px); }
+  .territorio-location-wrap { grid-template-columns: 1fr; gap: 36px; }
+  .location-img { height: 300px; }
   .chi-siamo-grid { grid-template-columns: 1fr; gap: 48px; }
   .target-inner { grid-template-columns: 1fr; gap: 48px; }
   .desktop-br { display: none; }
@@ -999,6 +1253,8 @@ ul { list-style: none; }
 
 @media (max-width: 768px) {
   .section { padding: 72px 0; }
+  .territorio { padding: 80px 0; }
+  .worlds-grid { grid-template-columns: 1fr 1fr; }
 
   .nav-toggle { display: flex; }
   .nav-links {
@@ -1043,4 +1299,6 @@ ul { list-style: none; }
   .gallery-item.span-2 { grid-column: span 1; }
   .section-title { font-size: 28px; }
   .form-card { padding: 24px 20px; }
+  .worlds-grid { grid-template-columns: 1fr; }
+  .territorio-quote blockquote { font-size: 18px; }
 }
