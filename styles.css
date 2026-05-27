@@ -22,7 +22,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   background: var(--black);
@@ -66,7 +66,8 @@ ul { list-style: none; }
   border: 2px solid transparent;
   cursor: pointer;
   transition: all var(--transition);
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .btn-primary {
@@ -1317,39 +1318,59 @@ ul { list-style: none; }
 }
 
 /* =============================================
-   RESPONSIVE — TABLET
+   RESPONSIVE — 1200px (large tablet / small laptop)
    ============================================= */
 
 @media (max-width: 1200px) {
+  .hero-container { grid-template-columns: 1fr 400px; gap: 48px; }
   .corsi-grid { grid-template-columns: repeat(2, 1fr); }
   .perche-grid { grid-template-columns: repeat(3, 1fr); }
-  .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
   .worlds-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 1024px) {
-  .hero-container { grid-template-columns: 1fr; gap: 48px; }
-  .hero-form-wrap { max-width: 540px; margin: 0 auto; }
-  .hero-headline { font-size: clamp(32px, 5vw, 48px); }
-  .sedi-strip { grid-template-columns: 1fr; }
-  .imola-spotlight { grid-template-columns: 1fr; gap: 36px; padding: 36px; }
-  .imola-img { height: 320px; }
-  .chi-siamo-grid { grid-template-columns: 1fr; gap: 48px; }
-  .target-inner { grid-template-columns: 1fr; gap: 48px; }
-  .desktop-br { display: none; }
+  .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 
 /* =============================================
-   RESPONSIVE — MOBILE
+   RESPONSIVE — 1024px (tablet landscape)
+   ============================================= */
+
+@media (max-width: 1024px) {
+  .section { padding: 80px 0; }
+  .section-header { margin-bottom: 48px; }
+
+  .hero { padding: 88px 0 56px; }
+  .hero-container { grid-template-columns: 1fr; gap: 48px; }
+  .hero-form-wrap { width: 100%; max-width: 580px; margin: 0 auto; }
+  .hero-headline { font-size: clamp(30px, 5vw, 48px); }
+  .hero-sub { font-size: 16px; }
+  .desktop-br { display: none; }
+
+  .chi-siamo-grid { grid-template-columns: 1fr; gap: 48px; }
+  .visual-grid { grid-template-rows: 200px 140px; }
+
+  .sedi-strip { grid-template-columns: repeat(2, 1fr); }
+
+  .target-inner { grid-template-columns: 1fr; gap: 40px; }
+  .target-text { font-size: clamp(16px, 2.5vw, 20px); }
+
+  .testi-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+/* =============================================
+   RESPONSIVE — 768px (tablet portrait / large mobile)
    ============================================= */
 
 @media (max-width: 768px) {
-  .section { padding: 72px 0; }
-  .territorio { padding: 80px 0; }
-  .worlds-grid { grid-template-columns: 1fr 1fr; }
-  .sedi-strip { grid-template-columns: 1fr 1fr; }
-  .imola-spotlight { padding: 28px; gap: 28px; }
+  .container { padding: 0 20px; }
 
+  .section { padding: 64px 0; }
+  .section-header { margin-bottom: 40px; }
+  .section-title { font-size: clamp(26px, 7vw, 36px); }
+  .territorio { padding: 72px 0; }
+
+  /* --- Navbar --- */
+  .logo-img { height: 40px; }
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
@@ -1357,44 +1378,162 @@ ul { list-style: none; }
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(17,17,17,0.98);
+    z-index: 99;
+    background: rgba(15,15,15,0.98);
     flex-direction: column;
-    padding: 24px;
-    gap: 20px;
+    padding: 20px;
+    gap: 16px;
     border-bottom: 1px solid var(--dark-border);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
   }
   .nav-links.open { display: flex; }
-  .nav-links li a.nav-cta { width: 100%; text-align: center; }
+  .nav-links li { width: 100%; }
+  .nav-links li a { display: block; padding: 8px 0; font-size: 14px; }
+  .nav-links li a.nav-cta { text-align: center; padding: 12px 20px; }
 
-  .corsi-grid { grid-template-columns: 1fr; }
-  .perche-grid { grid-template-columns: 1fr 1fr; }
-  .testi-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
-  .gallery-item.span-2 { grid-column: span 2; }
-  .gallery-item { height: 180px; }
+  /* --- Hero --- */
+  .hero { padding: 80px 0 48px; min-height: auto; }
+  .hero-container { gap: 40px; }
+  .hero-form-wrap { max-width: 100%; }
+  .hero-headline { font-size: clamp(28px, 7vw, 40px); }
+  .hero-sub { font-size: 15px; margin-bottom: 24px; }
+  .hero-bullets li { font-size: 13px; }
+  .hero-scroll-hint { display: none; }
 
-  .chi-siamo-stats { flex-direction: column; gap: 24px; }
-  .footer-container { grid-template-columns: 1fr; gap: 32px; }
-  .footer-bottom-inner { flex-direction: column; align-items: flex-start; }
+  /* --- Form --- */
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .form-card { padding: 28px 24px; }
+  .form-title { font-size: 20px; }
 
-  .form-row { grid-template-columns: 1fr; }
-  .btn { width: 100%; text-align: center; }
-  .hero-form-wrap { width: 100%; }
+  /* --- Chi Siamo --- */
+  .visual-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 130px; }
+  .chi-siamo-stats { flex-direction: row; flex-wrap: wrap; gap: 24px; }
+  .stat-number { font-size: 34px; }
 
-  .visual-grid { grid-template-rows: 160px 120px; }
+  /* --- Corsi --- */
+  .corsi-grid { grid-template-columns: 1fr; gap: 16px; }
+  .corso-img { height: 220px; }
 
+  /* --- Territorio sedi --- */
+  .sedi-strip { grid-template-columns: 1fr; gap: 12px; }
+  .sede-img { height: 180px; }
+
+  /* --- Worlds --- */
+  .worlds-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+  /* --- Perché MTS --- */
+  .perche-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .perche-card { padding: 24px 20px; }
+  .perche-cta-wrap { margin-top: 40px; padding-top: 36px; }
+  .perche-cta-wrap .btn { width: auto; min-width: 260px; }
+
+  /* --- Target --- */
   .target-text { font-size: 16px; }
+  .target-list li { gap: 16px; padding: 16px 0; }
+
+  /* --- Testimonianze --- */
+  .testi-grid { grid-template-columns: 1fr; gap: 16px; }
+  .testi-card { padding: 28px 24px; }
+
+  /* --- Gallery --- */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 8px;
+  }
+  .gallery-item.span-2 { grid-column: span 2; }
+
+  /* --- Final CTA --- */
+  .cta-title { font-size: clamp(24px, 6vw, 36px); }
+  .cta-text { font-size: 15px; }
+  .final-cta-inner .btn { width: auto; min-width: 260px; }
+
+  /* --- Footer --- */
+  .footer { padding-top: 56px; }
+  .footer-container { grid-template-columns: 1fr; gap: 36px; padding-bottom: 48px; }
+  .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .footer-desc { max-width: 100%; }
 }
 
+/* =============================================
+   RESPONSIVE — 480px (small mobile)
+   ============================================= */
+
 @media (max-width: 480px) {
-  .perche-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr; }
+  .container { padding: 0 16px; }
+
+  .section { padding: 52px 0; }
+  .section-header { margin-bottom: 32px; }
+  .section-title { font-size: clamp(22px, 7vw, 30px); }
+  .territorio { padding: 56px 0; }
+
+  /* --- Navbar --- */
+  .logo-img { height: 36px; }
+
+  /* --- Hero --- */
+  .hero { padding: 72px 0 40px; }
+  .hero-headline { font-size: clamp(24px, 8vw, 34px); }
+  .hero-sub { font-size: 14px; }
+  .hero-badge { font-size: 10px; }
+  .hero-bullets li { font-size: 12px; }
+
+  /* --- Form --- */
+  .form-card { padding: 24px 16px; }
+  .form-title { font-size: 18px; }
+
+  /* --- Chi Siamo --- */
+  .visual-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .visual-card { height: 200px; }
+  .visual-card.large { height: 240px; grid-column: 1; }
+  .chi-siamo-stats { flex-direction: column; gap: 20px; }
+  .stat-number { font-size: 36px; }
+
+  /* --- Corsi --- */
+  .corso-img { height: 200px; }
+  .corso-content { padding: 20px; }
+  .corso-title { font-size: 20px; }
+
+  /* --- Territorio --- */
+  .territorio-title { font-size: clamp(30px, 8vw, 46px); }
+  .territorio-intro { font-size: 15px; }
+  .territorio-header { margin-bottom: 48px; }
+  .sedi-strip { gap: 10px; }
+  .worlds-grid { grid-template-columns: 1fr; gap: 10px; }
+  .worlds-title { font-size: 22px; }
+
+  /* --- Perché MTS --- */
+  .perche-grid { grid-template-columns: 1fr; gap: 10px; }
+  .perche-cta-wrap .btn { width: 100%; }
+
+  /* --- Target --- */
+  .target-text { font-size: 15px; }
+  .target-num { font-size: 11px; }
+
+  /* --- Gallery --- */
+  .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; gap: 8px; }
   .gallery-item.span-2 { grid-column: span 1; }
-  .section-title { font-size: 28px; }
-  .form-card { padding: 24px 20px; }
-  .worlds-grid { grid-template-columns: 1fr; }
-  .sedi-strip { grid-template-columns: 1fr; }
-  .imola-spotlight { grid-template-columns: 1fr; padding: 24px; }
+
+  /* --- Quote --- */
+  .territorio-quote { margin-top: 48px; padding-top: 40px; }
+  .territorio-quote blockquote { font-size: clamp(16px, 4vw, 22px); }
+
+  /* --- Final CTA --- */
+  .final-cta-inner .btn { width: 100%; }
+
+  /* --- Footer --- */
+  .footer-socials { gap: 10px; }
+}
+
+/* =============================================
+   RESPONSIVE — 360px (very small mobile)
+   ============================================= */
+
+@media (max-width: 360px) {
+  .container { padding: 0 12px; }
+  .hero-headline { font-size: 22px; }
+  .section-title { font-size: 20px; }
+  .btn { font-size: 13px; padding: 12px 20px; }
+  .btn-large { padding: 14px 24px; font-size: 14px; }
+}
   .territorio-quote blockquote { font-size: 18px; }
 }
