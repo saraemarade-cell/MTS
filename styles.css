@@ -608,7 +608,28 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: stretch;
+}
+
+.chi-siamo-visuals {
+  height: 100%;
+}
+
+.chi-siamo-img {
+  height: 100%;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.chi-siamo-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(17,17,17,0.45), transparent 55%);
 }
 
 .chi-siamo-text p {
@@ -1485,7 +1506,7 @@ ul { list-style: none; }
   .desktop-br { display: none; }
 
   .chi-siamo-grid { grid-template-columns: 1fr; gap: 48px; }
-  .visual-grid { grid-template-rows: 200px 140px; }
+  .chi-siamo-img { min-height: 380px; }
 
   .sedi-strip { grid-template-columns: repeat(2, 1fr); }
 
@@ -1552,7 +1573,6 @@ ul { list-style: none; }
   .form-title { font-size: 20px; }
 
   /* --- Chi Siamo --- */
-  .visual-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 130px; }
   .stats-items { grid-template-columns: 1fr 1fr; gap: 20px 28px; }
   .stat-number { font-size: 34px; }
 
@@ -1635,9 +1655,7 @@ ul { list-style: none; }
   .form-title { font-size: 18px; }
 
   /* --- Chi Siamo --- */
-  .visual-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
-  .visual-card { height: 200px; }
-  .visual-card.large { height: 240px; grid-column: 1; }
+  .chi-siamo-img { min-height: 300px; }
   .stats-items { grid-template-columns: 1fr; }
   .stat-number { font-size: 36px; }
 
