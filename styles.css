@@ -608,15 +608,10 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: stretch;
-}
-
-.chi-siamo-visuals {
-  height: 100%;
+  align-items: center;
 }
 
 .chi-siamo-img {
-  height: 100%;
   min-height: 520px;
   background-size: cover;
   background-position: center;
@@ -640,41 +635,51 @@ ul { list-style: none; }
 }
 
 .chi-siamo-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  margin-top: 40px;
-  padding-top: 40px;
+  margin-top: 64px;
+  padding-top: 56px;
   border-top: 1px solid var(--dark-border);
 }
 
 .stats-block-title {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(242,242,242,0.35);
+  color: rgba(242,242,242,0.3);
   margin-bottom: 28px;
 }
 
 .stats-items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px 40px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
 }
 
-.stat { display: flex; flex-direction: column; gap: 6px; }
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px 20px;
+  border: 1px solid rgba(215,46,31,0.15);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.025);
+  transition: border-color var(--transition);
+}
+
+.stat:hover {
+  border-color: rgba(215,46,31,0.35);
+}
 
 .stat-number {
   font-family: var(--font-headline);
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1;
-  color: var(--smoke);
+  color: var(--red);
 }
 
-.stat-unit { color: var(--red); font-size: 28px; }
-.stat-label { font-size: 12px; color: rgba(242,242,242,0.5); line-height: 1.4; letter-spacing: 0.02em; }
+.stat-unit { color: var(--red); font-size: 26px; }
+.stat-label { font-size: 13px; color: rgba(242,242,242,0.55); line-height: 1.5; }
 
 .chi-siamo-closing {
   font-size: 15px;
@@ -1573,8 +1578,9 @@ ul { list-style: none; }
   .form-title { font-size: 20px; }
 
   /* --- Chi Siamo --- */
-  .stats-items { grid-template-columns: 1fr 1fr; gap: 20px 28px; }
-  .stat-number { font-size: 34px; }
+  .stats-items { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .stat-number { font-size: 36px; }
+  .stat { padding: 20px 16px; }
 
   /* --- Corsi --- */
   .corsi-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -1656,8 +1662,9 @@ ul { list-style: none; }
 
   /* --- Chi Siamo --- */
   .chi-siamo-img { min-height: 300px; }
-  .stats-items { grid-template-columns: 1fr; }
-  .stat-number { font-size: 36px; }
+  .stats-items { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .stat-number { font-size: 34px; }
+  .stat { padding: 18px 14px; }
 
   /* --- Corsi --- */
   .corso-img { height: 200px; }
