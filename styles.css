@@ -589,13 +589,14 @@ ul { list-style: none; }
   object-fit: contain;
   object-position: center;
   display: block;
-  filter: brightness(0) invert(1) opacity(0.62);
+  mix-blend-mode: screen;
+  opacity: 0.75;
   image-rendering: -webkit-optimize-contrast;
-  transition: filter var(--transition), transform var(--transition);
+  transition: opacity var(--transition), transform var(--transition);
 }
 
 .partner-logo:hover img {
-  filter: brightness(0) invert(1) opacity(1);
+  opacity: 1;
   transform: scale(1.08);
 }
 
