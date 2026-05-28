@@ -1171,6 +1171,114 @@ ul { list-style: none; }
 }
 
 /* =============================================
+   PROCESSO DI SELEZIONE
+   ============================================= */
+
+.selezione-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 64px;
+}
+
+.selezione-lead {
+  font-family: var(--font-headline);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--smoke);
+  margin-bottom: 20px;
+}
+
+.selezione-body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(242,242,242,0.6);
+  margin-bottom: 24px;
+}
+
+.selezione-criteri {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.selezione-criteri li {
+  font-size: 14px;
+  color: rgba(242,242,242,0.7);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.selezione-criteri li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+}
+
+.processo-title {
+  display: block;
+  color: rgba(242,242,242,0.35);
+  margin-bottom: 24px;
+}
+
+.processo-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.processo-step {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--dark-border);
+  transition: gap var(--transition);
+}
+.processo-step:first-child {
+  border-top: 1px solid var(--dark-border);
+}
+.processo-step:hover {
+  gap: 36px;
+}
+
+.step-num {
+  font-family: var(--font-headline);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--red);
+  min-width: 60px;
+}
+
+.step-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--smoke);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.selezione-footer {
+  text-align: center;
+  padding-top: 56px;
+  border-top: 1px solid var(--dark-border);
+}
+
+.selezione-closing {
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(242,242,242,0.45);
+  margin-bottom: 32px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* =============================================
    PERCHE MTS
    ============================================= */
 
@@ -1599,6 +1707,10 @@ ul { list-style: none; }
   .sedi-strip { grid-template-columns: 1fr; gap: 12px; }
   .sede-img { height: 180px; }
 
+  /* --- Selezione --- */
+  .selezione-grid { grid-template-columns: 1fr; gap: 48px; }
+  .selezione-footer { padding-top: 40px; }
+
   /* --- Worlds --- */
   .worlds-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 
@@ -1687,6 +1799,13 @@ ul { list-style: none; }
   .sedi-strip { gap: 10px; }
   .worlds-grid { grid-template-columns: 1fr; gap: 10px; }
   .worlds-title { font-size: 22px; }
+
+  /* --- Selezione --- */
+  .selezione-grid { gap: 36px; }
+  .selezione-footer { padding-top: 32px; }
+  .selezione-closing { font-size: 14px; }
+  .step-num { font-size: 28px; }
+  .selezione-footer .btn { width: 100%; }
 
   /* --- Perché MTS --- */
   .perche-grid { grid-template-columns: 1fr; gap: 10px; }
