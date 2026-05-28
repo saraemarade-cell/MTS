@@ -1174,176 +1174,133 @@ ul { list-style: none; }
    PROCESSO DI SELEZIONE
    ============================================= */
 
-.selezione-layout {
+.selezione-intro {
+  font-size: 17px;
+  line-height: 1.65;
+  color: rgba(242,242,242,0.65);
+  margin-top: 20px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selezione-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: start;
 }
 
-/* LEFT COLUMN */
-.selezione-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: sticky;
-  top: 100px;
-}
-
-.selezione-left .section-tag {
+/* LEFT — criteria */
+.criteri-body {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(242,242,242,0.5);
   margin-bottom: 24px;
 }
 
-.selezione-title {
-  text-align: left;
-  margin-bottom: 32px;
+.criteri-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.selezione-lead {
+.criterio-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  transition: all var(--transition);
+}
+.criterio-item:hover {
+  border-color: rgba(215,46,31,0.4);
+  transform: translateX(4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.criterio-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.criterio-icon svg { width: 100%; height: 100%; }
+
+.criterio-label {
   font-family: var(--font-headline);
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--smoke);
+  line-height: 1.25;
+}
+
+/* RIGHT — process card */
+.processo-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+.processo-card:hover {
+  border-color: rgba(215,46,31,0.3);
+}
+
+.processo-card-header {
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.processo-card-tag { color: var(--red); }
+
+.processo-steps { padding: 0 28px; }
+
+.ps-step {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--dark-border);
+}
+.ps-last { border-bottom: none; }
+
+.ps-num {
+  font-family: var(--font-headline);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--red);
+  min-width: 52px;
+}
+
+.ps-label {
+  font-family: var(--font-headline);
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--smoke);
-  margin-bottom: 16px;
 }
 
-.selezione-body {
-  font-size: 15px;
-  line-height: 1.75;
-  color: rgba(242,242,242,0.55);
-  margin-bottom: 32px;
-}
-
-.selezione-closing {
+.processo-closing {
+  padding: 20px 28px;
   font-size: 13px;
   font-style: italic;
-  color: rgba(242,242,242,0.38);
-  margin-bottom: 32px;
-  line-height: 1.7;
-}
-
-/* RIGHT COLUMN */
-.selezione-right {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
-/* — Criteria block */
-.criteri-block {}
-
-.criteri-label {
-  display: block;
-  color: rgba(242,242,242,0.3);
-  margin-bottom: 16px;
-}
-
-.criteri-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.criterio-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 14px 16px;
-  background: rgba(255,255,255,0.025);
-  border: 1px solid rgba(215,46,31,0.18);
-  border-radius: var(--radius);
-  font-size: 13px;
-  color: rgba(242,242,242,0.7);
-  line-height: 1.45;
-  transition: border-color var(--transition), background var(--transition);
-}
-
-.criterio-card:hover {
-  border-color: rgba(215,46,31,0.4);
-  background: rgba(215,46,31,0.05);
-}
-
-.criterio-marker {
-  color: var(--red);
-  font-size: 7px;
-  margin-top: 4px;
-  flex-shrink: 0;
-}
-
-/* — Process timeline */
-.processo-block {
-  padding-top: 40px;
+  color: rgba(242,242,242,0.4);
+  line-height: 1.65;
   border-top: 1px solid var(--dark-border);
 }
 
-.processo-title {
-  display: block;
-  color: rgba(242,242,242,0.3);
-  margin-bottom: 20px;
-}
-
-.processo-timeline {
-  display: flex;
-  flex-direction: column;
-}
-
-.timeline-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.timeline-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.step-num {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-headline);
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--red);
-  border: 1px solid rgba(215,46,31,0.3);
-  border-radius: var(--radius);
-  background: rgba(215,46,31,0.06);
-  flex-shrink: 0;
-  transition: background var(--transition), border-color var(--transition);
-}
-
-.timeline-step:hover .step-num {
-  background: rgba(215,46,31,0.14);
-  border-color: rgba(215,46,31,0.5);
-}
-
-.timeline-connector {
-  width: 1px;
-  min-height: 36px;
-  background: linear-gradient(to bottom, rgba(215,46,31,0.35), rgba(215,46,31,0.05));
-  margin: 4px 0;
-}
-
-.step-content {
-  padding-top: 13px;
-  padding-bottom: 36px;
-}
-
-.step-label {
-  font-family: var(--font-headline);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--smoke);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  line-height: 1.3;
+/* CTA */
+.selezione-cta {
+  text-align: center;
+  margin-top: 64px;
+  padding-top: 56px;
+  border-top: 1px solid var(--dark-border);
 }
 
 /* =============================================
@@ -1776,8 +1733,7 @@ ul { list-style: none; }
   .sede-img { height: 180px; }
 
   /* --- Selezione --- */
-  .selezione-layout { grid-template-columns: 1fr; gap: 52px; }
-  .selezione-left { position: static; }
+  .selezione-main { grid-template-columns: 1fr; gap: 48px; }
 
   /* --- Worlds --- */
   .worlds-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -1869,8 +1825,9 @@ ul { list-style: none; }
   .worlds-title { font-size: 22px; }
 
   /* --- Selezione --- */
-  .criteri-grid { grid-template-columns: 1fr; }
-  .selezione-left .btn { width: 100%; }
+  .selezione-cta .btn { width: 100%; }
+  .criterio-item { padding: 16px 18px; gap: 16px; }
+  .criterio-icon { width: 40px; height: 40px; }
 
   /* --- Perché MTS --- */
   .perche-grid { grid-template-columns: 1fr; gap: 10px; }
