@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Model Maker Dallara — Corso specialistico MTS Motorsport Technical School. Formati con professionisti e accedi a un colloquio garantito con Dallara.">
+  <title>Model Maker Dallara — MTS Motorsport Technical School</title>
+  <link rel="stylesheet" href="https://use.typekit.net/bty4mzk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/acx6tcp.css">
+  <link rel="stylesheet" href="model-maker.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="MTS-Logo_Payoff-Negativo-colori.webp" alt="MTS Motorsport Technical School" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#cos-e">Il Ruolo</a></li>
+        <li><a href="#programma">Programma</a></li>
+        <li><a href="#struttura">Il Corso</a></li>
+        <li><a href="#investimento">Investimento</a></li>
+        <li><a href="#candidatura" class="nav-cta">Candidati ora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       01. HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="mono">// MTS × DALLARA — CORSO SPECIALISTICO</span>
+        </div>
+        <h1 class="hero-headline">
+          Diventa Model Maker<br>
+          <span class="text-red">nel Motorsport Professionale</span>
+        </h1>
+        <p class="hero-sub">
+          Formati con professionisti del settore e accedi a un colloquio<br class="desktop-br">
+          garantito con Dallara al termine del corso.
+        </p>
+        <ul class="hero-proof">
+          <li><span class="proof-icon">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>144 ore in formula weekend</li>
+          <li><span class="proof-icon">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>65% attività pratica</li>
+          <li><span class="proof-icon">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>Attività in modelleria e galleria del vento</li>
+          <li><span class="proof-icon">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>Colloquio finale garantito con Dallara</li>
+        </ul>
+        <div class="hero-scroll-hint">
+          <span class="scroll-line"></span>
+          <span class="mono">scroll</span>
+        </div>
+      </div>
+
+      <!-- FORM HERO -->
+      <div class="hero-form-wrap" id="candidatura">
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="mono form-label">// CANDIDATURA</span>
+            <h2 class="form-title">Ricevi informazioni<br>e candidati alle selezioni</h2>
+            <p class="form-intro">Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua candidatura.</p>
+          </div>
+          <form id="leadForm" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome e Cognome *</label>
+              <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="mario@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="tel">Telefono *</label>
+                <input type="tel" id="tel" name="tel" placeholder="+39 000 0000000" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="eta">Età *</label>
+              <input type="number" id="eta" name="eta" placeholder="Es. 24" min="16" max="60" required>
+            </div>
+            <div class="form-group">
+              <label for="obiettivo">Qual è il tuo obiettivo? *</label>
+              <select id="obiettivo" name="obiettivo" required>
+                <option value="" disabled selected>Seleziona un obiettivo</option>
+                <option value="lavoro-motorsport">Lavorare nel motorsport</option>
+                <option value="specializzarmi">Specializzarmi tecnicamente</option>
+                <option value="cambio-carriera">Cambiare carriera</option>
+                <option value="passione">Trasformare una passione in lavoro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="esperienza">Hai già esperienze tecniche? *</label>
+              <select id="esperienza" name="esperienza" required>
+                <option value="" disabled selected>Seleziona una risposta</option>
+                <option value="nessuna">No, sono alla prima esperienza</option>
+                <option value="base">Sì, competenze base</option>
+                <option value="meccanica">Sì, background meccanico/tecnico</option>
+                <option value="motorsport">Sì, già nel settore motorsport</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="messaggio">Raccontaci il tuo interesse (opzionale)</label>
+              <textarea id="messaggio" name="messaggio" rows="3" placeholder="Perché vuoi diventare Model Maker..."></textarea>
+            </div>
+            <div class="form-check">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required>
+                <span class="checkmark"></span>
+                Acconsento al trattamento dei dati personali per ricevere informazioni sul corso *
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Candidati ora</button>
+            <p class="form-microcopy">Posti limitati — selezione tramite colloquio attitudinale online.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02. PARTNER SECTION
+  ============================================================ -->
+  <section class="partners" id="partner">
+    <div class="container partners-header-wrap">
+      <div class="partners-header">
+        <span class="mono section-tag">// I NOSTRI PARTNER</span>
+      </div>
+    </div>
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <!-- SET A -->
+        <div class="partner-logo"><img src="assets/brembo-1-1.webp" alt="Brembo"></div>
+        <div class="partner-logo"><img src="assets/andreani.webp" alt="Andreani"></div>
+        <div class="partner-logo"><img src="assets/marelli-logo.svg" alt="Marelli"></div>
+        <div class="partner-logo"><img src="assets/Telwin_Logo_Payoff.webp" alt="Telwin"></div>
+        <div class="partner-logo"><img src="assets/arp_suspension.webp" alt="ARP Suspension"></div>
+        <div class="partner-logo"><img src="assets/hrs.webp" alt="HRS"></div>
+        <div class="partner-logo"><img src="assets/mechanix.webp" alt="Mechanix"></div>
+        <div class="partner-logo"><img src="assets/Logo-FMI-1024x448-1.webp" alt="FMI"></div>
+        <div class="partner-logo"><img src="assets/confartigianato-motori.webp" alt="Confartigianato Motori"></div>
+        <div class="partner-logo"><img src="assets/autotecnica-logo-grigio-2048x599.png" alt="Autotecnica"></div>
+        <div class="partner-logo"><img src="assets/crg.jpg" alt="CRG"></div>
+        <div class="partner-logo"><img src="assets/motorquality.svg" alt="Motorquality"></div>
+        <div class="partner-logo"><img src="assets/gieffe.webp" alt="Gieffe"></div>
+        <div class="partner-logo"><img src="assets/aessecom.webp" alt="Aessecom"></div>
+        <div class="partner-logo"><img src="assets/new-exan-logo-menu-2016-1.webp" alt="New Exan"></div>
+        <div class="partner-logo"><img src="assets/DAL_rgb.webp" alt="DAL"></div>
+        <div class="partner-logo"><img src="assets/mc-1.webp" alt="MC"></div>
+        <div class="partner-logo"><img src="assets/logo-MUSEO-FRATELLI-COZZI_page-0001-20240129-124403-1.webp" alt="Museo Fratelli Cozzi"></div>
+        <div class="partner-logo"><img src="assets/Senza-titolo-1_0000_Livello-2.webp" alt="Partner"></div>
+        <div class="partner-logo"><img src="assets/Senza-titolo-1_0002_Livello-4.webp" alt="Partner"></div>
+        <!-- SET B (duplicate for seamless loop) -->
+        <div class="partner-logo"><img src="assets/brembo-1-1.webp" alt="Brembo"></div>
+        <div class="partner-logo"><img src="assets/andreani.webp" alt="Andreani"></div>
+        <div class="partner-logo"><img src="assets/marelli-logo.svg" alt="Marelli"></div>
+        <div class="partner-logo"><img src="assets/Telwin_Logo_Payoff.webp" alt="Telwin"></div>
+        <div class="partner-logo"><img src="assets/arp_suspension.webp" alt="ARP Suspension"></div>
+        <div class="partner-logo"><img src="assets/hrs.webp" alt="HRS"></div>
+        <div class="partner-logo"><img src="assets/mechanix.webp" alt="Mechanix"></div>
+        <div class="partner-logo"><img src="assets/Logo-FMI-1024x448-1.webp" alt="FMI"></div>
+        <div class="partner-logo"><img src="assets/confartigianato-motori.webp" alt="Confartigianato Motori"></div>
+        <div class="partner-logo"><img src="assets/autotecnica-logo-grigio-2048x599.png" alt="Autotecnica"></div>
+        <div class="partner-logo"><img src="assets/crg.jpg" alt="CRG"></div>
+        <div class="partner-logo"><img src="assets/motorquality.svg" alt="Motorquality"></div>
+        <div class="partner-logo"><img src="assets/gieffe.webp" alt="Gieffe"></div>
+        <div class="partner-logo"><img src="assets/aessecom.webp" alt="Aessecom"></div>
+        <div class="partner-logo"><img src="assets/new-exan-logo-menu-2016-1.webp" alt="New Exan"></div>
+        <div class="partner-logo"><img src="assets/DAL_rgb.webp" alt="DAL"></div>
+        <div class="partner-logo"><img src="assets/mc-1.webp" alt="MC"></div>
+        <div class="partner-logo"><img src="assets/logo-MUSEO-FRATELLI-COZZI_page-0001-20240129-124403-1.webp" alt="Museo Fratelli Cozzi"></div>
+        <div class="partner-logo"><img src="assets/Senza-titolo-1_0000_Livello-2.webp" alt="Partner"></div>
+        <div class="partner-logo"><img src="assets/Senza-titolo-1_0002_Livello-4.webp" alt="Partner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03. COS'È UN MODEL MAKER
+  ============================================================ -->
+  <section class="cos-e section section-dark" id="cos-e">
+    <div class="container">
+      <div class="cose-grid">
+        <div class="cose-text chi-siamo-text">
+          <div class="section-header left-align">
+            <span class="mono section-tag">// 01 — IL RUOLO</span>
+            <h2 class="section-title">Il professionista dietro lo sviluppo aerodinamico</h2>
+          </div>
+          <p>Il Model Maker è la figura tecnica che costruisce e prepara i modelli in scala utilizzati nelle sessioni di galleria del vento. Un ruolo che richiede precisione manuale, competenze tecniche avanzate e profonda conoscenza dei materiali aeronautici e da competizione.</p>
+          <p>Collabora a stretto contatto con ingegneri aerodinamici e tecnici, contribuendo direttamente allo sviluppo delle prestazioni delle vetture racing.</p>
+          <div class="cose-highlight">
+            <span class="mono section-tag">// PROFILO RARO</span>
+            <p>Una figura sempre più richiesta nel motorsport professionale — e ancora difficile da trovare sul mercato.</p>
+          </div>
+        </div>
+        <div class="cose-visuals chi-siamo-visuals">
+          <div class="visual-grid">
+            <div class="visual-card large" style="background-image: url('AIV07010.webp');">
+              <div class="visual-label mono">// MODELLERIA</div>
+            </div>
+            <div class="visual-card" style="background-image: url('Workshop.webp');">
+              <div class="visual-label mono">// OFFICINA</div>
+            </div>
+            <div class="visual-card" style="background-image: url('AIV03336%20copia.webp');">
+              <div class="visual-label mono">// PRECISIONE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04. COSA IMPARERAI
+  ============================================================ -->
+  <section class="competenze section" id="competenze">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 02 — COMPETENZE</span>
+        <h2 class="section-title">Cosa Imparerai</h2>
+      </div>
+      <div class="competenze-grid">
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><rect x="12" y="14" width="16" height="14" rx="1" stroke="#D72E1F" stroke-width="1.5"/><path d="M16 14v-3M24 14v-3" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><path d="M15 20h10M15 24h6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Costruzione modelli</h3>
+          <p>Costruzione e preparazione modelli in scala per galleria del vento.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><circle cx="27" cy="13" r="4" stroke="#D72E1F" stroke-width="1.5"/><circle cx="13" cy="27" r="4" stroke="#D72E1F" stroke-width="1.5"/><line x1="24.2" y1="15.8" x2="15.8" y2="24.2" stroke="#D72E1F" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Lavorazioni meccaniche</h3>
+          <p>Lavorazioni meccaniche di precisione su metalli e materiali compositi.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M13 28c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><path d="M20 21V12M17 15l3-3 3 3" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Carbonio e compositi</h3>
+          <p>Riparazione e lavorazione del carbonio e dei materiali compositi.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M12 20h5M23 20h5" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="20" r="3" stroke="#D72E1F" stroke-width="1.5"/><path d="M20 12v3M20 25v3M14.1 14.1l2.1 2.1M23.8 23.8l2.1 2.1M14.1 25.9l2.1-2.1M23.8 16.2l2.1-2.1" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Laser Tracker</h3>
+          <p>Strumenti di misura di precisione e utilizzo del Laser Tracker.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M11 25a9 9 0 0 1 18 0" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><path d="M20 16v5M14 22l3 2" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Galleria del vento</h3>
+          <p>Workflow e preparazione delle sessioni di sviluppo aerodinamico.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M14 16h12M14 20h8M14 24h10" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><path d="M28 22l-4 6 4-2 4 2-4-6z" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Disegno tecnico</h3>
+          <p>Lettura e interpretazione del disegno tecnico professionale.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M13 20c0 3.866 3.134 7 7 7s7-3.866 7-7" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><path d="M13 20h14M20 13v7" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Linee di pressione</h3>
+          <p>Gestione e installazione delle linee di pressione sui modelli.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M11 30h4v-5h4v-5h4v-5h4" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 12l4 3-4 3" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Workflow professionale</h3>
+          <p>Workflow completo di una modelleria motorsport professionale.</p>
+        </div>
+        <div class="competenza-card">
+          <div class="comp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M20 12v16M14 18l6-6 6 6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 28h12" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Finiture e prefitting</h3>
+          <p>Finiture tecniche e prefitting dei componenti da galleria del vento.</p>
+        </div>
+      </div>
+      <div class="competenze-cta">
+        <a href="#candidatura" class="btn btn-outline">Ricevi il programma completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05. PERCHÉ QUESTO CORSO È DIVERSO
+  ============================================================ -->
+  <section class="perche section section-dark" id="perche">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 03 — DIFFERENZIALI</span>
+        <h2 class="section-title">Perché questo corso è diverso</h2>
+      </div>
+      <div class="perche-grid-mm">
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">01</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M13 20l4 4 10-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Accesso al mondo Dallara</h3>
+          <p>L'unico corso in Italia con accesso diretto alle strutture e ai professionisti di Dallara — uno dei più importanti costruttori di monoposto al mondo.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">02</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><circle cx="27" cy="13" r="4" stroke="#D72E1F" stroke-width="1.5"/><circle cx="13" cy="27" r="4" stroke="#D72E1F" stroke-width="1.5"/><line x1="24.2" y1="15.8" x2="15.8" y2="24.2" stroke="#D72E1F" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Formazione pratica reale</h3>
+          <p>Il 65% delle ore è pratica diretta su modelli, materiali e attrezzature professionali. Non simulazioni: lavori come si lavora in modelleria.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">03</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M12 23a9 9 0 0 1 16 0" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><path d="M12 23h16v2.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 12 25.5V23z" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 23v4" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Tecnologie professionali</h3>
+          <p>Lavori con gli stessi strumenti usati nei team di Formula 1 e motorsport internazionale: Laser Tracker, CNC, materiali compositi.</p>
+        </div>
+        <div class="perche-card-mm featured">
+          <div class="pcard-num mono">04</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M13 10v20M13 10h15v12H13" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/><rect x="13" y="10" width="5" height="4" fill="#D72E1F"/><rect x="23" y="10" width="5" height="4" fill="#D72E1F"/><rect x="18" y="14" width="5" height="4" fill="#D72E1F"/><rect x="13" y="18" width="5" height="4" fill="#D72E1F"/><rect x="23" y="18" width="5" height="4" fill="#D72E1F"/></svg>
+          </div>
+          <h3>Colloquio garantito</h3>
+          <p>Al termine del percorso, accedi a un colloquio garantito con Dallara. Selezionato o rimborsato.</p>
+          <div class="pcard-badge mono">GARANZIA UNICA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06. A CHI SI RIVOLGE
+  ============================================================ -->
+  <section class="target section" id="target">
+    <div class="container">
+      <div class="target-inner-mm">
+        <div class="section-header left-align">
+          <span class="mono section-tag">// 04 — TARGET</span>
+          <h2 class="section-title">A chi si rivolge</h2>
+        </div>
+        <div class="target-content-mm">
+          <ul class="target-list-mm">
+            <li>
+              <span class="target-num mono">01</span>
+              <div class="target-body">
+                <strong>Chi sogna di lavorare nel motorsport</strong>
+                <span>e cerca un percorso concreto per entrarci</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">02</span>
+              <div class="target-body">
+                <strong>Chi ama precisione tecnica e manualità</strong>
+                <span>e vuole trasformarla in una competenza professionale</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">03</span>
+              <div class="target-body">
+                <strong>Chi cerca una specializzazione concreta</strong>
+                <span>in un settore ad alto valore e bassa saturazione</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">04</span>
+              <div class="target-body">
+                <strong>Chi vuole trasformare una passione in professione</strong>
+                <span>con un metodo diretto e orientato al lavoro reale</span>
+              </div>
+            </li>
+          </ul>
+          <div class="target-cta-wrap">
+            <a href="#candidatura" class="btn btn-primary btn-large">Prenota un colloquio orientativo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07 + 08. STRUTTURA E PROGRAMMA
+  ============================================================ -->
+  <section class="struttura section section-dark" id="struttura">
+    <div class="container">
+      <div class="struttura-grid">
+
+        <!-- Struttura del corso -->
+        <div>
+          <div class="section-header left-align">
+            <span class="mono section-tag">// 05 — STRUTTURA</span>
+            <h2 class="section-title">Il Corso</h2>
+          </div>
+          <div class="corso-info-block">
+            <div class="info-stats">
+              <div class="stat">
+                <span class="stat-number">144<span class="stat-unit">h</span></span>
+                <span class="stat-label">Ore totali</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">6<span class="stat-unit">×</span></span>
+                <span class="stat-label">Weekend</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">65<span class="stat-unit">%</span></span>
+                <span class="stat-label">Pratica</span>
+              </div>
+            </div>
+            <ul class="corso-dettagli">
+              <li><span class="detail-label mono">Sede</span><span class="detail-val">MTS — Lesmo (MB)</span></li>
+              <li><span class="detail-label mono">Inizio</span><span class="detail-val">25 Settembre 2026</span></li>
+              <li><span class="detail-label mono">Formula</span><span class="detail-val">Weekend (Sabato + Domenica)</span></li>
+              <li><span class="detail-label mono">Posti</span><span class="detail-val">Numero limitato — selezione</span></li>
+            </ul>
+            <div class="corso-include">
+              <span class="mono section-tag" style="font-size:10px; margin-bottom:12px; display:block;">// INCLUSO NEL CORSO</span>
+              <ul class="include-list">
+                <li><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Materiale didattico</li>
+                <li><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>DPI e abbigliamento tecnico</li>
+                <li><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Assicurazione</li>
+                <li><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Accesso area riservata MTS</li>
+                <li><svg viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Corso sicurezza alto rischio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programma -->
+        <div id="programma">
+          <div class="section-header left-align">
+            <span class="mono section-tag">// 06 — PROGRAMMA</span>
+            <h2 class="section-title">Moduli didattici</h2>
+          </div>
+          <ol class="moduli-list">
+            <li><span class="modulo-num mono">01</span><span>Workflow di modelleria professionale</span></li>
+            <li><span class="modulo-num mono">02</span><span>Disegno tecnico</span></li>
+            <li><span class="modulo-num mono">03</span><span>Galleria del vento — metodo e sessioni</span></li>
+            <li><span class="modulo-num mono">04</span><span>Strumenti di misura di precisione</span></li>
+            <li><span class="modulo-num mono">05</span><span>Laser Tracker</span></li>
+            <li><span class="modulo-num mono">06</span><span>Lavorazioni meccaniche</span></li>
+            <li><span class="modulo-num mono">07</span><span>Carbonio e compositi</span></li>
+            <li><span class="modulo-num mono">08</span><span>Gestione linee di pressione</span></li>
+            <li><span class="modulo-num mono">09</span><span>Montaggio modelli da galleria</span></li>
+            <li><span class="modulo-num mono">10</span><span>Sicurezza alto rischio</span></li>
+          </ol>
+          <div style="margin-top:32px;">
+            <a href="#candidatura" class="btn btn-outline">Richiedi la brochure</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       09. DOPO IL CORSO
+  ============================================================ -->
+  <section class="dopo section" id="dopo">
+    <div class="dopo-bg">
+      <div class="dopo-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="container dopo-container">
+      <div class="dopo-content">
+        <span class="mono section-tag">// 07 — SBOCCO PROFESSIONALE</span>
+        <h2 class="dopo-title">Dopo il corso</h2>
+        <p class="dopo-text">Al termine del percorso, ogni studente selezionato accede a un <strong>colloquio garantito con Dallara</strong> — uno dei più grandi costruttori di monoposto al mondo, con sede a Varano de' Melegari.</p>
+        <p class="dopo-text">Non è un colloquio simbolico. È un'opportunità reale, costruita sulla base delle competenze acquisite durante il percorso MTS.</p>
+        <div class="dopo-garanzia">
+          <div class="garanzia-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="#D72E1F" stroke-width="1.5"/><path d="M16 24l6 6 10-12" stroke="#D72E1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <strong class="garanzia-title">Selezionato o rimborsato</strong>
+            <p class="garanzia-desc">Se non superi il colloquio con Dallara, ricevi il rimborso del costo del corso.</p>
+          </div>
+        </div>
+        <a href="#candidatura" class="btn btn-primary btn-large">Parla con un advisor MTS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. INVESTIMENTO
+  ============================================================ -->
+  <section class="investimento section section-dark" id="investimento">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 08 — INVESTIMENTO</span>
+        <h2 class="section-title">Investimento</h2>
+      </div>
+      <div class="investimento-grid">
+        <div class="inv-card inv-main">
+          <div class="inv-label mono">Soluzione unica</div>
+          <div class="inv-price">
+            <span class="inv-amount">2.800€</span>
+            <span class="inv-vat">+ IVA</span>
+          </div>
+          <p class="inv-desc">Corso completo Model Maker Dallara — include tutti i moduli, materiali, DPI e accesso al colloquio garantito.</p>
+          <div class="inv-separator"></div>
+          <div class="inv-addon">
+            <span class="mono" style="font-size:10px; color: rgba(242,242,242,0.4);">// OPZIONALE</span>
+            <div class="inv-addon-row">
+              <span>MTS Card</span>
+              <span class="inv-addon-price">69€ + IVA</span>
+            </div>
+          </div>
+          <a href="#candidatura" class="btn btn-primary btn-full" style="margin-top:28px;">Candidati ora</a>
+        </div>
+        <div class="inv-card inv-rate">
+          <div class="inv-label mono">Rateizzazione</div>
+          <div class="inv-rate-list">
+            <div class="inv-rata">
+              <span class="rata-num mono">01</span>
+              <span class="rata-amount">900€ <small>+ IVA</small></span>
+              <span class="rata-when">Prima rata — all'iscrizione</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">02</span>
+              <span class="rata-amount">950€ <small>+ IVA</small></span>
+              <span class="rata-when">Seconda rata</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">03</span>
+              <span class="rata-amount">950€ <small>+ IVA</small></span>
+              <span class="rata-when">Terza rata</span>
+            </div>
+          </div>
+          <div class="inv-garanzia">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Garanzia: selezionato o rimborsato
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. FINAL CTA
+  ============================================================ -->
+  <section class="final-cta section" id="final-cta">
+    <div class="container">
+      <div class="final-cta-inner">
+        <span class="mono section-tag">// 09 — CANDIDATURA</span>
+        <h2 class="final-title">Il motorsport ha bisogno<br>di <span class="text-red">specialisti</span></h2>
+        <p class="final-sub">Trasforma la tua passione in una competenza professionale. I posti sono limitati — la selezione avviene tramite colloquio attitudinale online.</p>
+        <div class="final-actions">
+          <a href="#candidatura" class="btn btn-primary btn-large">Candidati ora</a>
+          <a href="#programma" class="btn btn-outline">Scopri il programma</a>
+        </div>
+        <p class="final-micro mono">Posti limitati — selezione tramite colloquio attitudinale online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="MTS-Logo_Payoff-Negativo-colori.webp" alt="MTS Motorsport Technical School" class="footer-logo">
+        <p>MTS Motorsport Technical School — formazione tecnica specialistica per il mondo del racing.</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Corso</span>
+        <ul>
+          <li><a href="#cos-e">Il ruolo del Model Maker</a></li>
+          <li><a href="#competenze">Cosa imparerai</a></li>
+          <li><a href="#programma">Programma didattico</a></li>
+          <li><a href="#struttura">Struttura del corso</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Informazioni</span>
+        <ul>
+          <li><a href="#investimento">Investimento</a></li>
+          <li><a href="#dopo">Sbocchi professionali</a></li>
+          <li><a href="#candidatura">Candidati ora</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Contatti</span>
+        <ul>
+          <li><a href="mailto:info@mts-motorsport.it">info@mts-motorsport.it</a></li>
+          <li><span style="color:rgba(242,242,242,0.4);">MTS — Lesmo (MB), Italia</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="mono" style="color:rgba(242,242,242,0.25); font-size:10px;">© 2026 MTS Motorsport Technical School — Tutti i diritti riservati</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="model-maker.js"></script>
+</body>
+</html>
