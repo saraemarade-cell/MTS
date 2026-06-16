@@ -490,25 +490,27 @@ ul, ol { list-style: none; }
    STRUTTURA DEL CORSO
    ============================================= */
 
-.struttura-panel {
+/* Stats + Dettagli: nessun box, affiancati */
+.struttura-open {
   display: flex;
-  align-items: stretch;
-  gap: 0;
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
+  gap: 80px;
+  align-items: flex-start;
+  margin-bottom: 48px;
 }
 
-.struttura-col {
+.struttura-col-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.struttura-col-dettagli {
   flex: 1;
-  padding: 36px 32px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.struttura-col-stats { flex: 0 0 auto; min-width: 200px; }
 
 .struttura-col-label {
   color: var(--red);
@@ -517,10 +519,15 @@ ul, ol { list-style: none; }
   display: block;
 }
 
-.struttura-divider {
-  width: 1px;
-  background: var(--dark-border);
-  flex-shrink: 0;
+/* Incluso: box evidenziato */
+.corso-include-box {
+  background: rgba(215,46,31,0.06);
+  border: 1px solid rgba(215,46,31,0.2);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* =============================================
@@ -789,10 +796,8 @@ ul, ol { list-style: none; }
   .cose-grid { grid-template-columns: 1fr; gap: 48px; }
   .visual-grid { grid-template-rows: 200px 140px; }
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
-  .struttura-panel { flex-direction: column; }
-  .struttura-divider { width: 100%; height: 1px; }
-  .struttura-col { padding: 28px 24px; }
-  .struttura-col-stats { min-width: unset; }
+  .struttura-open { flex-direction: column; gap: 40px; }
+  .corso-include-box { padding: 24px 20px; }
   .moduli-list-full { grid-template-columns: 1fr; }
   .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
