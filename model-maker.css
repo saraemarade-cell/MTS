@@ -487,15 +487,40 @@ ul, ol { list-style: none; }
 .target-cta-pre { font-size: 16px; font-weight: 600; color: rgba(242,242,242,0.8); }
 
 /* =============================================
-   STRUTTURA + PROGRAMMA
+   STRUTTURA DEL CORSO
    ============================================= */
 
-.struttura-grid {
+.corso-info-block { max-width: 900px; margin: 0 auto; }
+
+.struttura-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--dark-border);
 }
+
+/* =============================================
+   PROGRAMMA DIDATTICO
+   ============================================= */
+
+.moduli-list-full {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.programma-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--dark-border);
+}
+
 .info-stats {
   display: flex;
   gap: 40px;
@@ -737,7 +762,8 @@ ul, ol { list-style: none; }
   .cose-grid { grid-template-columns: 1fr; gap: 48px; }
   .visual-grid { grid-template-rows: 200px 140px; }
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
-  .struttura-grid { grid-template-columns: 1fr; gap: 56px; }
+  .struttura-body { grid-template-columns: 1fr; gap: 32px; }
+  .moduli-list-full { grid-template-columns: 1fr; }
   .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
