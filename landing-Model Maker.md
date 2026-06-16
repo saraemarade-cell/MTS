@@ -1,10 +1,4 @@
-# MTS Visual Identity — Documento di Riferimento
 ### Uso: Landing page futura (Model Maker)
-
-> Questo documento descrive l'identità visiva estratta dalla landing MTS esistente.
-> La nuova landing erediterà questi valori ma potrà avere una struttura diversa.
-
----
 
 ## 1. Colori
 
