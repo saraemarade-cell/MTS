@@ -668,6 +668,7 @@ ul, ol { list-style: none; }
   margin-bottom: 20px;
 }
 .dopo-text strong { color: var(--smoke); }
+.dopo-cta-pre { font-size: 16px; font-weight: 600; color: rgba(242,242,242,0.8); margin-bottom: 4px; }
 
 .dopo-garanzia {
   display: flex;
