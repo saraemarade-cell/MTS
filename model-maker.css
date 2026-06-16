@@ -490,15 +490,22 @@ ul, ol { list-style: none; }
    STRUTTURA DEL CORSO
    ============================================= */
 
-.corso-info-block { max-width: 900px; margin: 0 auto; }
+.corso-info-block { max-width: 960px; margin: 0 auto; }
+
+.struttura-top {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 64px;
+  align-items: start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--dark-border);
+  margin-bottom: 40px;
+}
 
 .struttura-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-top: 40px;
-  padding-top: 40px;
-  border-top: 1px solid var(--dark-border);
 }
 
 /* =============================================
@@ -547,6 +554,11 @@ ul, ol { list-style: none; }
 
 .corso-include { padding: 24px; background: rgba(255,255,255,0.02); border: 1px solid var(--dark-border); border-radius: var(--radius-lg); }
 .include-list { display: flex; flex-direction: column; gap: 10px; }
+.include-list-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+}
 .include-list li {
   display: flex;
   align-items: center;
@@ -762,6 +774,7 @@ ul, ol { list-style: none; }
   .cose-grid { grid-template-columns: 1fr; gap: 48px; }
   .visual-grid { grid-template-rows: 200px 140px; }
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
+  .struttura-top { grid-template-columns: 1fr; gap: 32px; }
   .struttura-body { grid-template-columns: 1fr; gap: 32px; }
   .moduli-list-full { grid-template-columns: 1fr; }
   .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
