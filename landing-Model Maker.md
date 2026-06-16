@@ -442,3 +442,224 @@ CSS Grid con `grid-auto-rows: 220px` e slot `grid-column: span 2` per immagini l
 ---
 
 *Documento estratto dalla landing MTS esistente — branch `main` — per uso esclusivo sul branch `landing/model-maker`.*
+## 12. JS Behaviors da ereditare
+## 13. Struttura della Landing — Model Maker Dallara
+
+> Questa sezione descrive esclusivamente la struttura informativa e il contenuto della landing.
+> La visual identity, i componenti, le animazioni e le regole di design devono essere ereditati dai capitoli precedenti.
+
+### 01. Hero Section
+
+#### Headline
+
+Diventa Model Maker nel Motorsport Professionale
+
+#### Subheadline
+
+Formati con professionisti del settore e accedi a un colloquio garantito con Dallara al termine del corso.
+
+#### Proof Bar
+
+* 144 ore in formula weekend
+* 65% pratica
+* Attività in modelleria e galleria del vento
+* Colloquio finale garantito con Dallara
+
+#### Form Hero
+
+**Titolo**
+Ricevi informazioni e candidati alle selezioni
+
+**Testo**
+Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua candidatura.
+
+**Campi**
+
+* Nome e cognome
+* Email
+* Telefono
+* Età
+* Qual è il tuo obiettivo?
+* Hai già esperienze tecniche?
+* Raccontaci il tuo interesse per il corso (opzionale)
+
+**CTA**
+Candidati ora
+
+**Microcopy**
+Posti limitati — selezione tramite colloquio attitudinale online.
+
+---
+
+### 02. Partner Section
+
+#### Eyebrow
+
+I nostri partner
+
+#### Contenuto
+
+Marquee o griglia loghi partner.
+
+---
+
+### 03. Cos'è un Model Maker
+
+#### Titolo
+
+Il professionista dietro lo sviluppo aerodinamico
+
+#### Contenuti
+
+* Ruolo del Model Maker nello sviluppo aerodinamico.
+* Collaborazione con ingegneri e tecnici.
+* Precisione manuale e competenze tecniche.
+* Impatto diretto sulle prestazioni delle vetture.
+
+#### Highlight
+
+Una figura rara e sempre più richiesta nel motorsport professionale.
+
+---
+
+### 04. Cosa Imparerai
+
+#### Elenco competenze
+
+* Costruzione e preparazione modelli
+* Lavorazioni meccaniche di precisione
+* Riparazione e lavorazione del carbonio
+* Gestione delle linee di pressione
+* Finiture tecniche e prefitting
+* Montaggio componenti da galleria del vento
+* Strumenti di misura e Laser Tracker
+* Workflow di una modelleria motorsport
+* Preparazione delle sessioni di sviluppo aerodinamico
+
+#### CTA
+
+Ricevi il programma completo
+
+---
+
+### 05. Perché Questo Corso è Diverso
+
+#### Blocchi contenuto
+
+* Accesso al mondo Dallara
+* Formazione pratica reale
+* Tecnologie professionali
+* Colloquio garantito
+
+---
+
+### 06. A Chi Si Rivolge
+
+#### Target
+
+Persone che:
+
+* sognano di lavorare nel motorsport;
+* amano precisione tecnica e manualità;
+* cercano una specializzazione concreta;
+* vogliono trasformare una passione in professione.
+
+#### CTA
+
+Prenota un colloquio orientativo
+
+---
+
+### 07. Struttura del Corso
+
+#### Formula
+
+144 ore distribuite in 6 weekend.
+
+#### Include
+
+* Materiale didattico
+* DPI e abbigliamento tecnico
+* Assicurazione
+* Area riservata MTS
+* Corso sicurezza alto rischio
+
+#### Informazioni
+
+* Sede: MTS Lesmo
+* Inizio: 25 Settembre 2026
+* Formula: Weekend
+* Posti: Numero limitato
+
+---
+
+### 08. Programma Didattico
+
+#### Moduli
+
+* Workflow di modelleria professionale
+* Disegno tecnico
+* Galleria del vento
+* Strumenti di misura
+* Laser Tracker
+* Lavorazioni meccaniche
+* Carbonio e compositi
+* Gestione linee di pressione
+* Montaggio modelli
+* Sicurezza alto rischio
+
+#### CTA
+
+Richiedi la brochure
+
+---
+
+### 09. Dopo il Corso
+
+#### Contenuto
+
+Accesso a colloquio garantito con Dallara al termine del percorso.
+
+#### CTA
+
+Parla con un advisor MTS
+
+---
+
+### 10. Investimento
+
+#### Prezzo
+
+* Corso: 2.800€ + IVA
+* MTS Card: 69€ + IVA
+
+#### Rateizzazione
+
+* 900€ + IVA
+* 950€ + IVA
+* 950€ + IVA
+
+#### Garanzia
+
+Selezionato o rimborsato.
+
+---
+
+### 11. Final CTA
+
+#### Headline
+
+Il motorsport ha bisogno di specialisti
+
+#### Testo
+
+Trasforma la tua passione in una competenza professionale.
+
+#### CTA
+
+Candidati ora
+
+#### Microcopy
+
+Posti limitati — selezione tramite colloquio attitudinale online.
+
