@@ -399,7 +399,8 @@ ul, ol { list-style: none; }
   letter-spacing: 0.02em;
 }
 .competenza-card p { font-size: 13px; line-height: 1.6; color: rgba(242,242,242,0.55); }
-.competenze-cta { display: flex; justify-content: center; margin-top: 48px; }
+.competenze-cta { display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 48px; }
+.competenze-sub { font-size: 16px; line-height: 1.65; color: rgba(242,242,242,0.65); text-align: center; max-width: 480px; }
 
 /* =============================================
    PERCHÉ DIVERSO (4 card orizzontali)
