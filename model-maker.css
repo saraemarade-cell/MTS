@@ -312,6 +312,7 @@ ul, ol { list-style: none; }
   object-fit: contain; object-position: center; display: block;
   mix-blend-mode: screen;
   filter: grayscale(1) opacity(0.5);
+  image-rendering: -webkit-optimize-contrast;
   transition: filter var(--transition), transform var(--transition);
 }
 .partner-logo:hover img { filter: grayscale(0) opacity(0.95); transform: scale(1.08); }
@@ -718,6 +719,11 @@ ul, ol { list-style: none; }
    ============================================= */
 
 @media (max-width: 1024px) {
+  .partners { padding: 44px 0; }
+  .partners-header-wrap { margin-bottom: 28px; }
+  .partner-logo { padding: 0 28px; height: 60px; }
+  .partner-logo img { height: 28px; width: auto; max-width: 110px; }
+
   .section { padding: 80px 0; }
   .section-header { margin-bottom: 48px; }
   .hero { padding: 88px 0 56px; }
@@ -769,6 +775,9 @@ ul, ol { list-style: none; }
    ============================================= */
 
 @media (max-width: 480px) {
+  .partner-logo { padding: 0 20px; height: 52px; }
+  .partner-logo img { height: 24px; width: auto; max-width: 90px; }
+
   .section { padding: 60px 0; }
   .hero-headline { font-size: clamp(28px, 8vw, 40px); }
   .competenze-grid { grid-template-columns: 1fr; }
