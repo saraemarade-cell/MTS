@@ -783,7 +783,7 @@ ul, ol { list-style: none; }
 .rata-when { font-size: 12px; color: rgba(242,242,242,0.4); text-align: right; }
 .inv-garanzia {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   font-size: 13px;
   color: rgba(242,242,242,0.6);
