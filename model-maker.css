@@ -534,12 +534,37 @@ ul, ol { list-style: none; }
    PROGRAMMA DIDATTICO
    ============================================= */
 
-.moduli-list-full {
+.moduli-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 48px;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.modulo-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px;
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition);
+}
+.modulo-pill:hover {
+  border-color: rgba(215,46,31,0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.modulo-pill .modulo-num {
+  color: var(--red);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+.modulo-pill span:last-child {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(242,242,242,0.85);
 }
 
 .programma-cta {
@@ -798,7 +823,8 @@ ul, ol { list-style: none; }
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
   .struttura-open { flex-direction: column; gap: 40px; }
   .corso-include-box { padding: 24px 20px; }
-  .moduli-list-full { grid-template-columns: 1fr; }
+  .moduli-grid { grid-template-columns: repeat(3, 1fr); }
+  .moduli-grid { grid-template-columns: repeat(2, 1fr); }
   .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
