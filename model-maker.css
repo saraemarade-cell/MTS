@@ -865,12 +865,44 @@ ul, ol { list-style: none; }
   padding-bottom: 48px;
 }
 .footer-logo { height: 44px; width: auto; object-fit: contain; object-position: left center; margin-bottom: 16px; }
-.footer-brand p { font-size: 13px; color: rgba(242,242,242,0.4); line-height: 1.65; max-width: 280px; }
+.footer-brand p { font-size: 13px; color: rgba(242,242,242,0.4); line-height: 1.65; max-width: 280px; margin-bottom: 20px; }
 .footer-heading { color: var(--red); display: block; margin-bottom: 20px; font-size: 10px; }
 .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
 .footer-col ul li a { font-size: 13px; color: rgba(242,242,242,0.5); transition: color var(--transition); }
 .footer-col ul li a:hover { color: var(--smoke); }
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--smoke);
+  border-radius: 10px;
+  color: var(--black);
+  transition: background var(--transition), transform var(--transition);
+  flex-shrink: 0;
+}
+.social-icon:hover { background: rgba(242,242,242,0.85); transform: translateY(-2px); }
+.social-icon svg { width: 18px; height: 18px; }
+
 .footer-bottom { border-top: 1px solid var(--dark-border); padding: 20px 0; }
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.footer-copy { color: rgba(242,242,242,0.25); font-size: 10px; }
+.footer-legal { display: flex; gap: 20px; }
+.footer-legal a { font-size: 11px; color: rgba(242,242,242,0.35); transition: color var(--transition); }
+.footer-legal a:hover { color: rgba(242,242,242,0.7); }
 
 /* =============================================
    ANIMATIONS
@@ -950,6 +982,7 @@ ul, ol { list-style: none; }
   .form-row { grid-template-columns: 1fr; }
   .info-stats { gap: 24px; }
   .footer-container { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
   .final-actions { flex-direction: column; align-items: center; }
   .dopo-content { max-width: 100%; }
   .marquee-inner { animation-duration: 36s; }
