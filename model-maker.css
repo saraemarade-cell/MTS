@@ -650,8 +650,14 @@ ul, ol { list-style: none; }
   position: absolute; inset: 0;
   background: linear-gradient(160deg, rgba(10,10,10,0.97) 0%, rgba(17,17,17,0.94) 50%, rgba(25,10,10,0.88) 100%);
 }
-.dopo-container { position: relative; z-index: 1; }
-.dopo-content { max-width: 680px; }
+.dopo-container {
+  position: relative; z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 72px;
+  align-items: center;
+}
+.dopo-content { }
 .dopo-title {
   font-family: var(--font-headline);
   font-size: clamp(36px, 5vw, 56px);
@@ -669,29 +675,70 @@ ul, ol { list-style: none; }
 }
 .dopo-text strong { color: var(--smoke); }
 .dopo-cta-pre { font-size: 16px; font-weight: 600; color: rgba(242,242,242,0.8); margin-bottom: 4px; }
-
-.dopo-garanzia {
+.dopo-cta-block {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
-  padding: 28px;
-  margin: 36px 0;
-  background: rgba(215,46,31,0.08);
-  border: 1px solid rgba(215,46,31,0.25);
-  border-radius: var(--radius-lg);
+  gap: 12px;
+  margin-top: 40px;
 }
-.garanzia-icon { width: 48px; height: 48px; flex-shrink: 0; }
-.garanzia-icon svg { width: 100%; height: 100%; }
-.garanzia-title {
-  display: block;
+
+/* Dallara card */
+.dallara-card {
+  background: rgba(22,22,22,0.9);
+  border: 1px solid rgba(215,46,31,0.18);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.5), inset 0 1px 0 rgba(242,242,242,0.04);
+  position: relative;
+  overflow: hidden;
+}
+.dallara-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gradient);
+}
+.dallara-label { color: var(--red); display: block; margin-bottom: 16px; }
+.dallara-name {
   font-family: var(--font-headline);
-  font-size: 18px;
+  font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
-  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 14px;
 }
-.garanzia-desc { font-size: 14px; line-height: 1.6; color: rgba(242,242,242,0.65); }
+.dallara-desc { font-size: 13px; line-height: 1.65; color: rgba(242,242,242,0.5); }
+.dallara-divider { height: 1px; background: var(--dark-border); margin: 28px 0; }
+.dallara-facts { display: flex; flex-direction: column; margin-bottom: 28px; }
+.dallara-facts li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--dark-border);
+}
+.dallara-facts li:first-child { border-top: 1px solid var(--dark-border); }
+.dallara-fact-label { color: rgba(242,242,242,0.35); flex-shrink: 0; padding-top: 2px; }
+.dallara-fact-val { font-size: 13px; color: rgba(242,242,242,0.8); text-align: right; font-weight: 500; }
+.dallara-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(215,46,31,0.1);
+  border: 1px solid rgba(215,46,31,0.3);
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--smoke);
+}
+.dallara-badge svg { width: 14px; height: 14px; flex-shrink: 0; }
 
 /* =============================================
    INVESTIMENTO
@@ -830,6 +877,8 @@ ul, ol { list-style: none; }
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
   .struttura-open { flex-direction: column; gap: 40px; }
   .corso-include-box { padding: 24px 20px; }
+  .dopo-container { grid-template-columns: 1fr; gap: 48px; }
+  .dopo-cta-block { align-items: center; }
   .moduli-grid { grid-template-columns: repeat(3, 1fr); }
   .moduli-grid { grid-template-columns: repeat(2, 1fr); }
   .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
