@@ -490,44 +490,102 @@ ul, ol { list-style: none; }
    STRUTTURA DEL CORSO
    ============================================= */
 
-/* Stats + Dettagli: nessun box, affiancati */
-.struttura-open {
-  display: flex;
-  gap: 80px;
-  align-items: flex-start;
-  margin-bottom: 48px;
-}
-
-.struttura-col-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  flex-shrink: 0;
-}
-
-.struttura-col-dettagli {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .struttura-col-label {
   color: var(--red);
   font-size: 10px;
   letter-spacing: 0.14em;
   display: block;
+  margin-bottom: 20px;
 }
 
-/* Incluso: box evidenziato */
-.corso-include-box {
-  background: rgba(215,46,31,0.06);
-  border: 1px solid rgba(215,46,31,0.2);
+/* Scheda tecnica unificata */
+.struttura-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
   border-radius: var(--radius-lg);
-  padding: 28px 32px;
+  overflow: hidden;
+  position: relative;
+}
+.struttura-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gradient);
+}
+
+/* Stats row */
+.struttura-stats-row {
+  display: flex;
+  align-items: stretch;
+}
+.struttura-stat {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
+  padding: 40px 36px;
+}
+.struttura-stat-sep {
+  width: 1px;
+  background: var(--dark-border);
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.struttura-stat-num {
+  font-family: var(--font-headline);
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--smoke);
+  display: block;
+}
+.struttura-stat-num em {
+  color: var(--red);
+  font-style: normal;
+  font-size: 0.6em;
+}
+.struttura-stat-lbl {
+  font-size: 11px;
+  color: rgba(242,242,242,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.struttura-card-divider {
+  height: 1px;
+  background: var(--dark-border);
+}
+
+/* Corpo: dettagli + incluso */
+.struttura-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.struttura-details-col {
+  padding: 36px;
+  border-right: 1px solid var(--dark-border);
+}
+.struttura-incluso-col {
+  padding: 36px;
+  background: rgba(215,46,31,0.03);
+}
+
+.struttura-include-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.struttura-include-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: rgba(242,242,242,0.75);
+}
+.struttura-include-list li svg {
+  width: 16px; height: 16px;
+  flex-shrink: 0;
 }
 
 /* =============================================
@@ -945,8 +1003,11 @@ ul, ol { list-style: none; }
   .cose-grid { grid-template-columns: 1fr; gap: 48px; }
   .visual-grid { grid-template-rows: 200px 140px; }
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
-  .struttura-open { flex-direction: column; gap: 40px; }
-  .corso-include-box { padding: 24px 20px; }
+  .struttura-stats-row { flex-wrap: wrap; }
+  .struttura-stat { padding: 28px 24px; min-width: calc(50% - 0.5px); }
+  .struttura-body-grid { grid-template-columns: 1fr; }
+  .struttura-details-col { border-right: none; border-bottom: 1px solid var(--dark-border); padding: 28px 24px; }
+  .struttura-incluso-col { padding: 28px 24px; }
   .dopo-container { grid-template-columns: 1fr; gap: 48px; }
   .dopo-cta-block { align-items: center; }
   .moduli-grid { grid-template-columns: repeat(3, 1fr); }
