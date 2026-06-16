@@ -311,11 +311,11 @@ ul, ol { list-style: none; }
   height: 36px; width: auto; max-width: 140px;
   object-fit: contain; object-position: center; display: block;
   mix-blend-mode: screen;
-  filter: grayscale(1) opacity(0.5);
+  filter: opacity(0.85);
   image-rendering: -webkit-optimize-contrast;
   transition: filter var(--transition), transform var(--transition);
 }
-.partner-logo:hover img { filter: grayscale(0) opacity(0.95); transform: scale(1.08); }
+.partner-logo:hover img { filter: opacity(1); transform: scale(1.08); }
 
 /* =============================================
    COS'È UN MODEL MAKER
