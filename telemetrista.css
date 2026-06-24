@@ -566,11 +566,20 @@ ul, ol { list-style: none; }
    ============================================= */
 
 .investimento-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
   max-width: 900px;
   margin: 0 auto;
+}
+.investimento-grid .inv-card {
+  flex-shrink: 0;
+  width: 480px;
+}
+.investimento-grid .inv-garanzia-block {
+  flex-shrink: 0;
+  width: fit-content;
+  align-self: center;
 }
 .inv-card {
   background: var(--dark-card);
@@ -758,7 +767,9 @@ ul, ol { list-style: none; }
 
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
 
-  .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
+  .investimento-grid { flex-direction: column; align-items: stretch; max-width: 520px; }
+  .investimento-grid .inv-card { width: 100%; }
+  .investimento-grid .inv-garanzia-block { width: 100%; align-self: stretch; }
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 
