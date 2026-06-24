@@ -24,6 +24,22 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
+document.addEventListener('click', e => {
+  if (!e.target.closest('.nav-container') && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  }
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  }
+});
+
 // Smooth scroll with navbar offset
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {

@@ -1185,6 +1185,18 @@ ul, ol { list-style: none; }
   /* --- Competenze --- */
   .competenze-grid { grid-template-columns: 1fr; }
 
+  /* --- Cos'è / Visual grid --- */
+  .visual-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .visual-card { height: 200px; }
+  .visual-card.large { height: 240px; grid-column: 1; }
+
+  /* --- Struttura stats --- */
+  .struttura-stat { min-width: 100%; }
+  .struttura-stat-sep { display: none; }
+
+  /* --- Programma --- */
+  .moduli-grid { grid-template-columns: 1fr; }
+
   /* --- Investimento --- */
   .inv-rata { grid-template-columns: auto 1fr; }
   .rata-when { display: none; }
