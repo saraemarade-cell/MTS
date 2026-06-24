@@ -355,8 +355,8 @@ ul, ol { list-style: none; }
 }
 .visual-card {
   position: relative;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: center center;
   background-color: #191919;
   border-radius: var(--radius);
   overflow: hidden;
