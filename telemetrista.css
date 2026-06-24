@@ -677,20 +677,11 @@ ul, ol { list-style: none; }
    ============================================= */
 
 .investimento-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 520px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
   margin: 0 auto;
-}
-.investimento-grid .inv-card {
-  flex-shrink: 0;
-  width: 100%;
-}
-.investimento-grid .inv-garanzia-block {
-  flex-shrink: 0;
-  width: 100%;
-  align-self: stretch;
 }
 .inv-card {
   background: var(--dark-card);
@@ -700,7 +691,7 @@ ul, ol { list-style: none; }
 }
 .inv-main { border-color: rgba(215,46,31,0.3); }
 .inv-label { color: rgba(242,242,242,0.4); font-size: 10px; letter-spacing: 0.12em; margin-bottom: 20px; display: block; }
-.inv-price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px; }
+.inv-price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; }
 .inv-amount { font-family: var(--font-headline); font-size: 48px; font-weight: 700; line-height: 1; color: var(--smoke); }
 .inv-vat { font-size: 14px; color: rgba(242,242,242,0.4); }
 .inv-rate-note { color: rgba(215,46,31,0.7); font-size: 10px; letter-spacing: 0.1em; margin-bottom: 20px; }
@@ -884,9 +875,7 @@ ul, ol { list-style: none; }
   .struttura-details-col { border-right: none; border-bottom: 1px solid var(--dark-border); padding: 28px 24px; }
   .struttura-incluso-col { padding: 28px 24px; }
 
-  .investimento-grid { flex-direction: column; align-items: stretch; max-width: 520px; }
-  .investimento-grid .inv-card { width: 100%; }
-  .investimento-grid .inv-garanzia-block { width: 100%; align-self: stretch; }
+  .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 
@@ -926,6 +915,8 @@ ul, ol { list-style: none; }
   .partner-logo { padding: 0 20px; height: 52px; }
   .partner-logo img { height: 24px; max-width: 90px; }
   .section { padding: 60px 0; }
+  .inv-rata { grid-template-columns: auto 1fr; }
+  .rata-when { display: none; }
   .hero-headline { font-size: clamp(28px, 8vw, 40px); }
   .inv-rata { grid-template-columns: auto 1fr; }
   .rata-when { display: none; }
