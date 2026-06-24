@@ -579,10 +579,18 @@ ul, ol { list-style: none; }
   padding: 36px 32px;
 }
 .inv-main { border-color: rgba(215,46,31,0.3); }
+.inv-garanzia-card {
+  border-color: rgba(215,46,31,0.25);
+  background: rgba(215,46,31,0.03);
+  display: flex;
+  align-items: center;
+}
+.inv-garanzia-card .inv-garanzia-block { margin-top: 0; }
 .inv-label { color: rgba(242,242,242,0.4); font-size: 10px; letter-spacing: 0.12em; margin-bottom: 20px; display: block; }
-.inv-price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; }
+.inv-price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px; }
 .inv-amount { font-family: var(--font-headline); font-size: 48px; font-weight: 700; line-height: 1; color: var(--smoke); }
 .inv-vat { font-size: 14px; color: rgba(242,242,242,0.4); }
+.inv-rate-note { color: rgba(215,46,31,0.7); font-size: 10px; letter-spacing: 0.1em; margin-bottom: 20px; }
 .inv-desc { font-size: 14px; line-height: 1.65; color: rgba(242,242,242,0.6); margin-bottom: 24px; }
 .inv-separator { height: 1px; background: var(--dark-border); margin: 24px 0; }
 .inv-addon-row { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 14px; color: rgba(242,242,242,0.7); }
