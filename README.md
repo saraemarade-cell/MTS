@@ -13,219 +13,119 @@ Follow the Visual Identity strictly:
 
 Create a high-converting landing page for motorsport technical courses, with a strong above-the-fold hero, lead generation form, course cards, persuasive sections, testimonials, gallery area, and final CTA.
 
-## Page Structure
+Page Structure
+1. HERO + LEAD FORM
+Headline
 
-### 1. Hero Section — Above the Fold
+Diventa Telemetrista nel Motorsport Professionale
 
-Headline:
+Subheadline
 
-> Trasforma la tua passione per il motorsport in una professione tecnica
+Specializzati nella telemetria e nella gestione elettronica di auto e moto da corsa. Corso pratico all'Autodromo di Imola.
 
-Subheadline:
+Proof Bar
+4 giornate in pista, auto e moto
+Docenti da team F1, MotoGP, SBK
+80% degli studenti inserito nel Motorsport
+Lead Form
+Titolo
 
-> Corsi specialistici nel settore racing con formazione pratica, docenti professionisti e accesso reale al mondo delle competizioni.
+Ricevi informazioni e candidati alle selezioni
 
-Fast bullet points:
-- Formazione pratica in officina e pista
-- Docenti provenienti dal motorsport professionale
-- Percorsi per moto, sospensioni, race engineering e meccanica racing
-- Supporto orientamento e inserimento professionale
+Testo
 
-Primary CTA:
+Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua candidatura.
 
-> Richiedi Informazioni
+CTA
 
-Secondary CTA:
+Candidati ora
 
-> Scopri i Corsi
+Microcopy
 
-Include a lead form inside the hero.
+Posti limitati — selezione tramite colloquio attitudinale online.
 
-#### Hero Form
+2. PARTNER
+Logo Strip
+Brembo
+Imola
+Sparco
 
-Form title:
+Mostrare esclusivamente i loghi, senza testo descrittivo.
 
-> Richiedi Informazioni sui Corsi
+3. COS'È UN TELEMETRISTA
+Titolo
 
-Fields:
-- Nome
-- Cognome
-- Email
-- Telefono
-- Corso di interesse
-- Messaggio facoltativo
-- Privacy checkbox: “Acconsento al trattamento dei dati personali”
+Il professionista che trasforma i dati in performance
 
-Submit button:
+Giornata Tipo
 
-> Voglio Ricevere Informazioni
+Il Telemetrista non guida e non monta i pezzi. Sta al muretto box o in sala dati: legge i numeri che arrivano dalla vettura in tempo reale — velocità, temperature, pressioni, accelerazioni — li confronta con l'ingegnere di pista e decide insieme a lui come modificare il setup prima del prossimo turno.
 
-Microcopy:
+È il ponte tra i dati e le scelte in pista.
 
-> Ti ricontatteremo per aiutarti a scegliere il percorso più adatto ai tuoi obiettivi.
+Non è / È
+❌ Non è
+Un meccanico — non mette le mani sul motore
+Un pilota
+✅ È
+Chi trasforma i dati di pista in decisioni di performance
+Lavora a stretto contatto con team e ingegneri
+Highlight
 
-### 2. Chi Siamo
+Una figura tecnica strategica, sempre più richiesta in F1, MotoGP e SBK.
 
-Title:
+4. A CHI SI RIVOLGE
+Fa per te se
+Sogni di lavorare nel motorsport professionale
+Hai basi di meccanica, matematica e fisica (anche senza esperienza pregressa)
+Ti piace analizzare dati e numeri più che mettere le mani sui pezzi
+Vuoi un ruolo strategico nel box, non solo manuale
+5. PERCHÉ MTS
+Benefit Cards
+Sede Imola
 
-> Formiamo i professionisti del motorsport
+Formazione nei box di uno degli autodromi più prestigiosi al mondo.
 
-Text:
+Docenti da Team Top
 
-> MTS Motorsport Technical School nasce per offrire una formazione tecnica specialistica orientata al lavoro reale nel mondo racing.  
-> I nostri corsi uniscono teoria, pratica e esperienza diretta per prepararti concretamente alle richieste del settore.
+Porsche Manthey, Lamborghini, Ducati, Yamaha.
 
-Suggested visuals:
-- Workshop photo
-- Track photo
-- Students at work
-- Racing bike
-- Suspensions
-- Telemetry
+240 Ore / 9 Weekend
 
-### 3. I Corsi
+Percorso compatibile con lavoro e studio.
 
-Title:
+Training On The Job
 
-> Scegli il percorso più adatto a te
+Garantito per il miglior studente.
 
-Create course cards:
+6. INVESTIMENTO
+Costo del Corso
 
-#### Race Bike Engineer
-Diventa tecnico specializzato nella preparazione e gestione delle moto da competizione.
+5.900€ + IVA
 
-CTA:
+Pagamento rateale disponibile.
 
-> Scopri di più
+MTS Card
 
-#### Corso Sospensionista Racing
-Specializzati nella taratura e preparazione sospensioni per il motorsport.
+69€ + IVA
 
-CTA:
+Garanzia
+Selezionato o Rimborsato
 
-> Scopri di più
+Se non superi la selezione, ricevi il rimborso completo dell'importo versato.
 
-#### Master Bike
-Un percorso avanzato tra teoria, pratica e lavoro reale in pista.
+7. CTA FINALE
+Headline
 
-CTA:
+Il motorsport ha bisogno di Telemetristi
 
-> Scopri di più
+CTA
 
-#### Formula Weekend
-Esperienza immersiva per vivere il lavoro di un team racing.
+Candidati ora
 
-CTA:
+Microcopy
 
-> Scopri di più
-
-### 4. Leve Persuasive
-
-Title:
-
-> Perché scegliere MTS
-
-Create persuasive boxes:
-
-#### Formazione pratica reale
-Non solo teoria: lavori direttamente su moto e componenti racing.
-
-#### Docenti professionisti
-Impara da chi lavora ogni giorno nel motorsport.
-
-#### Metodo orientato al lavoro
-Percorsi pensati per sviluppare competenze spendibili nel settore.
-
-#### Esperienza in pista
-Vivi il motorsport dall’interno attraverso attività pratiche ed eventi.
-
-#### Community e networking
-Entra in contatto con studenti, tecnici e professionisti del settore.
-
-### 5. A Chi Sono Rivolti i Corsi
-
-Title:
-
-> I corsi sono pensati per:
-
-List:
-- Appassionati motorsport
-- Giovani che vogliono entrare nel settore
-- Meccanici che vogliono specializzarsi
-- Tecnici che cercano competenze avanzate
-- Chi vuole trasformare una passione in lavoro
-
-### 6. Testimonianze
-
-Title:
-
-> Chi ha scelto MTS
-
-Testimonials:
-- “Il corso mi ha dato competenze pratiche che oggi utilizzo direttamente nel mio lavoro nel racing.”
-- “Esperienza concreta, docenti preparati e tanta pratica reale.”
-- “Finalmente una scuola che ti fa vivere davvero il motorsport.”
-
-### 7. Gallery / Visual Impact
-
-Title:
-
-> Vivi il motorsport da protagonista
-
-Create a gallery section with image placeholders for:
-- Paddock
-- Suspension work
-- Workshop
-- Track
-- Telemetry
-- Students in action
-- Racing details
-
-### 8. Final CTA
-
-Title:
-
-> Vuoi capire quale corso è più adatto a te?
-
-Text:
-
-> Parla con il nostro team e ricevi tutte le informazioni sui percorsi disponibili, modalità di iscrizione e opportunità professionali.
-
-CTA:
-
-> Richiedi Informazioni
-
-## Alternative Headlines
-
-Use these as optional variants for A/B testing:
-- Entra nel mondo del motorsport professionale
-- La scuola tecnica per chi vuole lavorare nel racing
-- Dalla passione per le moto alle competenze del motorsport
-- Specializzati nel motorsport con formazione pratica e professionale
-- Impara il motorsport direttamente sul campo
-
-## CTA Copy Alternatives
-
-Aspirational:
-- Inizia il tuo percorso nel motorsport
-- Richiedi informazioni sui corsi
-- Scopri il corso giusto per te
-
-Professional:
-- Diventa un professionista del racing
-- Costruisci il tuo futuro nel motorsport
-- Specializzati nel motorsport
-
-Practical:
-- Scopri la formazione pratica MTS
-- Entra nel mondo racing
-- Vivi il motorsport da dentro
-
-## Form Microcopy Alternatives
-
-- Ricevi informazioni personalizzate sui corsi e sulle modalità di iscrizione.
-- Ti aiutiamo a scegliere il percorso più adatto ai tuoi obiettivi.
-- Nessun impegno: riceverai una consulenza informativa sui corsi disponibili.
+Posti limitati — selezione tramite colloquio attitudinale online.
 
 ## Design Direction
 
