@@ -1049,13 +1049,10 @@ ul, ol { list-style: none; }
    ============================================= */
 
 @media (max-width: 1024px) {
-  .partners { padding: 44px 0; }
-  .partners-header-wrap { margin-bottom: 28px; }
-  .partner-logo { padding: 0 28px; height: 60px; }
-  .partner-logo img { height: 28px; width: auto; max-width: 110px; }
-
   .section { padding: 80px 0; }
   .section-header { margin-bottom: 48px; }
+
+  /* Hero */
   .hero { padding: 88px 0 56px; }
   .hero-container { grid-template-columns: 1fr; gap: 48px; }
   .hero-form-wrap { width: 100%; max-width: 580px; margin: 0 auto; }
@@ -1063,28 +1060,42 @@ ul, ol { list-style: none; }
   .hero-headline { font-size: clamp(30px, 5vw, 48px); }
   .hero-sub { font-size: 16px; }
   .desktop-br { display: none; }
+
+  /* Cos'è */
   .cose-grid { grid-template-columns: 1fr; gap: 48px; }
   .visual-grid { grid-template-rows: 200px 140px; }
+
+  /* Target */
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
+
+  /* Struttura */
   .struttura-stats-row { flex-wrap: wrap; }
-  .struttura-stat { padding: 28px 24px; min-width: calc(50% - 0.5px); }
+  .struttura-stat { padding: 28px 24px; min-width: calc(50% - 1px); }
   .struttura-body-grid { grid-template-columns: 1fr; }
   .struttura-details-col { border-right: none; border-bottom: 1px solid var(--dark-border); padding: 28px 24px; }
   .struttura-incluso-col { padding: 28px 24px; }
+
+  /* Programma */
+  .moduli-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Dopo */
+  .dopo { padding: 80px 0; }
   .dopo-container { grid-template-columns: 1fr; gap: 48px; }
   .dopo-cta-block { align-items: center; }
-  .moduli-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Investimento */
   .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
+
+  /* Footer */
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 
 /* =============================================
-   RESPONSIVE — 768px
+   RESPONSIVE — 768px  (mobile)
    ============================================= */
 
 @media (max-width: 768px) {
   .container { padding: 0 20px; }
-
   .section { padding: 64px 0; }
   .section-header { margin-bottom: 40px; }
   .section-title { font-size: clamp(26px, 7vw, 36px); }
@@ -1108,62 +1119,89 @@ ul, ol { list-style: none; }
   }
   .nav-links.open { display: flex; }
   .nav-links li { width: 100%; }
-  .nav-links li a { display: block; padding: 8px 0; font-size: 14px; }
-  .nav-links li a.nav-cta { text-align: center; padding: 12px 20px; }
+  .nav-links li a { display: block; padding: 10px 0; font-size: 14px; }
+  .nav-links li a.nav-cta { text-align: center; padding: 12px 20px; margin-top: 4px; }
 
   /* --- Partners --- */
   .partners { padding: 44px 0; }
   .partners-header-wrap { margin-bottom: 32px; }
   .partner-logo { padding: 0 28px; height: 60px; }
-  .partner-logo img { height: 28px; width: auto; max-width: 110px; }
+  .partner-logo img { height: 28px; max-width: 110px; }
   .marquee-inner { animation-duration: 36s; }
 
   /* --- Hero --- */
   .hero { padding: 80px 0 48px; min-height: auto; }
-  .hero-bg { background-size: cover; background-position: center 20%; }
-  .hero-container { gap: 40px; }
+  .hero-bg { background-size: cover; background-position: center center; }
+  .hero-container { grid-template-columns: 1fr; gap: 40px; }
   .hero-form-wrap { max-width: 100%; }
   .hero-headline { font-size: clamp(28px, 7vw, 40px); }
-  .hero-sub { font-size: 15px; margin-bottom: 24px; }
+  .hero-sub { font-size: 15px; margin-bottom: 20px; }
   .hero-kpi-item { padding: 14px 16px; }
+  .hero-kpi-val { font-size: clamp(22px, 5vw, 32px); }
+  .hero-flags { margin-top: 12px; }
   .hero-scroll-hint { display: none; }
 
   /* --- Form --- */
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .form-card { padding: 28px 24px; }
-  .form-title { font-size: 20px; }
+  .form-title { font-size: 18px; }
 
-  /* --- Competenze / Cos'è --- */
-  .competenze-grid { grid-template-columns: repeat(2, 1fr); }
+  /* --- Cos'è --- */
   .visual-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 130px; }
+  .cose-text p { font-size: 15px; }
 
-  /* --- Perché MTS --- */
-  .perche-grid-mm { grid-template-columns: 1fr; }
+  /* --- Competenze --- */
+  .competenze-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+  /* --- Perché --- */
+  .perche-grid-mm { grid-template-columns: 1fr; gap: 12px; }
+  .perche-card-mm { padding: 24px 20px; }
+
+  /* --- Target --- */
+  .target-list-mm li { padding: 16px 0; gap: 16px; }
+  .target-body strong { font-size: 15px; }
+
+  /* --- Struttura --- */
+  .struttura-stat { min-width: calc(50% - 1px); }
+
+  /* --- Programma --- */
+  .moduli-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .programma-cta { margin-top: 40px; padding-top: 36px; }
 
   /* --- Dopo --- */
-  .dopo-content { max-width: 100%; }
+  .dopo { padding: 64px 0; }
+  .dopo-bg { background-size: cover; background-position: center; }
+  .dopo-title { font-size: clamp(28px, 6vw, 42px); }
+  .dopo-text { font-size: 15px; }
+  .dopo-cta-block { align-items: center; }
+  .dallara-card { padding: 28px 24px; }
+  .dallara-name { font-size: 30px; }
+
+  /* --- Investimento --- */
+  .investimento-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .inv-card { padding: 28px 24px; }
+  .inv-amount { font-size: 40px; }
 
   /* --- Final CTA --- */
-  .final-actions { flex-direction: column; align-items: center; }
+  .final-title { font-size: clamp(26px, 7vw, 40px); }
+  .final-sub { font-size: 15px; margin-bottom: 28px; }
+  .final-actions { flex-direction: column; align-items: center; gap: 12px; }
   .final-actions .btn { width: auto; min-width: 260px; }
 
   /* --- Footer --- */
   .footer { padding-top: 56px; }
-  .footer-container { grid-template-columns: 1fr; gap: 36px; padding-bottom: 48px; }
+  .footer-container { grid-template-columns: 1fr; gap: 32px; padding-bottom: 40px; }
   .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
   .footer-desc { max-width: 100%; }
-
-  /* --- Stats --- */
-  .info-stats { gap: 24px; }
+  .info-stats { gap: 24px; flex-wrap: wrap; }
 }
 
 /* =============================================
-   RESPONSIVE — 480px
+   RESPONSIVE — 480px  (small mobile)
    ============================================= */
 
 @media (max-width: 480px) {
   .container { padding: 0 16px; }
-
   .section { padding: 52px 0; }
   .section-header { margin-bottom: 32px; }
   .section-title { font-size: clamp(22px, 7vw, 30px); }
@@ -1174,58 +1212,73 @@ ul, ol { list-style: none; }
   /* --- Partners --- */
   .partners { padding: 36px 0; }
   .partner-logo { padding: 0 20px; height: 52px; }
-  .partner-logo img { height: 24px; width: auto; max-width: 90px; }
+  .partner-logo img { height: 24px; max-width: 90px; }
 
   /* --- Hero --- */
   .hero { padding: 72px 0 40px; }
-  .hero-headline { font-size: clamp(24px, 8vw, 34px); }
+  .hero-headline { font-size: clamp(22px, 8vw, 32px); }
   .hero-sub { font-size: 14px; }
+  .hero-kpi-band { margin-top: 20px; }
+  .hero-kpi-item { padding: 12px 14px; }
+  .hero-kpi-val { font-size: 24px; }
 
   /* --- Form --- */
   .form-card { padding: 24px 16px; }
-  .form-title { font-size: 18px; }
-
-  /* --- Competenze --- */
-  .competenze-grid { grid-template-columns: 1fr; }
+  .form-title { font-size: 16px; }
 
   /* --- Cos'è / Visual grid --- */
+  .competenze-grid { grid-template-columns: 1fr; }
   .visual-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
   .visual-card { height: 200px; }
   .visual-card.large { height: 240px; grid-column: 1; }
 
   /* --- Struttura stats --- */
-  .struttura-stat { min-width: 100%; }
+  .struttura-stat { min-width: 100%; padding: 20px 20px; }
   .struttura-stat-sep { display: none; }
+  .struttura-stat-num { font-size: 36px; }
 
   /* --- Programma --- */
   .moduli-grid { grid-template-columns: 1fr; }
+  .modulo-pill { padding: 16px; }
+
+  /* --- Dopo --- */
+  .dopo { padding: 52px 0; }
+  .dopo-title { font-size: clamp(24px, 8vw, 34px); }
+  .dallara-card { padding: 24px 20px; }
+  .dallara-name { font-size: 26px; }
+  .dallara-facts li { flex-direction: column; gap: 4px; }
+  .dallara-fact-val { text-align: left; }
 
   /* --- Investimento --- */
-  .inv-rata { grid-template-columns: auto 1fr; }
-  .rata-when { display: none; }
+  .inv-card { padding: 24px 20px; }
   .inv-amount { font-size: 36px; }
-
-  /* --- Stats --- */
-  .stat-number { font-size: 32px; }
+  .inv-rata { grid-template-columns: auto 1fr; gap: 12px; }
+  .rata-when { display: none; }
+  .inv-garanzia-block { flex-direction: column; gap: 12px; padding: 20px; }
 
   /* --- Buttons --- */
-  .btn-large { padding: 16px 32px; font-size: 14px; }
+  .btn-large { padding: 16px 28px; font-size: 14px; }
   .final-actions .btn { width: 100%; }
 
   /* --- Footer --- */
   .footer-container { grid-template-columns: 1fr; }
   .footer-socials { gap: 10px; }
+  .info-stats { flex-direction: column; gap: 16px; }
 }
 
 /* =============================================
-   RESPONSIVE — 360px
+   RESPONSIVE — 360px  (very small)
    ============================================= */
 
 @media (max-width: 360px) {
   .container { padding: 0 12px; }
-  .hero-headline { font-size: 22px; }
-  .section-title { font-size: 20px; }
-  .form-card { padding: 24px 20px; }
-  .btn { font-size: 13px; padding: 12px 20px; }
-  .btn-large { padding: 14px 24px; font-size: 14px; }
+  .hero-headline { font-size: 20px; }
+  .section-title { font-size: 19px; }
+  .form-card { padding: 20px 14px; }
+  .btn { font-size: 12px; padding: 12px 18px; }
+  .btn-large { padding: 14px 20px; font-size: 13px; }
+  .hero-kpi-item { padding: 10px 12px; }
+  .struttura-stat-num { font-size: 30px; }
+  .inv-amount { font-size: 30px; }
 }
+
