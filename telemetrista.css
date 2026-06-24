@@ -567,19 +567,19 @@ ul, ol { list-style: none; }
 
 .investimento-grid {
   display: flex;
-  align-items: flex-end;
-  gap: 40px;
-  max-width: 900px;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
   margin: 0 auto;
 }
 .investimento-grid .inv-card {
   flex-shrink: 0;
-  width: 480px;
+  width: 100%;
 }
 .investimento-grid .inv-garanzia-block {
   flex-shrink: 0;
-  width: fit-content;
-  align-self: flex-end;
+  width: 100%;
+  align-self: stretch;
 }
 .inv-card {
   background: var(--dark-card);
