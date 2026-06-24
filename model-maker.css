@@ -1120,10 +1120,12 @@ ul, ol { list-style: none; }
 
   /* --- Hero --- */
   .hero { padding: 80px 0 48px; min-height: auto; }
+  .hero-bg { background-size: cover; background-position: center 20%; }
   .hero-container { gap: 40px; }
   .hero-form-wrap { max-width: 100%; }
   .hero-headline { font-size: clamp(28px, 7vw, 40px); }
   .hero-sub { font-size: 15px; margin-bottom: 24px; }
+  .hero-kpi-item { padding: 14px 16px; }
   .hero-scroll-hint { display: none; }
 
   /* --- Form --- */
@@ -1133,6 +1135,7 @@ ul, ol { list-style: none; }
 
   /* --- Competenze / Cos'è --- */
   .competenze-grid { grid-template-columns: repeat(2, 1fr); }
+  .visual-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 130px; }
 
   /* --- Perché MTS --- */
   .perche-grid-mm { grid-template-columns: 1fr; }
