@@ -567,7 +567,7 @@ ul, ol { list-style: none; }
 
 .investimento-grid {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
@@ -579,7 +579,7 @@ ul, ol { list-style: none; }
 .investimento-grid .inv-garanzia-block {
   flex-shrink: 0;
   width: fit-content;
-  align-self: center;
+  align-self: flex-end;
 }
 .inv-card {
   background: var(--dark-card);
