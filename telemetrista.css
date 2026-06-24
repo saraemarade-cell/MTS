@@ -326,7 +326,7 @@ ul, ol { list-style: none; }
 .form-microcopy { font-size: 11px; color: rgba(242,242,242,0.35); text-align: center; margin-top: 10px; line-height: 1.5; }
 
 /* =============================================
-   PARTNERS — static strip (3 logos)
+   PARTNERS (marquee)
    ============================================= */
 
 .partners {
@@ -334,53 +334,38 @@ ul, ol { list-style: none; }
   border-top: 1px solid var(--dark-border);
   border-bottom: 1px solid var(--dark-border);
   padding: 48px 0;
+  overflow: hidden;
 }
 .partners-header-wrap { margin-bottom: 32px; }
 .partners-header { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
-
-.partner-logos-strip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  flex-wrap: wrap;
+.marquee-track {
+  position: relative; width: 100%; overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
-.partner-logo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 52px;
-  height: 72px;
-  flex-shrink: 0;
+.marquee-inner {
+  display: flex; align-items: center;
+  width: max-content;
+  animation: marquee-scroll 48s linear infinite;
 }
-.partner-logo-item img {
-  height: 36px;
-  width: auto;
-  max-width: 140px;
-  object-fit: contain;
+.marquee-track:hover .marquee-inner { animation-play-state: paused; }
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.partner-logo {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 40px; height: 72px; flex-shrink: 0; position: relative;
+}
+.partner-logo::after { content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 28px; background: var(--dark-border); }
+.partner-logo img {
+  height: 36px; width: auto; max-width: 140px;
+  object-fit: contain; object-position: center; display: block;
   mix-blend-mode: screen;
   filter: opacity(0.85);
+  image-rendering: -webkit-optimize-contrast;
   transition: filter var(--transition), transform var(--transition);
 }
-.partner-logo-item:hover img { filter: opacity(1); transform: scale(1.06); }
-.partner-logo-sep {
-  width: 1px;
-  height: 36px;
-  background: var(--dark-border);
-  flex-shrink: 0;
-}
-.partner-logo-text { }
-.partner-text-mark {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(242,242,242,0.5);
-  line-height: 1.4;
-  text-align: center;
-  transition: color var(--transition);
-}
-.partner-logo-item:hover .partner-text-mark { color: rgba(242,242,242,0.85); }
+.partner-logo:hover img { filter: opacity(1); transform: scale(1.08); }
 
 /* =============================================
    COS'È UN TELEMETRISTA
@@ -746,8 +731,8 @@ ul, ol { list-style: none; }
 @media (max-width: 1024px) {
   .partners { padding: 44px 0; }
   .partners-header-wrap { margin-bottom: 28px; }
-  .partner-logo-item { padding: 0 32px; height: 60px; }
-  .partner-logo-item img { height: 28px; }
+  .partner-logo { padding: 0 28px; height: 60px; }
+  .partner-logo img { height: 28px; max-width: 110px; }
 
   .section { padding: 80px 0; }
   .section-header { margin-bottom: 48px; }
@@ -794,9 +779,7 @@ ul, ol { list-style: none; }
   .footer-container { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
   .final-actions { flex-direction: column; align-items: center; }
-  .partner-logos-strip { gap: 8px; }
-  .partner-logo-item { padding: 0 20px; height: 56px; }
-  .partner-logo-sep { display: none; }
+  .marquee-inner { animation-duration: 36s; }
 }
 
 /* =============================================
@@ -804,6 +787,8 @@ ul, ol { list-style: none; }
    ============================================= */
 
 @media (max-width: 480px) {
+  .partner-logo { padding: 0 20px; height: 52px; }
+  .partner-logo img { height: 24px; max-width: 90px; }
   .section { padding: 60px 0; }
   .hero-headline { font-size: clamp(28px, 8vw, 40px); }
   .inv-rata { grid-template-columns: auto 1fr; }
