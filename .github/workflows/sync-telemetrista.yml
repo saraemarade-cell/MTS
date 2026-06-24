@@ -1,0 +1,44 @@
+name: Sync Telemetrista → deployment
+
+on:
+  push:
+    branches:
+      - landing/telemetrista
+    paths:
+      - telemetrista.html
+      - telemetrista.css
+      - telemetrista.js
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout landing/telemetrista
+        uses: actions/checkout@v4
+        with:
+          ref: landing/telemetrista
+          fetch-depth: 1
+
+      - name: Save telemetrista files
+        run: |
+          cp telemetrista.html /tmp/telemetrista.html
+          cp telemetrista.css /tmp/telemetrista.css
+          cp telemetrista.js /tmp/telemetrista.js
+
+      - name: Checkout landing/model-maker
+        uses: actions/checkout@v4
+        with:
+          ref: landing/model-maker
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Copy files and push
+        run: |
+          cp /tmp/telemetrista.html telemetrista.html
+          cp /tmp/telemetrista.css telemetrista.css
+          cp /tmp/telemetrista.js telemetrista.js
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add telemetrista.html telemetrista.css telemetrista.js
+          git diff --staged --quiet || git commit -m "Sync telemetrista from landing/telemetrista"
+          git push
