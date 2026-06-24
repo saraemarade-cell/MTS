@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Telemetrista nel Motorsport — Corso specialistico MTS Motorsport Technical School. Formazione pratica all'Autodromo di Imola con docenti da team F1, MotoGP e SBK.">
+  <title>Telemetrista nel Motorsport — MTS Motorsport Technical School</title>
+  <link rel="stylesheet" href="https://use.typekit.net/bty4mzk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/acx6tcp.css">
+  <link rel="stylesheet" href="telemetrista.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="MTS-Logo_Payoff-Negativo-colori.webp" alt="MTS Motorsport Technical School" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#cos-e">Il Ruolo</a></li>
+        <li><a href="#target">A Chi Si Rivolge</a></li>
+        <li><a href="#perche">Perché MTS</a></li>
+        <li><a href="#investimento">Investimento</a></li>
+        <li><a href="#candidatura" class="nav-cta">Candidati ora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       01. HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('foto/1.webp');">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="mono">// MTS — CORSO SPECIALISTICO</span>
+        </div>
+        <h1 class="hero-headline">
+          Diventa Telemetrista<br>
+          <span class="text-red">nel Motorsport Professionale</span>
+        </h1>
+        <p class="hero-sub">
+          Specializzati nella telemetria e nella gestione elettronica<br class="desktop-br">
+          di auto e moto da corsa. Corso pratico all'Autodromo di Imola.
+        </p>
+        <!-- Statistiche numeriche -->
+        <div class="hero-kpi-band">
+          <div class="hero-kpi-item">
+            <span class="hero-kpi-val">4<em>gg</em></span>
+            <span class="hero-kpi-desc">Giornate in pista, auto e moto</span>
+          </div>
+          <div class="hero-kpi-item">
+            <span class="hero-kpi-val">80<em>%</em></span>
+            <span class="hero-kpi-desc">Degli studenti inserito nel Motorsport</span>
+          </div>
+        </div>
+        <!-- Feature flags -->
+        <ul class="hero-flags">
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Docenti da team F1, MotoGP e SBK
+          </li>
+        </ul>
+        <div class="hero-scroll-hint">
+          <span class="scroll-line"></span>
+          <span class="mono">scroll</span>
+        </div>
+      </div>
+
+      <!-- FORM HERO -->
+      <div class="hero-form-wrap" id="candidatura">
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="mono form-label">// CANDIDATURA</span>
+            <h2 class="form-title">Ricevi informazioni<br>e candidati alle selezioni</h2>
+            <p class="form-intro">Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua candidatura.</p>
+          </div>
+          <form id="leadForm" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome e Cognome *</label>
+              <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="mario@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="tel">Telefono *</label>
+                <input type="tel" id="tel" name="tel" placeholder="+39 000 0000000" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="eta">Età *</label>
+              <input type="number" id="eta" name="eta" placeholder="Es. 24" min="16" max="60" required>
+            </div>
+            <div class="form-group">
+              <label for="obiettivo">Qual è il tuo obiettivo? *</label>
+              <select id="obiettivo" name="obiettivo" required>
+                <option value="" disabled selected>Seleziona un obiettivo</option>
+                <option value="lavoro-motorsport">Lavorare nel motorsport</option>
+                <option value="specializzarmi">Specializzarmi nella telemetria</option>
+                <option value="cambio-carriera">Cambiare carriera</option>
+                <option value="passione">Trasformare una passione in lavoro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="esperienza">Hai già esperienze tecniche? *</label>
+              <select id="esperienza" name="esperienza" required>
+                <option value="" disabled selected>Seleziona una risposta</option>
+                <option value="nessuna">No, sono alla prima esperienza</option>
+                <option value="base">Sì, competenze base (meccanica, fisica)</option>
+                <option value="elettronica">Sì, background elettronico/informatico</option>
+                <option value="motorsport">Sì, già nel settore motorsport</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="messaggio">Raccontaci il tuo interesse (opzionale)</label>
+              <textarea id="messaggio" name="messaggio" rows="3" placeholder="Perché vuoi diventare Telemetrista..."></textarea>
+            </div>
+            <div class="form-check">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required>
+                <span class="checkmark"></span>
+                Acconsento al trattamento dei dati personali per ricevere informazioni sul corso *
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Candidati ora</button>
+            <p class="form-microcopy">Posti limitati — selezione tramite colloquio attitudinale online.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02. PARTNER SECTION
+  ============================================================ -->
+  <section class="partners" id="partner">
+    <div class="container partners-header-wrap">
+      <div class="partners-header">
+        <span class="mono section-tag">// I NOSTRI PARTNER</span>
+      </div>
+    </div>
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <!-- SET A -->
+        <div class="partner-logo"><img src="Loghi%20partner/brembo-1-1.webp" alt="Brembo"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/andreani.webp" alt="Andreani"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/marelli-logo.webp" alt="Marelli"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Telwin_Logo_Payoff.webp" alt="Telwin"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/arp_suspension.webp" alt="ARP Suspension"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/hrs.webp" alt="HRS"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/mechanix.webp" alt="Mechanix"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Logo-FMI-1024x448-1.webp" alt="FMI"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/confartigianato-motori.webp" alt="Confartigianato Motori"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/autotecnica-logo-grigio-2048x599.webp" alt="Autotecnica"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/crg.webp" alt="CRG"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/motorquality.webp" alt="Motorquality"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/gieffe.webp" alt="Gieffe"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/aessecom.webp" alt="Aessecom"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/new-exan-logo-menu-2016-1.webp" alt="New Exan"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/DAL_rgb.webp" alt="DAL"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/mc-1.webp" alt="MC"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/logo-MUSEO-FRATELLI-COZZI_page-0001-20240129-124403-1.webp" alt="Museo Fratelli Cozzi"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Senza-titolo-1_0000_Livello-2.webp" alt="Partner"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Senza-titolo-1_0002_Livello-4.webp" alt="Partner"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/MEMBERS-GREY-1.webp" alt="Members"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/dino-paoli-pit-stop.webp" alt="Dino Paoli Pit Stop"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/logo-19.webp" alt="Partner"></div>
+        <!-- SET B (duplicate for seamless loop) -->
+        <div class="partner-logo"><img src="Loghi%20partner/brembo-1-1.webp" alt="Brembo"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/andreani.webp" alt="Andreani"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/marelli-logo.webp" alt="Marelli"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Telwin_Logo_Payoff.webp" alt="Telwin"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/arp_suspension.webp" alt="ARP Suspension"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/hrs.webp" alt="HRS"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/mechanix.webp" alt="Mechanix"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Logo-FMI-1024x448-1.webp" alt="FMI"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/confartigianato-motori.webp" alt="Confartigianato Motori"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/autotecnica-logo-grigio-2048x599.webp" alt="Autotecnica"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/crg.webp" alt="CRG"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/motorquality.webp" alt="Motorquality"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/gieffe.webp" alt="Gieffe"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/aessecom.webp" alt="Aessecom"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/new-exan-logo-menu-2016-1.webp" alt="New Exan"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/DAL_rgb.webp" alt="DAL"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/mc-1.webp" alt="MC"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/logo-MUSEO-FRATELLI-COZZI_page-0001-20240129-124403-1.webp" alt="Museo Fratelli Cozzi"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Senza-titolo-1_0000_Livello-2.webp" alt="Partner"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/Senza-titolo-1_0002_Livello-4.webp" alt="Partner"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/MEMBERS-GREY-1.webp" alt="Members"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/dino-paoli-pit-stop.webp" alt="Dino Paoli Pit Stop"></div>
+        <div class="partner-logo"><img src="Loghi%20partner/logo-19.webp" alt="Partner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03. COS'È UN TELEMETRISTA
+  ============================================================ -->
+  <section class="cos-e section section-dark" id="cos-e">
+    <div class="container">
+      <div class="cose-grid">
+        <div class="cose-text">
+          <div class="section-header left-align">
+            <span class="mono section-tag">// 01 — COS'È UN TELEMETRISTA</span>
+            <h2 class="section-title">Il professionista che trasforma i dati in performance</h2>
+          </div>
+
+          <!-- Giornata tipo -->
+          <div class="cose-giornata">
+            <span class="mono cose-sub-tag">// GIORNATA TIPO</span>
+            <p>Il Telemetrista non guida e non monta i pezzi. Sta al muretto box o in sala dati: legge i numeri che arrivano dalla vettura in tempo reale — velocità, temperature, pressioni, accelerazioni — li confronta con l'ingegnere di pista, e decide insieme a lui come modificare il setup prima del prossimo turno.</p>
+            <p>È il ponte tra i dati e le scelte in pista.</p>
+          </div>
+
+          <!-- Non è / È -->
+          <div class="cose-role-grid">
+            <div class="cose-role-col">
+              <span class="mono cose-role-label cose-role-label-no">// NON È</span>
+              <ul class="cose-role-list">
+                <li class="cose-role-item-no">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  Non è un meccanico — non mette le mani sul motore
+                </li>
+                <li class="cose-role-item-no">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  Non è un pilota
+                </li>
+              </ul>
+            </div>
+            <div class="cose-role-col">
+              <span class="mono cose-role-label cose-role-label-yes">// È</span>
+              <ul class="cose-role-list">
+                <li class="cose-role-item-yes">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Chi trasforma i dati di pista in decisioni di performance, lavorando a stretto contatto con team e ingegneri
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cose-highlight">
+            <span class="mono section-tag">// PROFILO STRATEGICO</span>
+            <p>Una figura tecnica strategica, sempre più richiesta in F1, MotoGP e SBK.</p>
+          </div>
+        </div>
+
+        <div class="cose-visuals">
+          <div class="visual-grid">
+            <div class="visual-card large" style="background-image: url('foto/2.webp'); background-position: center center;"></div>
+            <div class="visual-card" style="background-image: url('foto/3.webp'); background-position: center 25%;"></div>
+            <div class="visual-card" style="background-image: url('foto/4.webp'); background-position: center 25%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04. A CHI SI RIVOLGE
+  ============================================================ -->
+  <section class="target section" id="target">
+    <div class="container">
+      <div class="target-inner-mm">
+        <div class="section-header left-align">
+          <span class="mono section-tag">// 02 — A CHI SI RIVOLGE</span>
+          <h2 class="section-title">Questo corso è pensato per chi:</h2>
+        </div>
+        <div class="target-content-mm">
+          <ul class="target-list-mm">
+            <li>
+              <span class="target-num mono">01</span>
+              <div class="target-body">
+                <strong>Sogna di lavorare nel motorsport professionale</strong>
+                <span>e cerca un percorso concreto per entrarci</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">02</span>
+              <div class="target-body">
+                <strong>Ha basi di meccanica, matematica e fisica</strong>
+                <span>anche senza esperienza pregressa nel settore</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">03</span>
+              <div class="target-body">
+                <strong>Preferisce analizzare dati e numeri</strong>
+                <span>più che mettere le mani sui pezzi</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">04</span>
+              <div class="target-body">
+                <strong>Vuole un ruolo strategico nel box</strong>
+                <span>non solo manuale — al centro delle decisioni di performance</span>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05. PERCHÉ MTS
+  ============================================================ -->
+  <section class="perche section section-dark" id="perche">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 03 — PERCHÉ MTS</span>
+        <h2 class="section-title">Perché scegliere questo corso</h2>
+      </div>
+      <div class="perche-grid-mm">
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">01</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/>
+              <path d="M10 32c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="16" r="4" stroke="#D72E1F" stroke-width="1.5"/>
+              <path d="M14 24h12" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Sede Imola</h3>
+          <p>Formazione nei box di uno degli autodromi più prestigiosi al mondo.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">02</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/>
+              <path d="M12 28l4-8 4 4 4-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="28" cy="12" r="3" stroke="#D72E1F" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Docenti da team top</h3>
+          <p>Porsche Manthey, Lamborghini, Ducati, Yamaha.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">03</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/>
+              <rect x="12" y="13" width="16" height="14" rx="1" stroke="#D72E1F" stroke-width="1.5"/>
+              <path d="M16 13v-2M24 13v-2" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M15 20h10M15 23h7" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>240 ore, 9 weekend</h3>
+          <p>Compatibile con lavoro/studio.</p>
+        </div>
+        <div class="perche-card-mm featured">
+          <div class="pcard-num mono">04</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/>
+              <path d="M20 4L6 10v10c0 8.284 5.928 16.02 14 18 8.072-1.98 14-9.716 14-18V10L20 4z" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M13 20l5 5 9-9" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Training on the job</h3>
+          <p>Garantito per il miglior studente.</p>
+          <div class="pcard-badge mono">GARANZIA UNICA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06. INVESTIMENTO
+  ============================================================ -->
+  <section class="investimento section" id="investimento">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 04 — INVESTIMENTO</span>
+        <h2 class="section-title">Investi nella tua carriera</h2>
+      </div>
+      <div class="investimento-grid">
+        <div class="inv-card inv-main">
+          <div class="inv-label mono">Quota di partecipazione</div>
+          <div class="inv-price">
+            <span class="inv-amount">5.900€</span>
+            <span class="inv-vat">+ IVA</span>
+          </div>
+          <p class="inv-rate-note mono">Pagamento rateale disponibile</p>
+          <div class="inv-separator"></div>
+          <div class="inv-addon">
+            <div class="inv-addon-row">
+              <span>MTS Card</span>
+              <span class="inv-addon-price">69€ + IVA</span>
+            </div>
+          </div>
+          <a href="#candidatura" class="btn btn-primary btn-full" style="margin-top:28px;">Candidati ora</a>
+        </div>
+        <div class="inv-garanzia-block">
+            <div class="inv-garanzia-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4L6 10v10c0 8.284 5.928 16.02 14 18 8.072-1.98 14-9.716 14-18V10L20 4z" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M13 20l5 5 9-9" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="inv-garanzia-body">
+              <span class="inv-garanzia-title">Selezionato o Rimborsato</span>
+              <p class="inv-garanzia-desc">Se non superi la selezione, rimborso completo dell'importo versato.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07. FINAL CTA
+  ============================================================ -->
+  <section class="final-cta section" id="final-cta">
+    <div class="container">
+      <div class="final-cta-inner">
+        <span class="mono section-tag">// 05 — CANDIDATURA</span>
+        <h2 class="final-title">Il motorsport ha bisogno<br>di <span class="text-red">Telemetristi</span></h2>
+        <p class="final-sub">Trasforma la tua passione in una competenza professionale.</p>
+        <div class="final-actions">
+          <a href="#candidatura" class="btn btn-primary btn-large">Candidati ora</a>
+        </div>
+        <p class="final-micro mono">Posti limitati — selezione tramite colloquio attitudinale online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="MTS-Logo_Payoff-Negativo-colori.webp" alt="MTS Motorsport Technical School" class="footer-logo">
+        <p>MTS Motorsport Technical School — formazione tecnica specialistica per il mondo del racing.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Corso</span>
+        <ul>
+          <li><a href="#cos-e">Il ruolo del Telemetrista</a></li>
+          <li><a href="#target">A chi si rivolge</a></li>
+          <li><a href="#perche">Perché MTS</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Informazioni</span>
+        <ul>
+          <li><a href="#investimento">Investimento</a></li>
+          <li><a href="#candidatura">Candidati ora</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Contatti</span>
+        <ul>
+          <li><a href="mailto:info@mtschool.it">info@mtschool.it</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span class="mono footer-copy">©2025 MTS Motorsport Technical School &nbsp;|&nbsp; MTS srl | PIVA 03783800166</span>
+        <span class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="telemetrista.js"></script>
+</body>
+</html>
