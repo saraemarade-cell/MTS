@@ -375,7 +375,11 @@ ul, ol { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: start;
+  align-items: stretch;
+}
+.cose-visuals {
+  display: flex;
+  flex-direction: column;
 }
 .cose-text p {
   font-size: 16px;
@@ -455,8 +459,10 @@ ul, ol { list-style: none; }
 .visual-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 220px 160px;
+  grid-template-rows: 2fr 1fr;
   gap: 12px;
+  flex: 1;
+  min-height: 380px;
 }
 .visual-card {
   position: relative;
@@ -744,8 +750,9 @@ ul, ol { list-style: none; }
   .hero-sub { font-size: 16px; }
   .desktop-br { display: none; }
 
-  .cose-grid { grid-template-columns: 1fr; gap: 48px; }
-  .visual-grid { grid-template-rows: 200px 140px; }
+  .cose-grid { grid-template-columns: 1fr; gap: 48px; align-items: start; }
+  .cose-visuals { flex: none; }
+  .visual-grid { grid-template-rows: 200px 140px; min-height: unset; flex: none; }
   .cose-role-grid { grid-template-columns: 1fr; }
 
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
