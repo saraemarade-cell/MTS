@@ -510,6 +510,8 @@ ul, ol { list-style: none; }
    PERCHÉ MTS
    ============================================= */
 
+.perche { background: var(--black); }
+
 .perche-grid-mm {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -572,7 +574,7 @@ ul, ol { list-style: none; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center 80%;
   background-repeat: no-repeat;
 }
 .struttura-overlay {
