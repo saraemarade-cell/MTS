@@ -159,7 +159,7 @@ ul, ol { list-style: none; }
   padding: 100px 0 60px;
   overflow: hidden;
 }
-.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; }
+.hero-bg { position: absolute; inset: 0; background-size: 100% auto; background-position: center top; background-repeat: no-repeat; background-color: #080808; }
 .hero-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(105deg, rgba(17,17,17,0.97) 0%, rgba(17,17,17,0.9) 40%, rgba(25,25,25,0.75) 65%, rgba(215,46,31,0.25) 100%);
@@ -355,8 +355,9 @@ ul, ol { list-style: none; }
 }
 .visual-card {
   position: relative;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-color: #191919;
   border-radius: var(--radius);
   overflow: hidden;
   transition: transform var(--transition);
@@ -703,7 +704,7 @@ ul, ol { list-style: none; }
   padding: 120px 0;
   overflow: hidden;
 }
-.dopo-bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; }
+.dopo-bg { position: absolute; inset: 0; background-size: 100% auto; background-position: center center; background-repeat: no-repeat; background-color: #080808; }
 .dopo-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(160deg, rgba(10,10,10,0.97) 0%, rgba(17,17,17,0.94) 50%, rgba(25,10,10,0.88) 100%);
