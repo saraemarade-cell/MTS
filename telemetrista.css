@@ -565,6 +565,26 @@ ul, ol { list-style: none; }
    STRUTTURA DEL CORSO
    ============================================= */
 
+.struttura {
+  position: relative;
+}
+.struttura-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.struttura-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.86);
+}
+.struttura .container {
+  position: relative;
+  z-index: 1;
+}
+
 .struttura-col-label {
   color: var(--red);
   font-size: 10px;
