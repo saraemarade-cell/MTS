@@ -890,16 +890,16 @@ ul, ol { list-style: none; }
 .inv-rate-list { display: flex; flex-direction: column; gap: 0; margin-bottom: 32px; }
 .inv-rata {
   display: grid;
-  grid-template-columns: 56px auto 1fr;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 16px;
-  padding: 14px 0;
+  padding: 16px 0;
   border-bottom: 1px solid var(--dark-border);
 }
 .inv-rata:first-child { border-top: 1px solid var(--dark-border); }
-.rata-num { color: var(--red); font-size: 10px; letter-spacing: 0.08em; }
-.rata-amount { font-family: var(--font-headline); font-size: 20px; font-weight: 700; color: var(--smoke); white-space: nowrap; }
-.rata-amount small { font-family: var(--font-body); font-size: 11px; color: rgba(242,242,242,0.4); }
+.rata-num { color: var(--red); font-size: 10px; }
+.rata-amount { font-family: var(--font-headline); font-size: 22px; font-weight: 700; color: var(--smoke); }
+.rata-amount small { font-family: var(--font-body); font-size: 12px; color: rgba(242,242,242,0.4); }
 .rata-when { font-size: 12px; color: rgba(242,242,242,0.4); text-align: right; }
 .inv-garanzia-block {
   display: flex;
