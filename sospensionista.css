@@ -595,6 +595,20 @@ ul, ol { list-style: none; }
    COS'È UN SOSPENSIONISTA
    ============================================= */
 
+/* Giornata tipo */
+.cose-giornata {
+  margin-bottom: 32px;
+}
+.cose-sub-tag {
+  display: block;
+  color: rgba(215,46,31,0.7);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
 /* Non è / È grid */
 .cose-role-grid {
   display: grid;
