@@ -379,7 +379,146 @@ ul, ol { list-style: none; }
 .partner-logo:hover img { filter: opacity(1); transform: scale(1.08); }
 
 /* =============================================
-   COS'È UN MODEL MAKER
+   PARTNERS STATIC ROW (sospensionista)
+   ============================================= */
+
+.partners-static-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.partner-logo-static {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  flex-shrink: 0;
+}
+.partner-logo-static img {
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  filter: opacity(0.85);
+  transition: filter var(--transition), transform var(--transition);
+}
+.partner-logo-static:hover img { filter: opacity(1); transform: scale(1.06); }
+.partner-logo-text {
+  font-family: var(--font-headline);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(242,242,242,0.55);
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+.partner-logo-text:hover { color: rgba(242,242,242,0.9); }
+
+/* =============================================
+   NON È / È  (sospensionista cos'è section)
+   ============================================= */
+
+.non-e-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 24px 0;
+}
+.non-e-no,
+.non-e-si {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--dark-border);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.non-e-no:first-child,
+.non-e-si:first-of-type { border-top: 1px solid var(--dark-border); }
+.non-e-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  margin-top: 1px;
+}
+.non-e-no .non-e-icon {
+  background: rgba(215,46,31,0.12);
+  color: var(--red);
+  border: 1px solid rgba(215,46,31,0.3);
+}
+.non-e-no { color: rgba(242,242,242,0.6); }
+.non-e-si .non-e-icon {
+  background: rgba(46,215,100,0.1);
+  color: #2ED764;
+  border: 1px solid rgba(46,215,100,0.25);
+}
+.non-e-si { color: rgba(242,242,242,0.85); }
+
+/* Visuals wrapper (cos'è section) */
+.cose-visuals { /* inherits visual-grid inside */ }
+
+/* =============================================
+   TARGET DISCLAIMER
+   ============================================= */
+
+.target-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 32px;
+  padding: 20px 20px;
+  background: rgba(215,46,31,0.04);
+  border: 1px solid rgba(215,46,31,0.18);
+  border-radius: var(--radius-lg);
+}
+.target-disclaimer::before {
+  content: 'ℹ';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--red);
+  margin-top: 1px;
+}
+.target-disclaimer p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(242,242,242,0.55);
+  margin: 0;
+}
+.target-disclaimer strong { color: rgba(242,242,242,0.8); }
+
+/* =============================================
+   DALLARA CARD TOP wrapper
+   ============================================= */
+
+.dallara-card-top { /* layout wrapper — no extra styles needed */ }
+
+/* =============================================
+   GARANZIA BODY wrapper
+   ============================================= */
+
+.inv-garanzia-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* =============================================
+   COS'È UN SOSPENSIONISTA
    ============================================= */
 
 .cose-grid {
@@ -1136,6 +1275,9 @@ ul, ol { list-style: none; }
   .partner-logo { padding: 0 28px; height: 60px; }
   .partner-logo img { height: 28px; max-width: 110px; }
   .marquee-inner { animation-duration: 36s; }
+  .partners-static-row { gap: 28px; }
+  .partner-logo-static { height: 56px; }
+  .partner-logo-static img { height: 28px; max-width: 110px; }
 
   /* --- Hero --- */
   .hero { padding: 80px 0 48px; min-height: auto; }
