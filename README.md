@@ -1,4 +1,6 @@
-#You are Claude Code. Build a modern, responsive landing page for **Diventa Sospensionista Moto Racing**.
+#You are Claude Code. Build a modern, responsive landing page for **Diventa Ingegnere di Pista nel Motorsport Moto
+
+**.
 
 Follow the Visual Identity strictly:
 - **RED GOAL**: `#D72E1F`
@@ -15,27 +17,32 @@ Create a high-converting landing page for motorsport technical courses, with a s
 
 # Page Structure
 
-## 1. Hero + Form
+# Page Structure
+
+## 1. HERO + FORM
 
 ### Headline
 
-**Diventa Sospensionista Moto Racing**
+**Diventa Ingegnere di Pista nel Motorsport Moto**
 
 ### Subheadline
 
-Impara a preparare e settare le sospensioni delle moto da competizione e lavora nel Motorsport professionale.
+**Master in lingua inglese all'Autodromo di Imola: lavora su moto da competizione e accedi ai Team del motomondiale.**
 
 ### Proof Bar
 
-* Solo 100 professionisti al mondo — figura rarissima e richiesta
-* 55% pratica, 104 ore di corso
-* Esperienza in pista garantita con ARP Suspension per il miglior studente
+*  4 giornate in pista con piloti professionisti
+*  Docenti da Ducati Corse, Yamaha Racing, KTM
+*  Opportunità Blu Technical Academy Yamaha per i 2 migliori studenti
 
 ### Form
 
-**Titolo:** Ricevi informazioni e candidati alle selezioni
+#### Titolo
 
-**Testo:**
+**Ricevi informazioni e candidati alle selezioni**
+
+#### Testo
+
 Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua candidatura.
 
 #### Campi
@@ -45,105 +52,120 @@ Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua cand
 * Telefono
 * Età
 * Qual è il tuo obiettivo?
-* Hai già esperienza di riparazione veicoli?
+* Il tuo livello di inglese?
 
-  * Sì, esperienza meccanica solida
-  * Ho qualche base
-  * No, nessuna esperienza
+  * Fluente
+  * Buono ma non fluente
+  * Base
+* Hai basi solide di matematica e fisica?
 
-> Campo filtro: requisito reale di accesso al corso.
-
-* Raccontaci il tuo interesse *(opzionale)*
+  * Sì, solide
+  * Ho basi scolastiche
+  * No
+* Raccontaci il tuo interesse (opzionale)
 
 #### CTA
 
 **Candidati ora**
 
-**Microcopy:**
-Posti limitati — corso a numero chiuso, richiesta esperienza di riparazione veicoli.
+#### Microcopy
+
+*Posti limitati — selezione tramite colloquio attitudinale e test in presenza. Master in lingua inglese.*
 
 ---
 
-## 2. Partner
+## 2. PARTNER
 
-Loghi partner:
+### Partner Logos Row
 
 * FMI
-* ARP Suspension
-* USAG
+* Yamaha Racing
+* Imola
 
 ---
 
-## 3. Cos'è un Sospensionista
+## 3. COS'È UN INGEGNERE DI PISTA
 
 ### Titolo
 
-**Il tecnico che decide come una moto da corsa tocca la pista**
+**Chi decide il setup della moto prima e durante la gara**
 
-### Giornata tipo
+### Giornata Tipo
 
-Il Sospensionista revisiona, prepara e setta le sospensioni delle moto da competizione — in officina prima della gara e a bordo pista durante le sessioni, insieme a piloti e team.
+L'Ingegnere di Pista lavora a stretto contatto con il pilota e il team per definire il setup della moto, gestire la strategia di gara e interpretare i dati raccolti in pista.
 
-Ogni regolazione cambia il modo in cui la moto risponde in curva, in frenata e in accelerazione: una competenza tecnica che si stima abbiano solo 100 professionisti in tutto il mondo.
+È la figura che traduce le sensazioni del pilota e i numeri della telemetria in scelte tecniche concrete su sospensioni, elettronica e assetto.
 
 ### Non è / È
 
-#### ❌ Non è
+#### ❌ Non è il Telemetrista
 
-* Un meccanico generico: è una specializzazione su un singolo componente critico
-* Sufficiente "saperci stare dietro alle moto": serve esperienza di riparazione concreta
+Il Telemetrista raccoglie e analizza i dati.
 
-#### ✅ È
+L'Ingegnere di Pista traduce quei dati in decisioni di setup e strategia, coordinando il lavoro tecnico e gestendo il rapporto con il pilota.
 
-* Un tecnico specializzato che lavora sia in officina sia in gara
-* Una figura che può operare per più team contemporaneamente su mandato del costruttore
+#### ✅ È il riferimento tecnico del pilota in pista
+
+#### ✅ È chi coordina dati, meccanici e strategia di gara in un'unica visione
 
 ### Highlight
 
-**Una delle competenze più rare e ricercate nel Motorsport professionale.**
+**Il ruolo di vertice nel rapporto tra dati, moto e pilota — centrale in ogni team MotoGP, Moto2, Moto3 e SBK.**
 
 ---
 
-## 4. A Chi Si Rivolge
+## 4. A CHI SI RIVOLGE
 
 ### Fa per te se
 
-* Hai già esperienza di riparazione di veicoli *(requisito necessario per l'accesso)*
-* Vuoi specializzarti in un ruolo tecnico raro e ad alto valore
-* Vuoi lavorare sia in officina sia in pista con team di corse
-* Sogni una carriera nel motorsport motociclistico
+* Parli inglese (il Master si svolge interamente in inglese)
+* Hai basi consolidate di matematica e fisica
+* Vuoi un ruolo di coordinamento tecnico, non solo esecutivo
+* Sogni di lavorare nel motomondiale (MotoGP, Moto2, Moto3, SBK)
 
-### Disclaimer (opzionale)
+### Nota Strategica
 
-Se non hai ancora esperienza di riparazione, scopri prima il Corso Meccanico Moto Racing per costruire le basi necessarie e accedere successivamente alla specializzazione.
-
----
-
-## 5. Perché MTS
-
-* Solo 100 sospensionisti al mondo — competenza rara e alta domanda
-* Docenti sospensionisti esperti dal mondo delle corse motociclistiche
-* 55% pratica su 104 ore totali, formula weekend
-* Esperienza in pista con ARP Suspension garantita per il miglior studente
+> Se l'inglese fluente rappresenta un requisito obbligatorio, è consigliabile evidenziarlo già nell'headline o nella subheadline per favorire l'autoselezione dei candidati e ridurre lead non idonei provenienti dalle campagne ADV.
 
 ---
 
-## 6. Investimento
+## 5. PERCHÉ MTS
 
-* **2.900€ + IVA** — pagamento rateale disponibile
-* **MTS Card:** 69€ + IVA
+### Vantaggi del Master
 
-### Selezionato o Rimborsato
-
-Da verificare con MTS prima della pubblicazione, poiché non risulta esplicitato nella documentazione attuale del corso.
+* Sede Imola — lavori su moto guidate da piloti professionisti
+*  Docenti da team top — Ducati Corse, Yamaha Racing, KTM
+*  Blu Technical Academy Yamaha — opportunità esclusiva per i 2 migliori studenti
+*  280 ore di formazione in 10 weekend
+*  Novembre 2026 → Marzo 2027
 
 ---
 
-## 7. CTA Finale
+## 6. INVESTIMENTO
+
+### Quota di Partecipazione
+
+**6.400€ + IVA**
+
+Pagamento rateale disponibile.
+
+### MTS Card
+
+**69€ + IVA**
+
+### Garanzia
+
+**Selezionato o Rimborsato**
+
+Se non superi la selezione, ricevi il rimborso completo dell'importo versato.
+
+---
+
+## 7. CTA FINALE
 
 ### Headline
 
-**Il Motorsport ha bisogno di specialisti delle sospensioni**
+**Il Motorsport ha bisogno di Ingegneri di Pista**
 
 ### CTA
 
@@ -151,7 +173,7 @@ Da verificare con MTS prima della pubblicazione, poiché non risulta esplicitato
 
 ### Microcopy
 
-Posti limitati — corso a numero chiuso, richiesta esperienza di riparazione veicoli.
+*Posti limitati — Master in lingua inglese, selezione tramite colloquio e test in presenza.*
 
 ## Design Direction
 
