@@ -1,4 +1,5 @@
-#You are Claude Code. Build a modern, responsive landing page for **Diventa Ingegnere di Pista nel Motorsport Moto
+#You are Claude Code. Build a modern, responsive landing page for **Diventa Ingegnere di Pista nel Motorsport Auto
+
 
 **.
 
@@ -17,23 +18,21 @@ Create a high-converting landing page for motorsport technical courses, with a s
 
 # Page Structure
 
-# Page Structure
-
 ## 1. HERO + FORM
 
 ### Headline
 
-**Diventa Ingegnere di Pista nel Motorsport Moto**
+**Diventa Ingegnere di Pista nel Motorsport Auto**
 
 ### Subheadline
 
-**Master in lingua inglese all'Autodromo di Imola: lavora su moto da competizione e accedi ai Team del motomondiale.**
+**Master in lingua inglese all'Autodromo di Imola: lavora su vetture da competizione e accedi ai Team di Formula 1.**
 
 ### Proof Bar
 
-*  4 giornate in pista con piloti professionisti
-*  Docenti da Ducati Corse, Yamaha Racing, KTM
-*  Opportunità Blu Technical Academy Yamaha per i 2 migliori studenti
+*  4 giornate in pista + 1 giornata al simulatore di guida
+*  Docenti da team F1, F2, F3, Formula E, WEC e GT3
+*  80% degli studenti MTS inserito nel Motorsport
 
 ### Form
 
@@ -78,23 +77,23 @@ Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua cand
 
 ### Partner Logos Row
 
-* FMI
-* Yamaha Racing
+* Pirelli
 * Imola
+* Wave Italy
 
 ---
 
-## 3. COS'È UN INGEGNERE DI PISTA
+## 3. COS'È UN INGEGNERE DI PISTA — AUTO
 
 ### Titolo
 
-**Chi decide il setup della moto prima e durante la gara**
+**Chi decide il setup della vettura prima e durante la gara**
 
 ### Giornata Tipo
 
-L'Ingegnere di Pista lavora a stretto contatto con il pilota e il team per definire il setup della moto, gestire la strategia di gara e interpretare i dati raccolti in pista.
+L'Ingegnere di Pista lavora a stretto contatto con il pilota e il team per definire il setup della vettura, gestire la strategia di gara e interpretare i dati raccolti in pista.
 
-È la figura che traduce le sensazioni del pilota e i numeri della telemetria in scelte tecniche concrete su sospensioni, elettronica e assetto.
+Traduce le sensazioni del pilota e i numeri della telemetria in scelte tecniche concrete su sospensioni, aerodinamica e assetto.
 
 ### Non è / È
 
@@ -110,7 +109,7 @@ L'Ingegnere di Pista traduce quei dati in decisioni di setup e strategia, coordi
 
 ### Highlight
 
-**Il ruolo di vertice nel rapporto tra dati, moto e pilota — centrale in ogni team MotoGP, Moto2, Moto3 e SBK.**
+**Il ruolo di vertice nel rapporto tra dati, vettura e pilota — centrale in ogni team F1, F2, F3, WEC e Formula E.**
 
 ---
 
@@ -121,11 +120,7 @@ L'Ingegnere di Pista traduce quei dati in decisioni di setup e strategia, coordi
 * Parli inglese (il Master si svolge interamente in inglese)
 * Hai basi consolidate di matematica e fisica
 * Vuoi un ruolo di coordinamento tecnico, non solo esecutivo
-* Sogni di lavorare nel motomondiale (MotoGP, Moto2, Moto3, SBK)
-
-### Nota Strategica
-
-> Se l'inglese fluente rappresenta un requisito obbligatorio, è consigliabile evidenziarlo già nell'headline o nella subheadline per favorire l'autoselezione dei candidati e ridurre lead non idonei provenienti dalle campagne ADV.
+* Sogni di lavorare in Formula 1 o nelle categorie endurance ed elettriche
 
 ---
 
@@ -133,11 +128,12 @@ L'Ingegnere di Pista traduce quei dati in decisioni di setup e strategia, coordi
 
 ### Vantaggi del Master
 
-* Sede Imola — lavori su moto guidate da piloti professionisti
-*  Docenti da team top — Ducati Corse, Yamaha Racing, KTM
-*  Blu Technical Academy Yamaha — opportunità esclusiva per i 2 migliori studenti
-*  280 ore di formazione in 10 weekend
+*  Sede Imola — lavori su vetture guidate da piloti professionisti
+*  Docenti provenienti da F1, F2, F3, WEC e GT3
+*  Giornata al simulatore di guida — strumento utilizzato realmente dai team in gara
+*  330 ore di formazione in 11 weekend
 *  Novembre 2026 → Marzo 2027
+*  Il percorso più completo e approfondito della gamma MTS
 
 ---
 
@@ -145,7 +141,7 @@ L'Ingegnere di Pista traduce quei dati in decisioni di setup e strategia, coordi
 
 ### Quota di Partecipazione
 
-**6.400€ + IVA**
+**6.700€ + IVA**
 
 Pagamento rateale disponibile.
 
@@ -157,7 +153,7 @@ Pagamento rateale disponibile.
 
 **Selezionato o Rimborsato**
 
-Se non superi la selezione, ricevi il rimborso completo dell'importo versato.
+Se non superi la selezione, ricevi il rimborso completo della rata versata.
 
 ---
 
