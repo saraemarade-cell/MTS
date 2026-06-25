@@ -263,6 +263,7 @@ ul, ol { list-style: none; }
   color: rgba(242,242,242,0.7);
 }
 .hero-flags li svg { width: 14px; height: 14px; flex-shrink: 0; }
+.hero-flags li strong { color: var(--smoke); font-weight: 600; }
 
 .hero-scroll-hint {
   position: absolute;
