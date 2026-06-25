@@ -592,6 +592,45 @@ ul, ol { list-style: none; }
    COS'È UN SOSPENSIONISTA
    ============================================= */
 
+/* Non è / È grid */
+.cose-role-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.cose-role-col {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+.cose-role-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  margin-bottom: 14px;
+}
+.cose-role-label-no { color: rgba(215,46,31,0.6); }
+.cose-role-label-yes { color: rgba(215,46,31,0.9); }
+.cose-role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cose-role-item-no,
+.cose-role-item-yes {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.cose-role-item-no { color: rgba(242,242,242,0.45); }
+.cose-role-item-yes { color: rgba(242,242,242,0.8); }
+.cose-role-item-no svg,
+.cose-role-item-yes svg { width: 14px; height: 14px; flex-shrink: 0; margin-top: 2px; }
+
 .cose-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1374,6 +1413,7 @@ ul, ol { list-style: none; }
   /* --- Cos'è --- */
   .visual-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 130px; }
   .cose-text p { font-size: 15px; }
+  .cose-role-grid { grid-template-columns: 1fr; }
 
   /* --- Competenze --- */
   .competenze-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
