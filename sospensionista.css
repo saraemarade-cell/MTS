@@ -601,7 +601,7 @@ ul, ol { list-style: none; }
 }
 .cose-sub-tag {
   display: block;
-  color: rgba(215,46,31,0.7);
+  color: var(--red);
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -652,7 +652,7 @@ ul, ol { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: stretch;
 }
 .cose-text p {
   font-size: 17px;
