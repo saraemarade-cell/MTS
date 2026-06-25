@@ -290,7 +290,9 @@ ul, ol { list-style: none; }
 .hero-proof-val em {
   color: var(--red);
   font-style: normal;
-  font-size: 0.62em;
+  font-size: 0.55em;
+  display: inline-block;
+  line-height: 1.4;
 }
 .hero-proof-desc {
   font-size: 11px;
