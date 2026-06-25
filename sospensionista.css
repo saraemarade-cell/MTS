@@ -299,6 +299,23 @@ ul, ol { list-style: none; }
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+.hero-proof-item--flag {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.hero-proof-item--flag svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.hero-proof-item--flag span {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(242,242,242,0.75);
+  text-transform: none;
+  letter-spacing: 0;
+}
 
 .hero-scroll-hint {
   position: absolute;
