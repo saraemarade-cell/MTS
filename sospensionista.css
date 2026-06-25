@@ -1156,6 +1156,7 @@ ul, ol { list-style: none; }
 .inv-amount { font-family: var(--font-headline); font-size: 48px; font-weight: 700; line-height: 1; color: var(--smoke); }
 .inv-vat { font-size: 14px; color: rgba(242,242,242,0.4); }
 .inv-desc { font-size: 14px; line-height: 1.65; color: rgba(242,242,242,0.6); margin-bottom: 24px; }
+.inv-desc strong, .inv-desc em { color: var(--smoke); font-style: normal; }
 .inv-separator { height: 1px; background: var(--dark-border); margin: 24px 0; }
 .inv-addon-row { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-size: 14px; color: rgba(242,242,242,0.7); }
 .inv-addon-price { font-family: var(--font-headline); font-size: 16px; color: var(--smoke); }
