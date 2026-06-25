@@ -1,4 +1,4 @@
-#You are Claude Code. Build a modern, responsive landing page for **MTS Motorsport Technical School**.
+#You are Claude Code. Build a modern, responsive landing page for **Diventa Sospensionista Moto Racing**.
 
 Follow the Visual Identity strictly:
 - **RED GOAL**: `#D72E1F`
@@ -13,219 +13,145 @@ Follow the Visual Identity strictly:
 
 Create a high-converting landing page for motorsport technical courses, with a strong above-the-fold hero, lead generation form, course cards, persuasive sections, testimonials, gallery area, and final CTA.
 
-## Page Structure
+# Page Structure
 
-### 1. Hero Section — Above the Fold
+## 1. Hero + Form
 
-Headline:
+### Headline
 
-> Trasforma la tua passione per il motorsport in una professione tecnica
+**Diventa Sospensionista Moto Racing**
 
-Subheadline:
+### Subheadline
 
-> Corsi specialistici nel settore racing con formazione pratica, docenti professionisti e accesso reale al mondo delle competizioni.
+Impara a preparare e settare le sospensioni delle moto da competizione e lavora nel Motorsport professionale.
 
-Fast bullet points:
-- Formazione pratica in officina e pista
-- Docenti provenienti dal motorsport professionale
-- Percorsi per moto, sospensioni, race engineering e meccanica racing
-- Supporto orientamento e inserimento professionale
+### Proof Bar
 
-Primary CTA:
+* Solo 100 professionisti al mondo — figura rarissima e richiesta
+* 55% pratica, 104 ore di corso
+* Esperienza in pista garantita con ARP Suspension per il miglior studente
 
-> Richiedi Informazioni
+### Form
 
-Secondary CTA:
+**Titolo:** Ricevi informazioni e candidati alle selezioni
 
-> Scopri i Corsi
+**Testo:**
+Ti contatteremo per spiegarti il percorso, le selezioni e verificare la tua candidatura.
 
-Include a lead form inside the hero.
+#### Campi
 
-#### Hero Form
+* Nome e cognome
+* Email
+* Telefono
+* Età
+* Qual è il tuo obiettivo?
+* Hai già esperienza di riparazione veicoli?
 
-Form title:
+  * Sì, esperienza meccanica solida
+  * Ho qualche base
+  * No, nessuna esperienza
 
-> Richiedi Informazioni sui Corsi
+> Campo filtro: requisito reale di accesso al corso.
 
-Fields:
-- Nome
-- Cognome
-- Email
-- Telefono
-- Corso di interesse
-- Messaggio facoltativo
-- Privacy checkbox: “Acconsento al trattamento dei dati personali”
+* Raccontaci il tuo interesse *(opzionale)*
 
-Submit button:
+#### CTA
 
-> Voglio Ricevere Informazioni
+**Candidati ora**
 
-Microcopy:
+**Microcopy:**
+Posti limitati — corso a numero chiuso, richiesta esperienza di riparazione veicoli.
 
-> Ti ricontatteremo per aiutarti a scegliere il percorso più adatto ai tuoi obiettivi.
+---
 
-### 2. Chi Siamo
+## 2. Partner
 
-Title:
+Loghi partner:
 
-> Formiamo i professionisti del motorsport
+* FMI
+* ARP Suspension
+* USAG
 
-Text:
+---
 
-> MTS Motorsport Technical School nasce per offrire una formazione tecnica specialistica orientata al lavoro reale nel mondo racing.  
-> I nostri corsi uniscono teoria, pratica e esperienza diretta per prepararti concretamente alle richieste del settore.
+## 3. Cos'è un Sospensionista
 
-Suggested visuals:
-- Workshop photo
-- Track photo
-- Students at work
-- Racing bike
-- Suspensions
-- Telemetry
+### Titolo
 
-### 3. I Corsi
+**Il tecnico che decide come una moto da corsa tocca la pista**
 
-Title:
+### Giornata tipo
 
-> Scegli il percorso più adatto a te
+Il Sospensionista revisiona, prepara e setta le sospensioni delle moto da competizione — in officina prima della gara e a bordo pista durante le sessioni, insieme a piloti e team.
 
-Create course cards:
+Ogni regolazione cambia il modo in cui la moto risponde in curva, in frenata e in accelerazione: una competenza tecnica che si stima abbiano solo 100 professionisti in tutto il mondo.
 
-#### Race Bike Engineer
-Diventa tecnico specializzato nella preparazione e gestione delle moto da competizione.
+### Non è / È
 
-CTA:
+#### ❌ Non è
 
-> Scopri di più
+* Un meccanico generico: è una specializzazione su un singolo componente critico
+* Sufficiente "saperci stare dietro alle moto": serve esperienza di riparazione concreta
 
-#### Corso Sospensionista Racing
-Specializzati nella taratura e preparazione sospensioni per il motorsport.
+#### ✅ È
 
-CTA:
+* Un tecnico specializzato che lavora sia in officina sia in gara
+* Una figura che può operare per più team contemporaneamente su mandato del costruttore
 
-> Scopri di più
+### Highlight
 
-#### Master Bike
-Un percorso avanzato tra teoria, pratica e lavoro reale in pista.
+**Una delle competenze più rare e ricercate nel Motorsport professionale.**
 
-CTA:
+---
 
-> Scopri di più
+## 4. A Chi Si Rivolge
 
-#### Formula Weekend
-Esperienza immersiva per vivere il lavoro di un team racing.
+### Fa per te se
 
-CTA:
+* Hai già esperienza di riparazione di veicoli *(requisito necessario per l'accesso)*
+* Vuoi specializzarti in un ruolo tecnico raro e ad alto valore
+* Vuoi lavorare sia in officina sia in pista con team di corse
+* Sogni una carriera nel motorsport motociclistico
 
-> Scopri di più
+### Disclaimer (opzionale)
 
-### 4. Leve Persuasive
+Se non hai ancora esperienza di riparazione, scopri prima il Corso Meccanico Moto Racing per costruire le basi necessarie e accedere successivamente alla specializzazione.
 
-Title:
+---
 
-> Perché scegliere MTS
+## 5. Perché MTS
 
-Create persuasive boxes:
+* Solo 100 sospensionisti al mondo — competenza rara e alta domanda
+* Docenti sospensionisti esperti dal mondo delle corse motociclistiche
+* 55% pratica su 104 ore totali, formula weekend
+* Esperienza in pista con ARP Suspension garantita per il miglior studente
 
-#### Formazione pratica reale
-Non solo teoria: lavori direttamente su moto e componenti racing.
+---
 
-#### Docenti professionisti
-Impara da chi lavora ogni giorno nel motorsport.
+## 6. Investimento
 
-#### Metodo orientato al lavoro
-Percorsi pensati per sviluppare competenze spendibili nel settore.
+* **2.900€ + IVA** — pagamento rateale disponibile
+* **MTS Card:** 69€ + IVA
 
-#### Esperienza in pista
-Vivi il motorsport dall’interno attraverso attività pratiche ed eventi.
+### Selezionato o Rimborsato
 
-#### Community e networking
-Entra in contatto con studenti, tecnici e professionisti del settore.
+Da verificare con MTS prima della pubblicazione, poiché non risulta esplicitato nella documentazione attuale del corso.
 
-### 5. A Chi Sono Rivolti i Corsi
+---
 
-Title:
+## 7. CTA Finale
 
-> I corsi sono pensati per:
+### Headline
 
-List:
-- Appassionati motorsport
-- Giovani che vogliono entrare nel settore
-- Meccanici che vogliono specializzarsi
-- Tecnici che cercano competenze avanzate
-- Chi vuole trasformare una passione in lavoro
+**Il Motorsport ha bisogno di specialisti delle sospensioni**
 
-### 6. Testimonianze
+### CTA
 
-Title:
+**Candidati ora**
 
-> Chi ha scelto MTS
+### Microcopy
 
-Testimonials:
-- “Il corso mi ha dato competenze pratiche che oggi utilizzo direttamente nel mio lavoro nel racing.”
-- “Esperienza concreta, docenti preparati e tanta pratica reale.”
-- “Finalmente una scuola che ti fa vivere davvero il motorsport.”
-
-### 7. Gallery / Visual Impact
-
-Title:
-
-> Vivi il motorsport da protagonista
-
-Create a gallery section with image placeholders for:
-- Paddock
-- Suspension work
-- Workshop
-- Track
-- Telemetry
-- Students in action
-- Racing details
-
-### 8. Final CTA
-
-Title:
-
-> Vuoi capire quale corso è più adatto a te?
-
-Text:
-
-> Parla con il nostro team e ricevi tutte le informazioni sui percorsi disponibili, modalità di iscrizione e opportunità professionali.
-
-CTA:
-
-> Richiedi Informazioni
-
-## Alternative Headlines
-
-Use these as optional variants for A/B testing:
-- Entra nel mondo del motorsport professionale
-- La scuola tecnica per chi vuole lavorare nel racing
-- Dalla passione per le moto alle competenze del motorsport
-- Specializzati nel motorsport con formazione pratica e professionale
-- Impara il motorsport direttamente sul campo
-
-## CTA Copy Alternatives
-
-Aspirational:
-- Inizia il tuo percorso nel motorsport
-- Richiedi informazioni sui corsi
-- Scopri il corso giusto per te
-
-Professional:
-- Diventa un professionista del racing
-- Costruisci il tuo futuro nel motorsport
-- Specializzati nel motorsport
-
-Practical:
-- Scopri la formazione pratica MTS
-- Entra nel mondo racing
-- Vivi il motorsport da dentro
-
-## Form Microcopy Alternatives
-
-- Ricevi informazioni personalizzate sui corsi e sulle modalità di iscrizione.
-- Ti aiutiamo a scegliere il percorso più adatto ai tuoi obiettivi.
-- Nessun impegno: riceverai una consulenza informativa sui corsi disponibili.
+Posti limitati — corso a numero chiuso, richiesta esperienza di riparazione veicoli.
 
 ## Design Direction
 
