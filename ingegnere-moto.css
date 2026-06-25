@@ -1548,3 +1548,23 @@ ul, ol { list-style: none; }
   .inv-amount { font-size: 30px; }
 }
 
+/* =============================================
+   INGEGNERE MOTO — page-specific overrides
+   ============================================= */
+
+/* Text-based stat (Nov→Mar) — smaller to avoid overflow */
+.struttura-stat-num--sm {
+  font-size: clamp(22px, 2.4vw, 34px);
+}
+
+/* Hero flags — 3 items need slightly more spacing */
+.hero-flags {
+  gap: 12px;
+  margin-top: 28px;
+}
+
+/* Investimento — 5 rate, tighten gap */
+.inv-rate-list { gap: 0; }
+.inv-rata { padding: 13px 0; }
+
+
