@@ -869,13 +869,16 @@ ul, ol { list-style: none; }
    ============================================= */
 
 @media (max-width: 1024px) {
+  .section { padding: 80px 0; }
+  .section-header { margin-bottom: 48px; }
+
+  /* Partners */
   .partners { padding: 44px 0; }
   .partners-header-wrap { margin-bottom: 28px; }
   .partner-logo { padding: 0 28px; height: 60px; }
   .partner-logo img { height: 28px; max-width: 110px; }
 
-  .section { padding: 80px 0; }
-  .section-header { margin-bottom: 48px; }
+  /* Hero */
   .hero { padding: 88px 0 56px; }
   .hero-container { grid-template-columns: 1fr; gap: 48px; }
   .hero-form-wrap { width: 100%; max-width: 580px; margin: 0 auto; }
@@ -884,75 +887,190 @@ ul, ol { list-style: none; }
   .hero-sub { font-size: 16px; }
   .desktop-br { display: none; }
 
+  /* Cos'è */
   .cose-grid { grid-template-columns: 1fr; gap: 48px; align-items: start; }
   .cose-visuals { flex: none; }
   .visual-grid { grid-template-rows: 200px 140px; min-height: unset; flex: none; }
   .cose-role-grid { grid-template-columns: 1fr; }
 
+  /* Target */
   .target-inner-mm { grid-template-columns: 1fr; gap: 40px; }
 
+  /* Struttura */
   .struttura-stats-row { flex-wrap: wrap; }
-  .struttura-stat { padding: 28px 24px; min-width: calc(50% - 0.5px); }
+  .struttura-stat { padding: 28px 24px; min-width: calc(50% - 1px); }
   .struttura-body-grid { grid-template-columns: 1fr; }
   .struttura-details-col { border-right: none; border-bottom: 1px solid var(--dark-border); padding: 28px 24px; }
   .struttura-incluso-col { padding: 28px 24px; }
 
+  /* Investimento */
   .investimento-grid { grid-template-columns: 1fr; max-width: 520px; }
+
+  /* Footer */
   .footer-container { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 
 /* =============================================
-   RESPONSIVE — 768px
+   RESPONSIVE — 768px  (mobile)
    ============================================= */
 
 @media (max-width: 768px) {
   .container { padding: 0 20px; }
+  .section { padding: 64px 0; }
+  .section-header { margin-bottom: 40px; }
+  .section-title { font-size: clamp(26px, 7vw, 36px); }
+
+  /* --- Navbar --- */
+  .logo-img { height: 40px; }
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(17,17,17,0.98);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     z-index: 99;
+    background: rgba(10,10,10,0.99);
+    flex-direction: column;
+    padding: 8px 0 16px;
+    gap: 0;
+    border-bottom: 2px solid var(--dark-border);
+    backdrop-filter: blur(20px);
   }
   .nav-links.open { display: flex; }
-  .nav-links li a { font-size: 18px; }
-  .perche-grid-mm { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-container { grid-template-columns: 1fr; gap: 32px; }
-  .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .final-actions { flex-direction: column; align-items: center; }
+  .nav-links li { width: 100%; border-bottom: 1px solid var(--dark-border); }
+  .nav-links li:last-child { border-bottom: none; }
+  .nav-links li a { display: block; padding: 14px 20px; font-size: 15px; letter-spacing: 0.06em; }
+  .nav-links li a.nav-cta {
+    display: block;
+    margin: 12px 20px 4px;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: var(--radius);
+    width: calc(100% - 40px);
+  }
+
+  /* --- Partners --- */
+  .partners { padding: 44px 0; }
+  .partners-header-wrap { margin-bottom: 32px; }
+  .partner-logo { padding: 0 28px; height: 60px; }
+  .partner-logo img { height: 28px; max-width: 110px; }
   .marquee-inner { animation-duration: 36s; }
+
+  /* --- Hero --- */
+  .hero { padding: 80px 0 48px; min-height: auto; }
+  .hero-bg { background-size: cover; background-position: center center; }
+  .hero-container { grid-template-columns: 1fr; gap: 40px; }
+  .hero-form-wrap { max-width: 100%; }
+  .hero-headline { font-size: clamp(34px, 9vw, 48px); line-height: 1.0; overflow-wrap: break-word; }
+  .hero-sub { font-size: 15px; margin-bottom: 20px; }
+  .hero-kpi-band { margin-top: 24px; }
+  .hero-kpi-item { padding: 14px 16px; }
+  .hero-kpi-val { font-size: clamp(22px, 5vw, 32px); }
+  .hero-flags { margin-top: 16px; }
+  .hero-scroll-hint { display: none; }
+
+  /* --- Form --- */
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .form-card { padding: 28px 24px; }
+  .form-title { font-size: 18px; }
+
+  /* --- Cos'è --- */
+  .visual-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 180px 130px; min-height: unset; flex: none; }
+  .cose-text p { font-size: 15px; }
+
+  /* --- Perché --- */
+  .perche-grid-mm { grid-template-columns: 1fr; gap: 12px; }
+  .perche-card-mm { padding: 24px 20px; }
+
+  /* --- Target --- */
+  .target-list-mm li { padding: 16px 0; gap: 16px; }
+  .target-body strong { font-size: 15px; }
+
+  /* --- Struttura --- */
+  .struttura-stat { min-width: calc(50% - 1px); }
+
+  /* --- Investimento --- */
+  .investimento-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .inv-card { padding: 28px 24px; }
+  .inv-amount { font-size: 40px; }
+
+  /* --- Final CTA --- */
+  .final-title { font-size: clamp(26px, 7vw, 40px); }
+  .final-sub { font-size: 15px; margin-bottom: 28px; }
+  .final-actions { flex-direction: column; align-items: center; gap: 12px; }
+  .final-actions .btn { width: auto; min-width: 260px; }
+
+  /* --- Footer --- */
+  .footer { padding-top: 56px; }
+  .footer-container { grid-template-columns: 1fr; gap: 32px; padding-bottom: 40px; }
+  .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 
 /* =============================================
-   RESPONSIVE — 480px
+   RESPONSIVE — 480px  (small mobile)
    ============================================= */
 
 @media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .section { padding: 52px 0; }
+  .section-header { margin-bottom: 32px; }
+  .section-title { font-size: clamp(22px, 7vw, 30px); }
+
+  /* --- Navbar --- */
+  .logo-img { height: 36px; }
+
+  /* --- Partners --- */
+  .partners { padding: 36px 0; }
   .partner-logo { padding: 0 20px; height: 52px; }
   .partner-logo img { height: 24px; max-width: 90px; }
-  .section { padding: 60px 0; }
-  .inv-rata { grid-template-columns: auto 1fr; }
-  .rata-when { display: none; }
-  .hero-headline { font-size: clamp(28px, 8vw, 40px); }
-  .inv-rata { grid-template-columns: auto 1fr; }
-  .rata-when { display: none; }
-  .btn-large { padding: 16px 32px; font-size: 14px; }
+
+  /* --- Hero --- */
+  .hero { padding: 72px 0 40px; }
+  .hero-headline { font-size: clamp(28px, 9vw, 38px); line-height: 1.0; overflow-wrap: break-word; }
+  .hero-sub { font-size: 14px; }
+
+  /* --- Form --- */
+  .form-card { padding: 24px 16px; }
+  .form-title { font-size: 16px; }
+
+  /* --- Cos'è / Visual grid --- */
+  .visual-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .visual-card { height: 200px; }
+  .visual-card.large { height: 240px; grid-column: 1; }
+
+  /* --- Struttura stats --- */
+  .struttura-stat { min-width: 100%; padding: 20px; }
+  .struttura-stat-sep { display: none; }
+  .struttura-stat-num { font-size: 36px; }
+
+  /* --- Investimento --- */
+  .inv-card { padding: 24px 20px; }
   .inv-amount { font-size: 36px; }
+  .inv-rata { grid-template-columns: auto 1fr; gap: 12px; }
+  .rata-when { display: none; }
+  .inv-garanzia-block { flex-direction: column; gap: 12px; padding: 20px; }
+
+  /* --- Buttons --- */
+  .btn-large { padding: 16px 28px; font-size: 14px; }
+  .final-actions .btn { width: 100%; }
+
+  /* --- Footer --- */
   .footer-container { grid-template-columns: 1fr; }
+  .footer-socials { gap: 10px; }
 }
 
 /* =============================================
-   RESPONSIVE — 360px
+   RESPONSIVE — 360px  (very small)
    ============================================= */
 
 @media (max-width: 360px) {
-  .hero-headline { font-size: 26px; }
-  .section-title { font-size: 26px; }
-  .form-card { padding: 24px 20px; }
+  .container { padding: 0 12px; }
+  .hero-headline { font-size: 24px; line-height: 1.0; }
+  .section-title { font-size: 19px; }
+  .form-card { padding: 20px 14px; }
+  .btn { font-size: 12px; padding: 12px 18px; }
+  .btn-large { padding: 14px 20px; font-size: 13px; }
+  .struttura-stat-num { font-size: 30px; }
+  .inv-amount { font-size: 30px; }
 }
