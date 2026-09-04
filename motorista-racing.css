@@ -321,6 +321,8 @@ ul, ol { list-style: none; }
 }
 .partner-logo-static:hover img { filter: opacity(1); transform: scale(1.06); }
 .partner-logo-static img.logo-lg { height: 110px; max-width: 320px; }
+.partner-logo-static img.logo-white-bg { filter: brightness(0) invert(1) opacity(0.85); mix-blend-mode: normal; }
+.partner-logo-static:hover img.logo-white-bg { filter: brightness(0) invert(1) opacity(1); }
 .partner-logo-text {
   font-family: var(--font-headline);
   font-size: 22px;
