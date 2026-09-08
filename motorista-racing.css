@@ -67,6 +67,8 @@ ul, ol { list-style: none; }
   word-break: break-word;
 }
 .btn-primary { background: var(--gradient); color: #fff; border-color: transparent; }
+.section-cta { margin-top: 36px; }
+.section-cta .btn { display: inline-block; }
 .btn-primary:hover {
   background: var(--gradient-hover);
   transform: translateY(-2px);
