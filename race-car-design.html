@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MTS × Tatuus — Race Car Design, Engineering and Development: 104 ore di formazione tecnica avanzata per comprendere come una racing car viene progettata, sviluppata, prodotta e assemblata. Giugno — luglio 2027.">
+  <title>Race Car Design, Engineering and Development — MTS × Tatuus</title>
+  <link rel="stylesheet" href="https://use.typekit.net/bty4mzk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/acx6tcp.css">
+  <link rel="stylesheet" href="race-car-design.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="Assetracecar/MTSLogoPayoffNegativocolori.webp" alt="MTS Motorsport Technical School" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#cos-e">Il percorso</a></li>
+        <li><a href="#target">A chi è rivolto</a></li>
+        <li><a href="#perche">MTS × Tatuus</a></li>
+        <li><a href="#programma">Programma</a></li>
+        <li><a href="#struttura">Struttura</a></li>
+        <li><a href="#investimento">Investimento</a></li>
+        <li><a href="#candidatura" class="nav-cta">Richiedi informazioni</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       01. HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('Assetracecar/foto/Hero-modelmaker.webp');">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="mono">// MTS × TATUUS — RACE CAR DESIGN, ENGINEERING AND DEVELOPMENT</span>
+        </div>
+        <h1 class="hero-headline">
+          Dalla progettazione alla <span class="text-red">vettura completa</span>
+        </h1>
+        <p class="hero-sub">
+          Un <strong>percorso avanzato di engineering</strong> per studenti, laureandi, laureati e giovani professionisti che vogliono comprendere come una racing car viene <strong>progettata, sviluppata, prodotta e assemblata</strong>, attraverso l'esperienza diretta di <strong>MTS e Tatuus</strong>.
+        </p>
+        <ul class="hero-flags">
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>104 ore</strong> di formazione tecnica</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <strong>MTS + Tatuus</strong>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <strong>Giugno — luglio 2027</strong>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <strong>Esame finale</strong>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <strong>Posti limitati</strong>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <strong>Colloquio di selezione online</strong>
+          </li>
+        </ul>
+        <div class="hero-scroll-hint">
+          <span class="scroll-line"></span>
+          <span class="mono">scroll</span>
+        </div>
+      </div>
+
+      <!-- FORM HERO -->
+      <div class="hero-form-wrap" id="candidatura">
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="mono form-label">// APPLICATION</span>
+            <h2 class="form-title">Inizia il tuo percorso nella progettazione e nello sviluppo di una racing car</h2>
+            <p class="form-intro">Richiedi maggiori informazioni sul corso <strong>Race Car Design, Engineering and Development</strong> e scopri come MTS e Tatuus possono aiutarti a sviluppare una visione completa dei processi di engineering e produzione che portano alla realizzazione di una vettura da competizione.</p>
+          </div>
+          <form id="leadForm" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome e Cognome *</label>
+              <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="mario@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="tel">Telefono *</label>
+                <input type="tel" id="tel" name="tel" placeholder="+39 000 0000000" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="formazione">Percorso di studi *</label>
+              <select id="formazione" name="formazione" required>
+                <option value="" disabled selected>Seleziona il tuo percorso</option>
+                <option value="studente-ingegneria">Studente di Ingegneria</option>
+                <option value="laureando">Laureando in Ingegneria</option>
+                <option value="laureato">Laureato in Ingegneria</option>
+                <option value="professionista">Giovane professionista del settore</option>
+                <option value="altro">Altro percorso tecnico</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="esperienza">Esperienze in ambito automotive o Motorsport *</label>
+              <select id="esperienza" name="esperienza" required>
+                <option value="" disabled selected>Seleziona un'opzione</option>
+                <option value="formula-student">Formula SAE / Formula Student</option>
+                <option value="automotive">Esperienze in ambito automotive</option>
+                <option value="motorsport">Esperienze in ambito Motorsport</option>
+                <option value="nessuna">Nessuna esperienza diretta</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="messaggio">Raccontaci il tuo interesse (opzionale)</label>
+              <textarea id="messaggio" name="messaggio" rows="3" placeholder="Perché vuoi approfondire la progettazione e lo sviluppo di una racing car..."></textarea>
+            </div>
+            <div class="form-check">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required>
+                <span class="checkmark"></span>
+                Acconsento al trattamento dei dati personali per ricevere informazioni sul corso *
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Richiedi informazioni</button>
+            <p class="form-microcopy">L'accesso al corso è subordinato a un <strong>colloquio di selezione online</strong>. Sono richiesti un background tecnico, una forte motivazione e un interesse concreto per l'Engineering nel Motorsport.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02. PARTNER
+  ============================================================ -->
+  <section class="partners" id="partner">
+    <div class="container partners-header-wrap">
+      <div class="partners-header">
+        <span class="mono section-tag">// UN PERCORSO MTS × TATUUS</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="partners-static-row">
+        <div class="partner-logo-static">
+          <img src="Assetracecar/MTSLogoPayoffNegativocolori.webp" alt="MTS Motorsport Technical School" class="logo-lg">
+        </div>
+        <span class="partners-cross mono" aria-hidden="true">×</span>
+        <div class="partner-logo-static">
+          <img src="Assetracecar/TatuusLogoColori.webp" alt="Tatuus — Race Car Manufacturer" class="logo-tatuus">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03. COS'È IL RACE CAR DESIGN, ENGINEERING AND DEVELOPMENT
+  ============================================================ -->
+  <section class="cos-e section section-dark" id="cos-e">
+    <div class="container">
+      <div class="cose-grid">
+        <div class="cose-text chi-siamo-text">
+          <div class="section-header left-align">
+            <span class="mono section-tag">// 01 — COS'È IL RACE CAR DESIGN, ENGINEERING AND DEVELOPMENT?</span>
+            <h2 class="section-title">Dal primo concept alla racing car completa</h2>
+          </div>
+          <div class="cose-giornata">
+            <span class="mono cose-sub-tag">// IL PERCORSO</span>
+            <p>Il <strong>Race Car Design, Engineering and Development</strong> è un percorso avanzato sviluppato da <strong>MTS</strong> in collaborazione con <strong>Tatuus</strong>, pensato per comprendere come nasce una racing car: dalla <strong>progettazione alla produzione, fino all&#39;assemblaggio finale</strong>.</p>
+            <p>Un approccio multidisciplinare che mette in relazione <strong>engineering, produzione e esigenze dei team</strong>.</p>
+          </div>
+
+          <div class="cose-learn">
+            <span class="mono cose-sub-tag">// COSA IMPARERAI</span>
+            <ul class="struttura-include-list cose-learn-list">
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come una racing car passa dal <strong>concept alla produzione</strong></span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come le decisioni ingegneristiche sono influenzate da <strong>performance, regolamenti, affidabilità, costi e producibilità</strong></span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come vengono scelti materiali e tecnologie produttive per applicazioni Motorsport</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come vengono progettati e prodotti i <strong>componenti in materiale composito</strong></span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come interagiscono aerodinamica, dinamica del veicolo, sospensioni e power unit</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come vengono integrati elettronica, sensori e sistemi di acquisizione dati</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come un <strong>modello CAD 3D diventa un componente pronto per la produzione</strong></span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come collaborano ufficio tecnico e reparto produttivo</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Come viene <strong>assemblata una racing car presso Tatuus</strong></span></li>
+            </ul>
+          </div>
+
+          <div class="cose-highlight">
+            <p class="cose-claim">Impara a pensare come un costruttore</p>
+          </div>
+
+          <div class="section-cta">
+            <a href="#candidatura" class="btn btn-primary">Richiedi informazioni</a>
+          </div>
+
+        </div>
+        <div class="cose-visuals chi-siamo-visuals">
+          <div class="visual-grid">
+            <div class="visual-card large" style="background-image: url('Assetracecar/foto/Grid-modelmaker.webp'); background-position: center center;"></div>
+            <div class="visual-card" style="background-image: url('Assetracecar/foto/Grid-ingegnereauto.webp'); background-position: center 30%;"></div>
+            <div class="visual-card" style="background-image: url('Assetracecar/foto/Grid-motorista.webp'); background-position: center center;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04. A CHI È RIVOLTO
+  ============================================================ -->
+  <section class="target section" id="target">
+    <div class="container">
+      <div class="target-inner-mm">
+        <div class="section-header left-align">
+          <span class="mono section-tag">// 02 — A CHI È RIVOLTO?</span>
+          <h2 class="section-title">Questo corso è pensato per te se:</h2>
+        </div>
+        <div class="target-content-mm">
+          <ul class="target-list-mm">
+            <li>
+              <span class="target-num mono">01</span>
+              <div class="target-body">
+                <strong>Vuoi lavorare nell'Engineering Motorsport</strong>
+                <span>Vuoi sviluppare le tue competenze tecniche e avvicinarti professionalmente al mondo della progettazione e dello sviluppo di vetture da competizione.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">02</span>
+              <div class="target-body">
+                <strong>Vuoi comprendere l'intero processo di sviluppo</strong>
+                <span>Vuoi andare oltre le singole discipline ingegneristiche e comprendere come una racing car evolve dal <strong>concept alla vettura completa</strong>.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">03</span>
+              <div class="target-body">
+                <strong>Hai una formazione ingegneristica</strong>
+                <span>Sei <strong>laureato o laureando in Ingegneria Meccanica</strong>, oppure possiedi solide conoscenze di dinamica del veicolo e aerodinamica.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">04</span>
+              <div class="target-body">
+                <strong>Hai già maturato esperienze progettuali</strong>
+                <span>Hai sviluppato esperienze in ambito <strong>automotive, Motorsport o Formula SAE / Formula Student</strong> e vuoi approfondire i processi di engineering utilizzati professionalmente.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="target-disclaimer">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M8 1v7M8 11v2" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="7" stroke="#D72E1F" stroke-width="1.5"/></svg>
+            <div class="target-disclaimer-body">
+              <span class="mono disclaimer-tag">// COLLOQUIO DI SELEZIONE ONLINE</span>
+              <p>L&#39;accesso al corso è subordinato a un <strong>colloquio di selezione online</strong>.</p>
+              <p>Durante il processo di selezione verranno valutati il percorso accademico, le conoscenze tecniche, le eventuali esperienze maturate in ambito automotive o Motorsport e la motivazione del candidato.</p>
+            </div>
+          </div>
+          <div class="section-cta">
+            <a href="#candidatura" class="btn btn-primary">Richiedi informazioni</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05. PERCHÉ MTS × TATUUS
+  ============================================================ -->
+  <section class="perche section section-dark" id="perche">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 03 — PERCHÉ MTS × TATUUS</span>
+        <h2 class="section-title">Una formazione tecnica direttamente collegata allo sviluppo di una racing car</h2>
+      </div>
+      <div class="perche-grid-mm grid-5">
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">01</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M20 9v11l7 4" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>104 ore di formazione tecnica</h3>
+          <p>Un percorso intensivo che affronta le principali aree di engineering, produzione e sviluppo coinvolte nella realizzazione di una racing car.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">02</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M11 26l6-11 5 7 3-4 4 8z" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Dall'engineering alla produzione</h3>
+          <p>Comprendi come le decisioni progettuali devono tradursi in componenti realmente <strong>producibili, assemblabili e utilizzabili in pista</strong>.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">03</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M10 29V17l10-6 10 6v12" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/><path d="M17 29v-7h6v7" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Entra nel mondo di un costruttore</h3>
+          <p>Una parte del percorso si svolgerà direttamente presso <strong>Tatuus</strong>, permettendoti di entrare in contatto con i processi di progettazione e produzione di una realtà specializzata nelle vetture da competizione.</p>
+        </div>
+        <div class="perche-card-mm featured">
+          <div class="pcard-num mono">04</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M13 23l4-4 4 3 6-7" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="23" r="2" stroke="#D72E1F" stroke-width="1.5"/><circle cx="27" cy="15" r="2" stroke="#D72E1F" stroke-width="1.5"/></svg>
+          </div>
+          <h3>16 ore dedicate all'assemblaggio</h3>
+          <p>Partecipa direttamente all&#39;<strong>assemblaggio di una racing car presso Tatuus</strong>, affrontando sospensioni, impianto frenante, power unit, trasmissione, impianti, cablaggio, carrozzeria e componenti aerodinamici.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">05</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><circle cx="14" cy="15" r="4" stroke="#D72E1F" stroke-width="1.5"/><circle cx="26" cy="15" r="4" stroke="#D72E1F" stroke-width="1.5"/><circle cx="20" cy="26" r="4" stroke="#D72E1F" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Un approccio multidisciplinare</h3>
+          <p>Osserva la racing car da prospettive differenti: <strong>progettista, ingegnere, produttore, tecnico e utilizzatore finale</strong>.</p>
+        </div>
+      </div>
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#candidatura" class="btn btn-primary">Richiedi informazioni</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06. PROGRAMMA DIDATTICO
+  ============================================================ -->
+  <section class="programma section" id="programma">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 04 — PROGRAMMA DIDATTICO</span>
+        <h2 class="section-title">Dal concept della vettura alla produzione e all'assemblaggio</h2>
+        <p class="section-intro">Il programma affronta le principali aree di <strong>engineering, produzione e sviluppo</strong> necessarie per trasformare un concept in una vettura da competizione.</p>
+      </div>
+      <div class="programma-grid">
+        <article class="programma-card">
+          <span class="programma-num mono">01</span>
+          <h3>Progettazione e sviluppo</h3>
+          <p>Dalla definizione dei requisiti alla progettazione, validazione e industrializzazione della racing car.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">02</span>
+          <h3>Materiali e produzione</h3>
+          <p>Materiali, lavorazioni CNC, saldatura, additive manufacturing e tecnologie produttive applicate al Motorsport.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">03</span>
+          <h3>Materiali compositi</h3>
+          <p>Dalla progettazione alla realizzazione di componenti in composito: fibre, resine, stampi e processi di laminazione.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">04</span>
+          <h3>Aerodinamica</h3>
+          <p>Fondamenti di aerodinamica, bilanciamento della vettura, CFD, galleria del vento e correlazione con la pista.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">05</span>
+          <h3>Elettronica Motorsport</h3>
+          <p>ECU, sensori, attuatori, CAN Bus, cablaggio e sistemi di acquisizione dati.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">06</span>
+          <h3>Power unit</h3>
+          <p>Motore, aspirazione e scarico, cambio, differenziale, sistemi di attuazione, lubrificazione e raffreddamento.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">07</span>
+          <h3>Dinamica del veicolo e sospensioni</h3>
+          <p>Pneumatici, bilanciamento, geometrie delle sospensioni, ammortizzatori e regolazioni di pista.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">08</span>
+          <h3>Assemblaggio vettura</h3>
+          <p>Dall'installazione delle sospensioni e dell'impianto frenante alla power unit, trasmissione, cablaggio, carrozzeria e componenti aerodinamici.</p>
+        </article>
+        <article class="programma-card">
+          <span class="programma-num mono">09</span>
+          <h3>CAD e progettazione per la produzione</h3>
+          <p>Dal modello CAD alla produzione: tavole tecniche, quotatura, tolleranze, trattamenti e controllo dimensionale.</p>
+        </article>
+      </div>
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#candidatura" class="btn btn-primary">Richiedi informazioni</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07. STRUTTURA DEL CORSO
+  ============================================================ -->
+  <section class="struttura section section-dark" id="struttura" style="position:relative;">
+    <div class="dopo-bg" style="background-image: url('Assetracecar/foto/Sfondo-modelmaker.webp'); opacity:0.12;"></div>
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="section-header">
+        <span class="mono section-tag">// 05 — STRUTTURA DEL CORSO</span>
+        <h2 class="section-title">Un percorso intensivo in formula weekend</h2>
+      </div>
+      <div class="struttura-card">
+        <div class="struttura-stats-row">
+          <div class="struttura-stat">
+            <span class="struttura-stat-num">104<em>h</em></span>
+            <span class="struttura-stat-lbl">Ore di formazione</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num stat-text">Giu — Lug <em>2027</em></span>
+            <span class="struttura-stat-lbl">Programma</span>
+            <span class="struttura-stat-desc">Formazione in formula weekend</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num stat-text">MTS <em>+</em> Tatuus</span>
+            <span class="struttura-stat-lbl">Sedi</span>
+            <span class="struttura-stat-desc">Formazione tecnica + assemblaggio vettura</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num stat-text">Posti limitati</span>
+            <span class="struttura-stat-lbl">Accesso</span>
+            <span class="struttura-stat-desc">Ammissione tramite selezione</span>
+          </div>
+        </div>
+        <div class="struttura-card-divider"></div>
+        <div class="struttura-body-grid">
+          <div class="struttura-details-col">
+            <span class="mono struttura-col-label">// DETTAGLI DEL CORSO</span>
+            <ul class="corso-dettagli">
+              <li><span class="detail-label mono">Formula</span><span class="detail-val">Weekend</span></li>
+              <li><span class="detail-label mono">Periodo</span><span class="detail-val">Giugno — luglio 2027</span></li>
+              <li><span class="detail-label mono">Durata</span><span class="detail-val">104 ore</span></li>
+              <li><span class="detail-label mono">Formazione</span><span class="detail-val">96 ore</span></li>
+              <li><span class="detail-label mono">Test finale</span><span class="detail-val">8 ore</span></li>
+              <li><span class="detail-label mono">Sedi</span><span class="detail-val">MTS + Tatuus</span></li>
+              <li><span class="detail-label mono">Ammissione</span><span class="detail-val">Colloquio di selezione online</span></li>
+              <li><span class="detail-label mono">Posti</span><span class="detail-val">Limitati</span></li>
+            </ul>
+          </div>
+          <div class="struttura-incluso-col">
+            <span class="mono struttura-col-label">// IL TEST FINALE</span>
+            <div class="struttura-note">
+              <p>Al termine del percorso sono previste <strong>8 ore dedicate al test finale</strong>, che completano le 96 ore di formazione tecnica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#candidatura" class="btn btn-primary">Richiedi informazioni</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       08. INVESTIMENTO
+  ============================================================ -->
+  <section class="investimento section" id="investimento">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 06 — INVESTIMENTO</span>
+        <h2 class="section-title">Investi nella tua carriera nel Motorsport Engineering</h2>
+      </div>
+      <div class="investimento-grid">
+        <div class="inv-card inv-main">
+          <div class="inv-label mono">Quota di partecipazione</div>
+          <div class="inv-price">
+            <span class="inv-amount">€3.250</span>
+            <span class="inv-vat">+ IVA</span>
+          </div>
+          <a href="#candidatura" class="btn btn-primary btn-full" style="margin-top:28px;">Richiedi informazioni</a>
+        </div>
+        <div class="inv-card inv-rate">
+          <div class="inv-label mono">Pagamento in 3 rate</div>
+          <div class="inv-rate-list">
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 1</span>
+              <span class="rata-amount">€900 <small>+ IVA + MTS Card</small></span>
+              <span class="rata-when">Al momento dell'iscrizione</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 2</span>
+              <span class="rata-amount">€1.200 <small>+ IVA</small></span>
+              <span class="rata-when">Entro 15 giorni dal superamento dello <strong>Step 1 della selezione</strong></span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 3</span>
+              <span class="rata-amount">€1.150 <small>+ IVA</small></span>
+              <span class="rata-when">Entro il <strong>18 giugno 2027</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       09. FINAL CTA
+  ============================================================ -->
+  <section class="final-cta section section-dark" id="final-cta">
+    <div class="container">
+      <div class="final-cta-inner">
+        <span class="mono section-tag">// 07 — APPLICATION</span>
+        <h2 class="final-title">Dall&#39;engineering<br>alla <span class="text-red">racing car</span><br><span class="text-red">completa</span></h2>
+        <p class="final-sub">Scopri come una racing car viene <strong>progettata, sviluppata, prodotta e assemblata</strong> e vivi questo processo attraverso l&#39;esperienza combinata di <strong>MTS e Tatuus</strong>.</p>
+        <div class="final-actions">
+          <a href="#candidatura" class="btn btn-primary btn-large">Richiedi informazioni</a>
+        </div>
+        <p class="final-recap mono">Race Car Design, Engineering and Development<br>104 ore · MTS + Tatuus · Giugno — luglio 2027</p>
+        <p class="final-micro mono">Posti limitati. Colloquio di selezione online obbligatorio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#"><img src="Assetracecar/MTSLogoPayoffNegativocolori.webp" alt="MTS Motorsport Technical School" class="footer-logo"></a>
+        <p>MTS Motorsport Technical School — formazione tecnica specialistica per il mondo del racing.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/MTSchoolMonza/?locale=it_IT" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/mts_motorsport_school/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://x.com/SchoolMts" target="_blank" rel="noopener" class="social-icon" aria-label="X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCwkB9NWdsuDq0dTjtxOMM5g" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/school/motorsport-technical-school/?originalSubdomain=it" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Corso</span>
+        <ul>
+          <li><a href="#cos-e">Il percorso</a></li>
+          <li><a href="#target">A chi è rivolto</a></li>
+          <li><a href="#perche">Perché MTS × Tatuus</a></li>
+          <li><a href="#programma">Programma didattico</a></li>
+          <li><a href="#struttura">Struttura del corso</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Informazioni</span>
+        <ul>
+          <li><a href="#investimento">Investimento</a></li>
+          <li><a href="#candidatura">Richiedi informazioni</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Contatti</span>
+        <ul>
+          <li><a href="mailto:info@mtschool.it">info@mtschool.it</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span class="mono footer-copy">©2025 MTS Motorsport Technical School &nbsp;|&nbsp; MTS srl | PIVA 03783800166</span>
+        <span class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="race-car-design.js"></script>
+</body>
+</html>

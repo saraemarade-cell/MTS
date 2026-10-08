@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MTS — Motorsport Engineering Bootcamp: 72 hours of technical training, 100% online. Build the foundations for a career in Race Engineering. July — September 2027.">
+  <title>Motorsport Engineering Bootcamp — MTS Motorsport Technical School</title>
+  <link rel="stylesheet" href="https://use.typekit.net/bty4mzk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/acx6tcp.css">
+  <link rel="stylesheet" href="motorsport-engineering-bootcamp.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="Assetbootcamp/MTSLogoPayoffNegativocolori.webp" alt="MTS Motorsport Technical School" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">The Bootcamp</a></li>
+        <li><a href="#target">Who is it for</a></li>
+        <li><a href="#why">Why MTS</a></li>
+        <li><a href="#content">Course content</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#investment">Investment</a></li>
+        <li><a href="#application" class="nav-cta">Request information</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       01. HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('Assetbootcamp/foto/Hero-team-car.webp');">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="mono">// MTS — MOTORSPORT ENGINEERING BOOTCAMP</span>
+        </div>
+        <h1 class="hero-headline">
+          Build the foundations for a career in <span class="text-red">Race Engineering</span>
+        </h1>
+        <p class="hero-sub">
+          An <strong>intensive online programme</strong> designed for students who want to develop a solid foundation in Race Engineering and take their first concrete step into the world of professional Motorsport.
+        </p>
+        <ul class="hero-flags">
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>72 hours</strong> of technical training - <strong>100% online</strong></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>July — September 2027</strong></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Final examination</strong> including written test + technical/aptitude interview</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Access to the selection process for the Master Race Car Engineer</strong> for students who pass the final exam</span>
+          </li>
+        </ul>
+        <div class="hero-scroll-hint">
+          <span class="scroll-line"></span>
+          <span class="mono">scroll</span>
+        </div>
+      </div>
+
+      <!-- FORM HERO -->
+      <div class="hero-form-wrap" id="application">
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="mono form-label">// APPLICATION</span>
+            <h2 class="form-title">Start your journey into Race Engineering</h2>
+            <p class="form-intro">Request more information about the Motorsport Engineering Bootcamp and discover how the programme can help you build the technical foundations for a career in Motorsport.</p>
+          </div>
+          <form id="leadForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full name *</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+39 000 0000000" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="country">Country *</label>
+              <input type="text" id="country" name="country" placeholder="Where are you based?" required>
+            </div>
+            <div class="form-group">
+              <label for="background">Your background *</label>
+              <select id="background" name="background" required>
+                <option value="" disabled selected>Select your background</option>
+                <option value="engineering-student">Engineering student</option>
+                <option value="engineering-graduate">Engineering graduate</option>
+                <option value="technical-studies">Other technical studies</option>
+                <option value="motorsport-experience">Experience in Motorsport or automotive</option>
+                <option value="enthusiast">Motorsport enthusiast</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your interest (optional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Why do you want to build a career in Race Engineering..."></textarea>
+            </div>
+            <div class="form-check">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required>
+                <span class="checkmark"></span>
+                I consent to the processing of my personal data in order to receive information about the course *
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Request information</button>
+            <p class="form-microcopy">No entrance selection is required. A strong passion for Motorsport and the willingness to engage with technical subjects are essential.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02. WHAT IS THE BOOTCAMP
+  ============================================================ -->
+  <section class="cos-e section section-dark" id="about">
+    <div class="container">
+      <div class="cose-grid">
+        <div class="cose-text chi-siamo-text">
+          <div class="section-header left-align">
+            <span class="mono section-tag">// 01 — WHAT IS THE MOTORSPORT ENGINEERING BOOTCAMP?</span>
+            <h2 class="section-title">From your passion for racing to a technical understanding of the race car</h2>
+          </div>
+          <div class="cose-giornata">
+            <span class="mono cose-sub-tag">// THE PROGRAMME</span>
+            <p>The <strong>Motorsport Engineering Bootcamp</strong> is an intensive online programme designed to build a solid foundation in <strong>Race Engineering</strong>.</p>
+            <p>You will explore <strong>vehicle dynamics, aerodynamics, data acquisition, race car setup and race weekend procedures</strong>, while learning the technical language and methodologies used in professional Motorsport.</p>
+          </div>
+
+          <div class="cose-learn">
+            <span class="mono cose-sub-tag">// WHAT YOU WILL LEARN</span>
+            <ul class="struttura-include-list cose-learn-list">
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How a professional <strong>Motorsport team</strong> operates</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The roles of the <strong>Race Engineer, Track Engineer and Data Engineer</strong></span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How to analyse race car behaviour</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How to read and interpret <strong>data acquisition</strong></span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How race car <strong>setup</strong> is developed</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How suspension, tyres, brakes, aerodynamics and differential systems interact</span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>How to prepare for and analyse a <strong>race weekend</strong></span></li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Which software and methodologies are used in professional Motorsport</span></li>
+            </ul>
+          </div>
+
+          <div class="cose-highlight">
+            <p class="cose-claim">Build the right technical foundation</p>
+            <p>The Bootcamp does not require an entrance selection.</p>
+            <p>However, students should be aware that the programme covers <strong>technical and specialised subjects</strong>. Before enrolling, you should therefore assess your own background and your readiness to engage with the technical content of the course.</p>
+          </div>
+
+          <div class="section-cta">
+            <a href="#application" class="btn btn-primary">Request information</a>
+          </div>
+
+        </div>
+        <div class="cose-visuals chi-siamo-visuals">
+          <div class="visual-grid">
+            <div class="visual-card large" style="background-image: url('Assetbootcamp/foto/Grid-cockpit.webp'); background-position: center center;"></div>
+            <div class="visual-card" style="background-image: url('Assetbootcamp/foto/Grid-data.webp'); background-position: center 30%;"></div>
+            <div class="visual-card" style="background-image: url('Assetbootcamp/foto/Grid-setup.webp'); background-position: center center;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03. WHO IS IT FOR
+  ============================================================ -->
+  <section class="target section" id="target">
+    <div class="container">
+      <div class="target-inner-mm">
+        <div class="section-header left-align">
+          <span class="mono section-tag">// 02 — WHO IS IT FOR?</span>
+          <h2 class="section-title">This programme is for you if:</h2>
+        </div>
+        <div class="target-content-mm">
+          <ul class="target-list-mm">
+            <li>
+              <span class="target-num mono">01</span>
+              <div class="target-body">
+                <strong>You want to enter Motorsport Engineering</strong>
+                <span>You want to turn your passion for racing into structured technical knowledge.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">02</span>
+              <div class="target-body">
+                <strong>You want to understand the Race Engineer's role</strong>
+                <span>You want to learn about the methodologies, tools and processes behind technical decisions made by professional racing teams.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">03</span>
+              <div class="target-body">
+                <strong>You want to build a technical foundation</strong>
+                <span>You want to develop your knowledge of vehicle dynamics, data acquisition, race car setup, aerodynamics, suspension systems and race car engineering.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">04</span>
+              <div class="target-body">
+                <strong>You want to continue your Motorsport education</strong>
+                <span>You are looking for a starting point to build a more advanced education and career path in race engineering.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="target-disclaimer">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M8 1v7M8 11v2" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="7" stroke="#D72E1F" stroke-width="1.5"/></svg>
+            <div class="target-disclaimer-body">
+              <span class="mono disclaimer-tag">// NO ENTRANCE SELECTION</span>
+              <p>There is no test or interview required to access the Bootcamp.</p>
+              <p>A <strong>strong passion for Motorsport</strong> and the willingness to work with technical subjects are the only requirements.</p>
+            </div>
+          </div>
+          <div class="section-cta">
+            <a href="#application" class="btn btn-primary">Request information</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04. WHY MTS
+  ============================================================ -->
+  <section class="perche section section-dark" id="why">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 03 — WHY MTS</span>
+        <h2 class="section-title">A technical approach built around Motorsport</h2>
+      </div>
+      <div class="perche-grid-mm grid-5">
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">01</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M20 9v11l7 4" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>72 hours of technical training</h3>
+          <p>An intensive programme covering the key foundations of Race Engineering.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">02</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M11 26l6-11 5 7 3-4 4 8z" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>From theory to methodology</h3>
+          <p>Go beyond technical concepts and learn the way professional Motorsport teams approach problems, analyse data and develop performance.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">03</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><rect x="10" y="12" width="20" height="14" rx="2" stroke="#D72E1F" stroke-width="1.5"/><path d="M16 30h8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><path d="M14 22l3-4 3 2 4-5" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Professional software and tools</h3>
+          <p>The programme introduces professional Motorsport data analysis software, including <strong>WinTAX, WinDarab and MoTeC</strong>.</p>
+        </div>
+        <div class="perche-card-mm">
+          <div class="pcard-num mono">04</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M12 16h16M12 21h11M12 26h8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Learn the language of Motorsport</h3>
+          <p>Develop an understanding of the technical terminology, procedures and methodologies used in professional racing environments.</p>
+        </div>
+        <div class="perche-card-mm featured">
+          <div class="pcard-num mono">05</div>
+          <div class="pcard-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#D72E1F" stroke-width="1.5"/><path d="M20 10l10 5-10 5-10-5 10-5z" stroke="#D72E1F" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 18v6c0 2 3 4 6 4s6-2 6-4v-6" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Developed by MTS</h3>
+          <p>The Bootcamp is developed by <strong>MTS — Motorsport Technical School</strong>, a specialist training institution focused on technical education for the Motorsport industry.</p>
+        </div>
+      </div>
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#application" class="btn btn-primary">Request information</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05. COURSE CONTENT
+  ============================================================ -->
+  <section class="programma section" id="content">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 04 — COURSE CONTENT</span>
+        <h2 class="section-title">From race car systems to data analysis</h2>
+        <p class="section-intro">The programme covers the key technical areas that an aspiring Race Engineer needs to understand when approaching professional Motorsport.</p>
+      </div>
+      <div class="content-grid">
+        <article class="content-card">
+          <span class="content-num mono">01</span>
+          <h3>Motorsport &amp; Race Engineering</h3>
+          <ul class="content-list">
+            <li>Introduction to Motorsport &amp; Race Engineering</li>
+            <li>The Racing World: Teams, Categories &amp; Professional Roles</li>
+            <li>The Role of the Track Engineer</li>
+            <li>The Role of the Data Engineer</li>
+            <li>Pre-Event Preparation &amp; Engineering Workflow</li>
+            <li>Post-Event Analysis &amp; Reporting</li>
+          </ul>
+        </article>
+        <article class="content-card">
+          <span class="content-num mono">02</span>
+          <h3>Race Car Systems</h3>
+          <ul class="content-list">
+            <li>Race Car Suspension Systems</li>
+            <li>Differentials: Principles &amp; Setup</li>
+            <li>Gearbox Systems &amp; Performance</li>
+            <li>Braking Systems &amp; Optimization</li>
+            <li>Race Tyres: Management, Measurement &amp; Performance</li>
+            <li>Materials &amp; Metallurgy for Motorsport</li>
+            <li>Motorsport Safety Equipment</li>
+          </ul>
+        </article>
+        <article class="content-card">
+          <span class="content-num mono">03</span>
+          <h3>Vehicle Dynamics</h3>
+          <ul class="content-list">
+            <li>Race Car Setup Fundamentals</li>
+            <li>Vertical Vehicle Dynamics: Ride &amp; Suspension Behaviour</li>
+            <li>Longitudinal Vehicle Dynamics: Acceleration &amp; Braking</li>
+            <li>Lateral Vehicle Dynamics: Cornering &amp; Handling</li>
+            <li>Setup Equipment &amp; Flat Patch Procedures</li>
+          </ul>
+        </article>
+        <article class="content-card">
+          <span class="content-num mono">04</span>
+          <h3>Aerodynamics &amp; Technical Knowledge</h3>
+          <ul class="content-list">
+            <li>Aerodynamics Fundamentals</li>
+            <li>Race Car Technical Manual</li>
+            <li>Technical Regulations</li>
+            <li>Car Mileage &amp; Component Tracking</li>
+          </ul>
+        </article>
+        <article class="content-card">
+          <span class="content-num mono">05</span>
+          <h3>Data Acquisition &amp; Analysis</h3>
+          <ul class="content-list">
+            <li>Introduction to Motorsport Data Acquisition</li>
+            <li>Engine Data Analysis Fundamentals</li>
+            <li>Race Car Data Analysis &amp; Interpretation</li>
+            <li>Professional Motorsport Software: WinTAX, WinDarab &amp; MoTeC</li>
+          </ul>
+        </article>
+      </div>
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#application" class="btn btn-primary">Request information</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06. COURSE STRUCTURE
+  ============================================================ -->
+  <section class="struttura section section-dark" id="structure" style="position:relative;">
+    <div class="dopo-bg" style="background-image: url('Assetbootcamp/foto/Background-briefing.webp'); opacity:0.12;"></div>
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="section-header">
+        <span class="mono section-tag">// 05 — COURSE STRUCTURE</span>
+        <h2 class="section-title">An intensive, fully online programme</h2>
+      </div>
+      <div class="struttura-card">
+        <div class="struttura-stats-row">
+          <div class="struttura-stat">
+            <span class="struttura-stat-num">72<em>h</em></span>
+            <span class="struttura-stat-lbl">Hours of training</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num stat-text">Jul — Sep <em>2027</em></span>
+            <span class="struttura-stat-lbl">Programme</span>
+            <span class="struttura-stat-desc">Intensive online training</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num">1<em>—</em>3</span>
+            <span class="struttura-stat-lbl">Days / week</span>
+            <span class="struttura-stat-desc">Classes per week</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num stat-text">Online</span>
+            <span class="struttura-stat-lbl">Format</span>
+            <span class="struttura-stat-desc">100% online</span>
+          </div>
+        </div>
+        <div class="struttura-card-divider"></div>
+        <div class="struttura-body-grid">
+          <div class="struttura-details-col">
+            <span class="mono struttura-col-label">// COURSE DETAILS</span>
+            <ul class="corso-dettagli">
+              <li><span class="detail-label mono">Format</span><span class="detail-val">Online</span></li>
+              <li><span class="detail-label mono">Period</span><span class="detail-val">July — September 2027</span></li>
+              <li><span class="detail-label mono">Duration</span><span class="detail-val">72 hours</span></li>
+              <li><span class="detail-label mono">Schedule</span><span class="detail-val">1–3 days per week</span></li>
+              <li><span class="detail-label mono">Admission</span><span class="detail-val">No entrance selection</span></li>
+              <li><span class="detail-label mono">Final exam</span><span class="detail-val">Written test + technical/aptitude interview</span></li>
+            </ul>
+          </div>
+          <div class="struttura-incluso-col">
+            <span class="mono struttura-col-label">// THE FINAL EXAM</span>
+            <div class="struttura-note">
+              <p>At the end of the Bootcamp, students will take a <strong>final examination</strong> consisting of:</p>
+            </div>
+            <ul class="exam-list">
+              <li>
+                <span class="exam-num mono">01 — Written test</span>
+                <span class="exam-desc">An assessment of the technical knowledge developed throughout the programme.</span>
+              </li>
+              <li>
+                <span class="exam-num mono">02 — Technical &amp; aptitude interview</span>
+                <span class="exam-desc">An interview designed to assess technical understanding and aptitude for further education in Motorsport Engineering.</span>
+              </li>
+            </ul>
+            <div class="struttura-note exam-outcome">
+              <p>Students who <strong>successfully pass the final examination</strong> will be eligible to access the <strong>selection process for the Master Race Car Engineer</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#application" class="btn btn-primary">Request information</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07. INVESTMENT
+  ============================================================ -->
+  <section class="investimento section" id="investment">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 06 — INVESTMENT</span>
+        <h2 class="section-title">Invest in your Motorsport career</h2>
+      </div>
+      <div class="investimento-grid">
+        <div class="inv-card inv-main">
+          <div class="inv-label mono">Course fee</div>
+          <div class="inv-price">
+            <span class="inv-amount">€4,000</span>
+          </div>
+          <p class="inv-vat-note"><strong>+22% VAT, if applicable</strong></p>
+          <a href="#application" class="btn btn-primary btn-full" style="margin-top:28px;">Request information</a>
+        </div>
+        <div class="inv-card inv-rate">
+          <div class="inv-label mono">Payment in 3 instalments</div>
+          <div class="inv-rate-list">
+            <div class="inv-rata">
+              <span class="rata-num mono">INSTALMENT 1</span>
+              <span class="rata-amount">€700</span>
+              <span class="rata-when">Due upon enrolment</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">INSTALMENT 2</span>
+              <span class="rata-amount">€1,600 <small>+ VAT, if applicable</small></span>
+              <span class="rata-when">Due <strong>4 June 2027</strong></span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">INSTALMENT 3</span>
+              <span class="rata-amount">€1,700 <small>+ VAT, if applicable</small></span>
+              <span class="rata-when">Due <strong>2 August 2027</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       08. FINAL CTA
+  ============================================================ -->
+  <section class="final-cta section section-dark" id="final-cta">
+    <div class="container">
+      <div class="final-cta-inner">
+        <span class="mono section-tag">// 07 — APPLICATION</span>
+        <h2 class="final-title">Your Motorsport Engineering<br>journey <span class="text-red">starts here</span></h2>
+        <p class="final-sub">Build your understanding of race engineering, learn how to analyse a race car through data and vehicle dynamics, and discover the methodologies used by professional Motorsport teams.</p>
+        <div class="final-actions">
+          <a href="#application" class="btn btn-primary btn-large">Request information</a>
+        </div>
+        <p class="final-recap mono">Motorsport Engineering Bootcamp<br>72 hours · Online · July — September 2027</p>
+        <p class="final-micro mono">No entrance selection required.<br>A strong passion for Motorsport and the willingness to engage with technical subjects are essential.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#"><img src="Assetbootcamp/MTSLogoPayoffNegativocolori.webp" alt="MTS Motorsport Technical School" class="footer-logo"></a>
+        <p>MTS Motorsport Technical School — specialist technical training for the racing world.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/MTSchoolMonza/?locale=it_IT" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/mts_motorsport_school/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://x.com/SchoolMts" target="_blank" rel="noopener" class="social-icon" aria-label="X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCwkB9NWdsuDq0dTjtxOMM5g" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/school/motorsport-technical-school/?originalSubdomain=it" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Course</span>
+        <ul>
+          <li><a href="#about">The Bootcamp</a></li>
+          <li><a href="#target">Who is it for</a></li>
+          <li><a href="#why">Why MTS</a></li>
+          <li><a href="#content">Course content</a></li>
+          <li><a href="#structure">Course structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Information</span>
+        <ul>
+          <li><a href="#investment">Investment</a></li>
+          <li><a href="#application">Request information</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Contact</span>
+        <ul>
+          <li><a href="mailto:info@mtschool.it">info@mtschool.it</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span class="mono footer-copy">©2025 MTS Motorsport Technical School &nbsp;|&nbsp; MTS srl | PIVA 03783800166</span>
+        <span class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="motorsport-engineering-bootcamp.js"></script>
+</body>
+</html>
