@@ -1105,6 +1105,8 @@ ul, ol { list-style: none; }
 /* --- Candidatura finale: passi + chiusura --- */
 .cand-steps { max-width: 720px; margin: 0 auto 56px; text-align: left; }
 .cand-steps .target-list-mm { margin-bottom: 0; }
+.final-title .text-red { white-space: nowrap; }
+.final-sub { text-wrap: pretty; }
 .final-closing {
   font-family: var(--font-headline);
   font-size: clamp(18px, 2.4vw, 24px);
@@ -1131,6 +1133,7 @@ ul, ol { list-style: none; }
   .section-intro { font-size: 14px; }
   .rimborso-card { padding: 24px 20px; }
   .cand-steps { margin-bottom: 40px; }
+  .form-card { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(25,25,25,0.97); }
 }
 @media (max-width: 600px) {
   .perche-grid-mm.grid-7 { grid-template-columns: 1fr; gap: 12px; }
