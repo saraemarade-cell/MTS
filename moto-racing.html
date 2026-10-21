@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MTS — Meccanico Moto Racing: corso professionale in formula weekend a MTS Lesmo. Sviluppa le competenze tecniche per lavorare sulle moto da competizione e costruisci il tuo futuro nel Motorsport, fino alla MotoGP.">
+  <title>Meccanico Moto Racing — MTS Motorsport Technical School</title>
+  <link rel="stylesheet" href="https://use.typekit.net/bty4mzk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/acx6tcp.css">
+  <link rel="stylesheet" href="moto-racing.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="Assetmotoracing/MTSLogoPayoffNegativocolori.webp" alt="MTS Motorsport Technical School" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#cos-e">Il Ruolo</a></li>
+        <li><a href="#target">A chi si rivolge</a></li>
+        <li><a href="#perche">Perché MTS</a></li>
+        <li><a href="#struttura">Struttura</a></li>
+        <li><a href="#investimento">Investimento</a></li>
+        <li><a href="#candidatura" class="nav-cta">Candidati ora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       01. HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('Assetmotoracing/foto/Heromotoracing.webp');">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="container hero-container">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="mono">// MTS — MECCANICO MOTO RACING</span>
+        </div>
+        <h1 class="hero-headline">
+          Diventa <span class="text-red">Meccanico Moto Racing</span>
+        </h1>
+        <p class="hero-sub">
+          Corso professionale in formula weekend a MTS Lesmo: sviluppa le competenze tecniche per lavorare sulle <strong>moto da competizione</strong> e costruire il tuo futuro nel Motorsport, fino alla MotoGP.
+        </p>
+        <ul class="hero-flags">
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>200 ore</strong> di formazione</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>65% pratica</strong> su moto racing</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>8 weekend</strong> · Ven–Dom</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>1 giornata in pista</strong></li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Opportunità di training on the job</strong> presso team professionistici</li>
+          <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Accesso alla Blu Technical Academy Yamaha</strong> per i 4 migliori studenti</li>
+        </ul>
+        <div class="hero-scroll-hint">
+          <span class="scroll-line"></span>
+          <span class="mono">scroll</span>
+        </div>
+      </div>
+
+      <!-- FORM HERO -->
+      <div class="hero-form-wrap" id="candidatura">
+        <div class="form-card">
+          <div class="form-card-header">
+            <span class="mono form-label">// CANDIDATURA</span>
+            <h2 class="form-title">Ricevi informazioni<br>e candidati alle selezioni</h2>
+            <p class="form-intro">Scopri il percorso formativo, le modalità di selezione e come accedere al corso.</p>
+          </div>
+          <form id="leadForm" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome e Cognome *</label>
+              <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="mario@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="tel">Telefono *</label>
+                <input type="tel" id="tel" name="tel" placeholder="+39 000 0000000" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="messaggio">Raccontaci il tuo interesse (opzionale)</label>
+              <textarea id="messaggio" name="messaggio" rows="3" placeholder="Perché vuoi diventare Meccanico Moto Racing..."></textarea>
+            </div>
+            <div class="form-check">
+              <label class="checkbox-label">
+                <input type="checkbox" name="privacy" required>
+                <span class="checkmark"></span>
+                Acconsento al trattamento dei dati personali per ricevere informazioni sul corso *
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Candidati ora</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02. PARTNER
+  ============================================================ -->
+  <section class="partners" id="partner">
+    <div class="container partners-header-wrap">
+      <div class="partners-header">
+        <span class="mono section-tag">// I NOSTRI PARTNER</span>
+      </div>
+    </div>
+    <div class="marquee-track" aria-label="Partner MTS">
+      <div class="marquee-inner">
+        <!-- set A -->
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/brembo.svg" alt="Brembo" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/andreani.svg" alt="Andreani" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/marelli.svg" alt="Marelli" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/telwin.svg" alt="Telwin" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/arpsuspension.svg" alt="ARP Suspension" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/hrs.svg" alt="HRS" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/mechanix.svg" alt="Mechanix" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/fmi.svg" alt="FMI – Federazione Motociclistica Italiana" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/confartigianatomotori.svg" alt="Confartigianato Motori" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/autotecnica.svg" alt="Autotecnica" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/crg.svg" alt="CRG" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/motorquality.svg" alt="Motorquality" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/gieffe.svg" alt="Gieffe" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/aessecom.svg" alt="Aessecom" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/exan.svg" alt="Exan" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/dal.svg" alt="DAL" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/mc.svg" alt="MC" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/museofratellicozzi.svg" alt="Museo Fratelli Cozzi" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/partner1.svg" alt="Partner" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/partner2.svg" alt="Partner" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/members.svg" alt="Partner" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/partner3.svg" alt="Partner" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/partner4.svg" alt="Partner" loading="lazy"></div>
+        <div class="partner-logo"><img src="Assetmotoracing/loghipartner/dinopaoli.svg" alt="Dino Paoli" loading="lazy"></div>
+        <!-- set B (duplicato per loop continuo) -->
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/brembo.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/andreani.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/marelli.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/telwin.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/arpsuspension.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/hrs.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/mechanix.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/fmi.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/confartigianatomotori.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/autotecnica.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/crg.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/motorquality.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/gieffe.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/aessecom.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/exan.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/dal.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/mc.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/museofratellicozzi.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/partner1.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/partner2.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/members.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/partner3.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/partner4.svg" alt="" loading="lazy"></div>
+        <div class="partner-logo" aria-hidden="true"><img src="Assetmotoracing/loghipartner/dinopaoli.svg" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03. COS'È UN MECCANICO MOTO RACING
+  ============================================================ -->
+  <section class="cos-e section section-dark" id="cos-e">
+    <div class="container">
+      <div class="cose-grid">
+        <div class="cose-text chi-siamo-text">
+          <div class="section-header left-align">
+            <span class="mono section-tag">// 01 — COS'È UN MECCANICO MOTO RACING</span>
+            <h2 class="section-title">Il professionista che prepara le moto da competizione</h2>
+          </div>
+          <div class="cose-giornata">
+            <p>Il Meccanico Moto Racing si occupa della preparazione, manutenzione e messa a punto delle moto da corsa.</p>
+            <p>Durante il corso imparerai a lavorare su motore, sospensioni, ciclistica, trasmissione ed elettronica, sviluppando le competenze tecniche necessarie per operare in un team racing.</p>
+          </div>
+
+          <div class="cose-role-grid">
+            <div class="cose-role-col">
+              <span class="mono cose-role-label cose-role-label-no">NON È</span>
+              <ul class="cose-role-list">
+                <li class="cose-role-item-no">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  <span><strong>Un meccanico generico</strong> — lavora su componenti e sistemi specifici delle moto da competizione.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cose-role-col">
+              <span class="mono cose-role-label cose-role-label-yes">È</span>
+              <ul class="cose-role-list">
+                <li class="cose-role-item-yes">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span><strong>Uno specialista delle moto racing</strong></span>
+                </li>
+                <li class="cose-role-item-yes">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span><strong>Una figura tecnica al servizio del pilota e del team</strong></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cose-highlight">
+            <h3 class="cose-highlight-title">Una formazione orientata alla pista</h3>
+            <p>Teoria, pratica e una giornata in circuito per applicare le competenze acquisite e conoscere il lavoro di un team.</p>
+          </div>
+
+          <div class="section-cta">
+            <a href="#candidatura" class="btn btn-primary">Candidati ora</a>
+          </div>
+
+        </div>
+        <div class="cose-visuals chi-siamo-visuals">
+          <div class="visual-grid">
+            <div class="visual-card large" style="background-image: url('Assetmotoracing/foto/Gridmotoracing1.webp'); background-position: center center;"></div>
+            <div class="visual-card" style="background-image: url('Assetmotoracing/foto/Gridmotoracing2.webp'); background-position: center center;"></div>
+            <div class="visual-card" style="background-image: url('Assetmotoracing/foto/Gridmotoracing3.webp'); background-position: center center;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04. A CHI SI RIVOLGE
+  ============================================================ -->
+  <section class="target section" id="target">
+    <div class="container">
+      <div class="target-inner-mm">
+        <div class="section-header left-align">
+          <span class="mono section-tag">// 02 — A CHI SI RIVOLGE</span>
+          <h2 class="section-title">Fa per te se:</h2>
+        </div>
+        <div class="target-content-mm">
+          <ul class="target-list-mm">
+            <li>
+              <span class="target-num mono">01</span>
+              <div class="target-body">
+                <strong>Ami il mondo delle due ruote</strong>
+                <span>Vuoi trasformare la tua passione per le moto in una competenza professionale.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">02</span>
+              <div class="target-body">
+                <strong>Hai basi di meccanica</strong>
+                <span>Possiedi già nozioni di riparazione dei veicoli e vuoi specializzarti nel racing.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">03</span>
+              <div class="target-body">
+                <strong>Vuoi imparare facendo</strong>
+                <span>Vuoi lavorare direttamente su motori, sospensioni, ciclistica ed elettronica.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">04</span>
+              <div class="target-body">
+                <strong>Vuoi entrare nel Motorsport</strong>
+                <span>Il tuo obiettivo è lavorare con team professionistici e avvicinarti al mondo delle competizioni.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="target-disclaimer">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M8 1v7M8 11v2" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="7" stroke="#D72E1F" stroke-width="1.5"/></svg>
+            <p>Il corso è a numero chiuso. L'accesso prevede un colloquio attitudinale online e una selezione in presenza presso MTS Lesmo.</p>
+          </div>
+          <div class="section-cta">
+            <a href="#candidatura" class="btn btn-primary">Candidati ora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05. PERCHÉ MTS
+  ============================================================ -->
+  <section class="perche section section-dark" id="perche">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 03 — PERCHÉ MTS</span>
+        <h2 class="section-title">Perché questo corso è diverso</h2>
+      </div>
+      <div class="perche-grid-mm grid-7">
+        <div class="perche-card-mm"><div class="pcard-num mono">01</div><h3>65% di pratica</h3></div>
+        <div class="perche-card-mm"><div class="pcard-num mono">02</div><h3>200 ore · 8 weekend</h3></div>
+        <div class="perche-card-mm"><div class="pcard-num mono">03</div><h3>Meccanica, ciclistica ed elettronica racing</h3></div>
+        <div class="perche-card-mm"><div class="pcard-num mono">04</div><h3>Una giornata in pista</h3></div>
+        <div class="perche-card-mm"><div class="pcard-num mono">05</div><h3>Docenti con esperienza nei top team</h3></div>
+        <div class="perche-card-mm"><div class="pcard-num mono">06</div><h3>Training on the job presso team professionistici</h3></div>
+        <div class="perche-card-mm featured"><div class="pcard-num mono">07</div><h3>Opportunità Blu Technical Academy Yamaha per i 4 migliori studenti</h3></div>
+      </div>
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#candidatura" class="btn btn-primary">Candidati ora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06. STRUTTURA DEL CORSO
+  ============================================================ -->
+  <section class="struttura section" id="struttura" style="position:relative;">
+    <div class="dopo-bg" style="background-image: url('Assetmotoracing/foto/Sfondomotoracing.webp'); opacity:0.12;"></div>
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="section-header">
+        <span class="mono section-tag">// 04 — STRUTTURA DEL CORSO</span>
+        <h2 class="section-title">Dalla meccanica alla pista</h2>
+        <p class="section-intro">Un percorso intensivo che combina teoria ed esercitazioni pratiche per imparare a preparare e mettere a punto una moto da competizione.</p>
+      </div>
+      <h3 class="struttura-subhead" style="text-align:center;">Formula weekend</h3>
+      <div class="struttura-card">
+        <div class="struttura-stats-row">
+          <div class="struttura-stat">
+            <span class="struttura-stat-num">200<em>h</em></span>
+            <span class="struttura-stat-lbl">Ore di corso</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num">8<em>WE</em></span>
+            <span class="struttura-stat-lbl">Weekend · Ven–Dom</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num">65<em>%</em></span>
+            <span class="struttura-stat-lbl">Pratica</span>
+          </div>
+          <div class="struttura-stat-sep"></div>
+          <div class="struttura-stat">
+            <span class="struttura-stat-num">35<em>%</em></span>
+            <span class="struttura-stat-lbl">Teoria</span>
+          </div>
+        </div>
+        <div class="struttura-card-divider"></div>
+        <div class="struttura-body-grid">
+          <div class="struttura-details-col">
+            <span class="mono struttura-col-label">DETTAGLI</span>
+            <ul class="corso-dettagli">
+              <li><span class="detail-label mono">Sede</span><span class="detail-val">MTS Lesmo</span></li>
+              <li><span class="detail-label mono">Inizio</span><span class="detail-val">11 dicembre 2026</span></li>
+              <li><span class="detail-label mono">Fine prevista</span><span class="detail-val">da confermare</span></li>
+              <li><span class="detail-label mono">Formula</span><span class="detail-val">Weekend · Ven–Dom</span></li>
+              <li><span class="detail-label mono">Durata</span><span class="detail-val">200 ore</span></li>
+              <li><span class="detail-label mono">Accesso</span><span class="detail-val">Numero chiuso · selezione in due fasi</span></li>
+            </ul>
+          </div>
+          <div class="struttura-incluso-col">
+            <span class="mono struttura-col-label">COSA È INCLUSO</span>
+            <ul class="struttura-include-list">
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Docenti professionisti del Motorsport</li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Materiale didattico</li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Tuta e scarpe da meccanico</li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Assicurazione</li>
+              <li><svg viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#D72E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Accesso all'area riservata MTS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="programma-block">
+        <h3 class="struttura-subhead">Il programma didattico</h3>
+        <div class="content-grid">
+          <article class="content-card">
+            <span class="content-num mono">01</span>
+            <h3>Ciclistica e assetto</h3>
+            <ul class="content-list">
+              <li>Setup della moto e scheda di setting</li>
+              <li>Pneumatici e rapporti del cambio</li>
+              <li>Quote geometriche e gestione delle anomalie</li>
+              <li>Sospensioni, revisione, SAG e regolazioni</li>
+              <li>Trasmissione e manutenzione della catena</li>
+            </ul>
+          </article>
+          <article class="content-card">
+            <span class="content-num mono">02</span>
+            <h3>Meccanica e motore</h3>
+            <ul class="content-list">
+              <li>Impianto frenante</li>
+              <li>Saldatura e smerigliatura valvole</li>
+              <li>Riassemblaggio della testa motore e messa in fase</li>
+              <li>Motore 4 tempi: funzionamento e smontaggio</li>
+              <li>Pulizia del motore e prove al banco Dyno</li>
+            </ul>
+          </article>
+          <article class="content-card">
+            <span class="content-num mono">03</span>
+            <h3>Elettronica e attività in gara</h3>
+            <ul class="content-list">
+              <li>Cablaggi ed elettronica applicata</li>
+              <li>Traction Control e Anti Wheelie</li>
+              <li>Interventi rapidi e riparazioni dopo un crash</li>
+              <li>Allestimento del box</li>
+            </ul>
+          </article>
+          <article class="content-card">
+            <span class="content-num mono">04</span>
+            <h3>Esperienza in pista</h3>
+            <ul class="content-list">
+              <li>Una giornata in circuito</li>
+            </ul>
+          </article>
+        </div>
+        <p class="programma-note">Il programma didattico può subire variazioni.</p>
+      </div>
+
+      <div class="section-cta" style="text-align:center; margin-top:40px;">
+        <a href="#candidatura" class="btn btn-primary">Candidati ora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07. INVESTIMENTO
+  ============================================================ -->
+  <section class="investimento section section-dark" id="investimento">
+    <div class="container">
+      <div class="section-header">
+        <span class="mono section-tag">// 05 — INVESTIMENTO</span>
+        <h2 class="section-title">Investi nella tua carriera nel Motorsport</h2>
+      </div>
+      <div class="investimento-grid">
+        <div class="inv-card inv-main">
+          <div class="inv-label mono">Prezzo del corso</div>
+          <div class="inv-price">
+            <span class="inv-amount">5.400€</span>
+            <span class="inv-vat">+ IVA</span>
+          </div>
+          <p class="inv-desc">È necessario essere in possesso della <strong>MTS Card</strong>, acquistabile al prezzo di 69€ + IVA.</p>
+          <div class="inv-separator"></div>
+          <p class="inv-vat-note">IVA applicata al 22%.</p>
+          <a href="#candidatura" class="btn btn-primary btn-full" style="margin-top:28px;">Candidati ora</a>
+        </div>
+        <div class="inv-card inv-rate">
+          <div class="inv-label mono">Paga in 5 rate</div>
+          <div class="inv-rate-list">
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 1</span>
+              <span class="rata-amount">400€ <small>+ IVA</small></span>
+              <span class="rata-when">Al momento dell'iscrizione</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 2</span>
+              <span class="rata-amount">600€ <small>+ IVA</small></span>
+              <span class="rata-when">Entro 15 giorni dal superamento dello Step 1</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 3</span>
+              <span class="rata-amount">1.500€ <small>+ IVA</small></span>
+              <span class="rata-when">Entro 5 giorni dal superamento dello Step 2</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 4</span>
+              <span class="rata-amount">1.500€ <small>+ IVA</small></span>
+              <span class="rata-when">Entro il 15 gennaio 2027</span>
+            </div>
+            <div class="inv-rata">
+              <span class="rata-num mono">RATA 5</span>
+              <span class="rata-amount">1.400€ <small>+ IVA</small></span>
+              <span class="rata-when">Entro il 12 febbraio 2027</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rimborso-card">
+        <h3 class="struttura-subhead">Selezionato o rimborsato</h3>
+        <p>Se non superi la selezione e non individuiamo insieme un corso alternativo adatto al tuo profilo, è previsto il rimborso completo degli importi versati, secondo le condizioni applicabili.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       08. CANDIDATURA FINALE
+  ============================================================ -->
+  <section class="final-cta section" id="final-cta">
+    <div class="container">
+      <div class="final-cta-inner">
+        <span class="mono section-tag">// 06 — CANDIDATURA</span>
+        <h2 class="final-title">Il tuo futuro nel Motorsport <span class="text-red">inizia qui</span></h2>
+        <div class="cand-steps">
+          <ul class="target-list-mm">
+            <li>
+              <span class="target-num mono">01</span>
+              <div class="target-body">
+                <strong>Invia la candidatura</strong>
+                <span>Ricevi via e-mail il modulo di iscrizione e le indicazioni per prepararti alle selezioni.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">02</span>
+              <div class="target-body">
+                <strong>Completa l'iscrizione</strong>
+                <span>Avvia il processo di selezione.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">03</span>
+              <div class="target-body">
+                <strong>Sostieni il colloquio online</strong>
+                <span>Entro 30 giorni dall'iscrizione.</span>
+              </div>
+            </li>
+            <li>
+              <span class="target-num mono">04</span>
+              <div class="target-body">
+                <strong>Partecipa alla selezione in presenza</strong>
+                <span>Sostieni a MTS Lesmo un test pratico, un colloquio e un test attitudinale.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <h3 class="final-closing">Trasforma la passione in una professione</h3>
+        <p class="final-sub">Specializzati nella meccanica delle moto da competizione e avvicinati al lavoro dei team professionistici.</p>
+        <div class="final-actions">
+          <a href="#candidatura" class="btn btn-primary btn-large">Candidati ora</a>
+        </div>
+        <p class="final-micro mono">Posti limitati · Selezione obbligatoria · Inizio previsto: 11 dicembre 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#"><img src="Assetmotoracing/MTSLogoPayoffNegativocolori.webp" alt="MTS Motorsport Technical School" class="footer-logo"></a>
+        <p>MTS Motorsport Technical School — formazione tecnica specialistica per il mondo del racing.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/MTSchoolMonza/?locale=it_IT" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/mts_motorsport_school/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://x.com/SchoolMts" target="_blank" rel="noopener" class="social-icon" aria-label="X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCwkB9NWdsuDq0dTjtxOMM5g" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/school/motorsport-technical-school/?originalSubdomain=it" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Corso</span>
+        <ul>
+          <li><a href="#cos-e">Il Meccanico Moto Racing</a></li>
+          <li><a href="#target">A chi si rivolge</a></li>
+          <li><a href="#perche">Perché MTS</a></li>
+          <li><a href="#struttura">Struttura del corso</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Informazioni</span>
+        <ul>
+          <li><a href="#investimento">Investimento</a></li>
+          <li><a href="#candidatura">Candidati ora</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading mono">// Contatti</span>
+        <ul>
+          <li><a href="mailto:info@mtschool.it">info@mtschool.it</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span class="mono footer-copy">©2025 MTS Motorsport Technical School &nbsp;|&nbsp; MTS srl | PIVA 03783800166</span>
+        <span class="footer-legal">
+          <a href="https://www.iubenda.com/privacy-policy/28546145" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="https://www.iubenda.com/privacy-policy/28546145/cookie-policy" target="_blank" rel="noopener">Cookie Policy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="moto-racing.js"></script>
+</body>
+</html>
